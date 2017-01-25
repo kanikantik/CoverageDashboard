@@ -1,0 +1,370 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData bower
+20 silly mapToRegistry name bower
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'bower',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'bower',
+23 silly mapToRegistry   name: 'bower',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/bower
+25 silly fetchNamedPackageData http-server
+26 silly mapToRegistry name http-server
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'http-server',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'http-server',
+29 silly mapToRegistry   name: 'http-server',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/http-server
+31 silly fetchNamedPackageData jasmine-core
+32 silly mapToRegistry name jasmine-core
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'jasmine-core',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'jasmine-core',
+35 silly mapToRegistry   name: 'jasmine-core',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/jasmine-core
+37 silly fetchNamedPackageData karma
+38 silly mapToRegistry name karma
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'karma',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'karma',
+41 silly mapToRegistry   name: 'karma',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/karma
+43 silly fetchNamedPackageData karma-chrome-launcher
+44 silly mapToRegistry name karma-chrome-launcher
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'karma-chrome-launcher',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'karma-chrome-launcher',
+47 silly mapToRegistry   name: 'karma-chrome-launcher',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/karma-chrome-launcher
+49 silly fetchNamedPackageData karma-firefox-launcher
+50 silly mapToRegistry name karma-firefox-launcher
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry data Result {
+53 silly mapToRegistry   raw: 'karma-firefox-launcher',
+53 silly mapToRegistry   scope: null,
+53 silly mapToRegistry   escapedName: 'karma-firefox-launcher',
+53 silly mapToRegistry   name: 'karma-firefox-launcher',
+53 silly mapToRegistry   rawSpec: '',
+53 silly mapToRegistry   spec: 'latest',
+53 silly mapToRegistry   type: 'tag' }
+54 silly mapToRegistry uri https://registry.npmjs.org/karma-firefox-launcher
+55 silly fetchNamedPackageData karma-jasmine
+56 silly mapToRegistry name karma-jasmine
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'karma-jasmine',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   escapedName: 'karma-jasmine',
+59 silly mapToRegistry   name: 'karma-jasmine',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/karma-jasmine
+61 silly fetchNamedPackageData karma-junit-reporter
+62 silly mapToRegistry name karma-junit-reporter
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'karma-junit-reporter',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'karma-junit-reporter',
+65 silly mapToRegistry   name: 'karma-junit-reporter',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/karma-junit-reporter
+67 silly fetchNamedPackageData protractor
+68 silly mapToRegistry name protractor
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry data Result {
+71 silly mapToRegistry   raw: 'protractor',
+71 silly mapToRegistry   scope: null,
+71 silly mapToRegistry   escapedName: 'protractor',
+71 silly mapToRegistry   name: 'protractor',
+71 silly mapToRegistry   rawSpec: '',
+71 silly mapToRegistry   spec: 'latest',
+71 silly mapToRegistry   type: 'tag' }
+72 silly mapToRegistry uri https://registry.npmjs.org/protractor
+73 verbose request uri https://registry.npmjs.org/bower
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 11:28:57 AM
+76 verbose request id ed9657abce9dcdfd
+77 http request GET https://registry.npmjs.org/bower
+78 verbose request uri https://registry.npmjs.org/http-server
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 11:28:57 AM
+81 http request GET https://registry.npmjs.org/http-server
+82 verbose request uri https://registry.npmjs.org/jasmine-core
+83 verbose request no auth needed
+84 info attempt registry request try #1 at 11:28:57 AM
+85 http request GET https://registry.npmjs.org/jasmine-core
+86 verbose request uri https://registry.npmjs.org/karma
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 11:28:57 AM
+89 http request GET https://registry.npmjs.org/karma
+90 verbose request uri https://registry.npmjs.org/karma-chrome-launcher
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 11:28:57 AM
+93 http request GET https://registry.npmjs.org/karma-chrome-launcher
+94 verbose request uri https://registry.npmjs.org/karma-firefox-launcher
+95 verbose request no auth needed
+96 info attempt registry request try #1 at 11:28:57 AM
+97 http request GET https://registry.npmjs.org/karma-firefox-launcher
+98 verbose request uri https://registry.npmjs.org/karma-jasmine
+99 verbose request no auth needed
+100 info attempt registry request try #1 at 11:28:57 AM
+101 http request GET https://registry.npmjs.org/karma-jasmine
+102 verbose request uri https://registry.npmjs.org/karma-junit-reporter
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 11:28:57 AM
+105 http request GET https://registry.npmjs.org/karma-junit-reporter
+106 verbose request uri https://registry.npmjs.org/protractor
+107 verbose request no auth needed
+108 info attempt registry request try #1 at 11:28:58 AM
+109 http request GET https://registry.npmjs.org/protractor
+110 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+111 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+112 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+113 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+114 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+115 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+116 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+117 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+118 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.0.162:443
+119 info attempt registry request try #2 at 11:29:29 AM
+120 http request GET https://registry.npmjs.org/protractor
+121 info attempt registry request try #2 at 11:29:29 AM
+122 http request GET https://registry.npmjs.org/karma-jasmine
+123 info attempt registry request try #2 at 11:29:29 AM
+124 http request GET https://registry.npmjs.org/karma-junit-reporter
+125 info attempt registry request try #2 at 11:29:29 AM
+126 http request GET https://registry.npmjs.org/bower
+127 info attempt registry request try #2 at 11:29:29 AM
+128 http request GET https://registry.npmjs.org/http-server
+129 info attempt registry request try #2 at 11:29:29 AM
+130 http request GET https://registry.npmjs.org/karma
+131 info attempt registry request try #2 at 11:29:29 AM
+132 http request GET https://registry.npmjs.org/jasmine-core
+133 info attempt registry request try #2 at 11:29:29 AM
+134 http request GET https://registry.npmjs.org/karma-firefox-launcher
+135 info attempt registry request try #2 at 11:29:29 AM
+136 http request GET https://registry.npmjs.org/karma-chrome-launcher
+137 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+138 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+139 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+140 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+141 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+142 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+143 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+144 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+145 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.64.162:443
+146 info attempt registry request try #3 at 11:30:50 AM
+147 http request GET https://registry.npmjs.org/protractor
+148 info attempt registry request try #3 at 11:30:50 AM
+149 http request GET https://registry.npmjs.org/karma-junit-reporter
+150 info attempt registry request try #3 at 11:30:50 AM
+151 http request GET https://registry.npmjs.org/karma-jasmine
+152 info attempt registry request try #3 at 11:30:50 AM
+153 http request GET https://registry.npmjs.org/karma-chrome-launcher
+154 info attempt registry request try #3 at 11:30:50 AM
+155 http request GET https://registry.npmjs.org/karma
+156 info attempt registry request try #3 at 11:30:50 AM
+157 http request GET https://registry.npmjs.org/karma-firefox-launcher
+158 info attempt registry request try #3 at 11:30:50 AM
+159 http request GET https://registry.npmjs.org/http-server
+160 info attempt registry request try #3 at 11:30:50 AM
+161 http request GET https://registry.npmjs.org/jasmine-core
+162 info attempt registry request try #3 at 11:30:50 AM
+163 http request GET https://registry.npmjs.org/bower
+164 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+164 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+164 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+164 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+164 silly fetchPackageMetaData  error for protractor@^4.0.9 { Error: connect ETIMEDOUT 151.101.192.162:443
+164 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+164 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+164 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+164 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+164 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+164 silly fetchPackageMetaData   syscall: 'connect',
+164 silly fetchPackageMetaData   address: '151.101.192.162',
+164 silly fetchPackageMetaData   port: 443 }
+165 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+165 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+165 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+165 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+165 silly fetchPackageMetaData  error for karma-jasmine@^0.3.8 { Error: connect ETIMEDOUT 151.101.192.162:443
+165 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+165 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+165 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+165 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+165 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+165 silly fetchPackageMetaData   syscall: 'connect',
+165 silly fetchPackageMetaData   address: '151.101.192.162',
+165 silly fetchPackageMetaData   port: 443 }
+166 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+166 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+166 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+166 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+166 silly fetchPackageMetaData  error for karma-chrome-launcher@^0.2.3 { Error: connect ETIMEDOUT 151.101.192.162:443
+166 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+166 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+166 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+166 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+166 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+166 silly fetchPackageMetaData   syscall: 'connect',
+166 silly fetchPackageMetaData   address: '151.101.192.162',
+166 silly fetchPackageMetaData   port: 443 }
+167 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+167 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+167 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+167 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+167 silly fetchPackageMetaData  error for karma-junit-reporter@^0.4.1 { Error: connect ETIMEDOUT 151.101.192.162:443
+167 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+167 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+167 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+167 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+167 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+167 silly fetchPackageMetaData   syscall: 'connect',
+167 silly fetchPackageMetaData   address: '151.101.192.162',
+167 silly fetchPackageMetaData   port: 443 }
+168 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+168 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+168 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+168 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+168 silly fetchPackageMetaData  error for karma@^0.13.22 { Error: connect ETIMEDOUT 151.101.192.162:443
+168 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+168 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+168 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+168 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+168 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+168 silly fetchPackageMetaData   syscall: 'connect',
+168 silly fetchPackageMetaData   address: '151.101.192.162',
+168 silly fetchPackageMetaData   port: 443 }
+169 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+169 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+169 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+169 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+169 silly fetchPackageMetaData  error for http-server@^0.9.0 { Error: connect ETIMEDOUT 151.101.192.162:443
+169 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+169 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+169 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+169 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+169 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+169 silly fetchPackageMetaData   syscall: 'connect',
+169 silly fetchPackageMetaData   address: '151.101.192.162',
+169 silly fetchPackageMetaData   port: 443 }
+170 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+170 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+170 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+170 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+170 silly fetchPackageMetaData  error for karma-firefox-launcher@^0.1.7 { Error: connect ETIMEDOUT 151.101.192.162:443
+170 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+170 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+170 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+170 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+170 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+170 silly fetchPackageMetaData   syscall: 'connect',
+170 silly fetchPackageMetaData   address: '151.101.192.162',
+170 silly fetchPackageMetaData   port: 443 }
+171 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+171 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+171 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+171 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+171 silly fetchPackageMetaData  error for jasmine-core@^2.4.1 { Error: connect ETIMEDOUT 151.101.192.162:443
+171 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+171 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+171 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+171 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+171 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+171 silly fetchPackageMetaData   syscall: 'connect',
+171 silly fetchPackageMetaData   address: '151.101.192.162',
+171 silly fetchPackageMetaData   port: 443 }
+172 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.192.162:443
+172 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+172 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+172 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+172 silly fetchPackageMetaData  error for bower@^1.7.7 { Error: connect ETIMEDOUT 151.101.192.162:443
+172 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+172 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+172 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+172 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+172 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+172 silly fetchPackageMetaData   syscall: 'connect',
+172 silly fetchPackageMetaData   address: '151.101.192.162',
+172 silly fetchPackageMetaData   port: 443 }
+173 silly rollbackFailedOptional Starting
+174 silly rollbackFailedOptional Finishing
+175 silly runTopLevelLifecycles Finishing
+176 silly install printInstalled
+177 verbose stack Error: connect ETIMEDOUT 151.101.192.162:443
+177 verbose stack     at Object.exports._errnoException (util.js:1022:11)
+177 verbose stack     at exports._exceptionWithHostPort (util.js:1045:20)
+177 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+178 verbose cwd D:\GitRepositories\CoverageDashboard\CoverageDashboard\CoverageDashboard.Web
+179 error Windows_NT 10.0.14393
+180 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+181 error node v6.9.2
+182 error npm  v3.10.9
+183 error code ETIMEDOUT
+184 error errno ETIMEDOUT
+185 error syscall connect
+186 error network connect ETIMEDOUT 151.101.192.162:443
+187 error network This is most likely not a problem with npm itself
+187 error network and is related to network connectivity.
+187 error network In most cases you are behind a proxy or have bad network settings.
+187 error network
+187 error network If you are behind a proxy, please make sure that the
+187 error network 'proxy' config is set properly.  See: 'npm help config'
+188 verbose exit [ 1, true ]

@@ -3,3 +3,13 @@
 ################################################################################
 
 /CoverageDashboard.Core/obj/Debug
+/CoverageDashBoard.Mongo/bin
+/CoverageDashBoard.Mongo/obj/Debug
+/CoverageDashboard.Tests/obj/Debug
+/CoverageDashboard.Web/bin
+/CoverageDashboard.Web/obj/Debug
+/CoverageDashboard.WebApi/bin
+/packages
+/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+/CoverageDashboard.Application/obj/Debug
