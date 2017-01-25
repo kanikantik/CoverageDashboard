@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoverageDashBoard.Core.Dependency
+namespace CoverageDashboard.Core.Dependency
 {
     /// <summary>
     /// Define interface for classes those are used to resolve dependencies.

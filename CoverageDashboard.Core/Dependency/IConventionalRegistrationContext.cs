@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CoverageDashBoard.Core.Dependency
+namespace CoverageDashboard.Core.Dependency
 {
     /// <summary>
     /// Used to pass needed objects on conventional registration process.

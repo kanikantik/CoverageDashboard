@@ -7,8 +7,8 @@
     <ProjectGuid>{9C66BCEF-DE7E-4D9E-B73B-3772F8EC948A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CoverageDashBoard.Mongo</RootNamespace>
-    <AssemblyName>CoverageDashBoard.Mongo</AssemblyName>
+    <RootNamespace>CoverageDashboard.Mongo</RootNamespace>
+    <AssemblyName>CoverageDashboard.Mongo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MongoDB.Bson">
-      <HintPath>..\..\..\..\..\Downloads\CoverageDashboard\packages\MongoDB.Bson.2.4.1\lib\net45\MongoDB.Bson.dll</HintPath>
+      <HintPath>C:\Users\krishna_kanikanti\Downloads\CoverageDashboard\packages\MongoDB.Bson.2.4.1\lib\net45\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver">
-      <HintPath>..\..\..\..\..\Downloads\CoverageDashboard\packages\MongoDB.Driver.2.4.1\lib\net45\MongoDB.Driver.dll</HintPath>
+      <HintPath>C:\Users\krishna_kanikanti\Downloads\CoverageDashboard\packages\MongoDB.Driver.2.4.1\lib\net45\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
-      <HintPath>..\..\..\..\..\Downloads\CoverageDashboard\packages\MongoDB.Driver.Core.2.4.1\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <HintPath>C:\Users\krishna_kanikanti\Downloads\CoverageDashboard\packages\MongoDB.Driver.Core.2.4.1\lib\net45\MongoDB.Driver.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

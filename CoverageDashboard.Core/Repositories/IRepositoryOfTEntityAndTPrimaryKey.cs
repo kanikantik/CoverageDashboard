@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace CoverageDashBoard.Core.Repositories
+namespace CoverageDashboard.Core.Repositories
 {
     /// <summary>
     /// This interface is implemented by all repositories to ensure implementation of fixed methods.

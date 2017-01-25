@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashBoard.Mongo", "CoverageDashBoard.Mongo\CoverageDashBoard.Mongo.csproj", "{9C66BCEF-DE7E-4D9E-B73B-3772F8EC948A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.Mongo", "CoverageDashBoard.Mongo\CoverageDashboard.Mongo.csproj", "{9C66BCEF-DE7E-4D9E-B73B-3772F8EC948A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.Core", "CoverageDashboard.Core\CoverageDashboard.Core.csproj", "{B95E8722-1277-48F8-A854-4DDD2A37FE56}"
 EndProject
@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.Web", "Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{656E5D0A-D9A4-4BB1-AD0E-0EAD2AE57AC5}"
 	ProjectSection(SolutionItems) = preProject
-		D:\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.Config = D:\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.Config
-		D:\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.exe = D:\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.exe
-		D:\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.targets = D:\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.targets
+		..\..\..\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.Config = ..\..\..\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.Config
+		..\..\..\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.exe = ..\..\..\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.exe
+		..\..\..\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.targets = ..\..\..\KnowledgeCoverageDashboard\CoverageDashboard\.nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.WebApi", "CoverageDashboard.WebApi\CoverageDashboard.WebApi.csproj", "{3BC01404-F7A9-4AC6-97D0-5EDE53D1A3D9}"

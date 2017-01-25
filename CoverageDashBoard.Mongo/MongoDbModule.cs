@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using CoverageDashBoard.Core.Modules;
+using CoverageDashboard.Core.Modules;
 using CoverageDashBoard.Mongo.Configurations;
 
 namespace CoverageDashBoard.Mongo
@@ -7,7 +7,7 @@ namespace CoverageDashBoard.Mongo
   /// This module is used to implement "Data Access Layer" in MongoDB.
   /// </summary>
     
-    public class MongoDbModule : BaseModule
+    public class MongoDbModule : CoreModule
     {
         public override void PreInitialize()
         {

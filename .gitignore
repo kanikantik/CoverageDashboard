@@ -13,3 +13,7 @@
 /Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 /Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 /CoverageDashboard.Application/obj/Debug
+/CoverageDashboard.Core/bin/Debug
+/CoverageDashboard.Application/bin/Debug
+/CoverageDashboard.Tests/bin/Debug
+/CoverageDashboard.WebApi/obj/Debug

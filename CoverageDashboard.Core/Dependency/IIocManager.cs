@@ -1,7 +1,7 @@
 ﻿using System;
 using Castle.Windsor;
 
-namespace CoverageDashBoard.Core.Dependency
+namespace CoverageDashboard.Core.Dependency
 {
     /// <summary>
     /// This interface is used to directly perform dependency injection tasks.

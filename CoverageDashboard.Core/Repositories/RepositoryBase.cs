@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 
-namespace CoverageDashBoard.Core.Repositories
+namespace CoverageDashboard.Core.Repositories
 {
     /// <summary>
     /// Base class to implement <see cref="IRepository"/>.
@@ -17,7 +17,6 @@ namespace CoverageDashBoard.Core.Repositories
         where TEntity : class, IEntity<TPrimaryKey>
     {
         
-
         public abstract IQueryable<TEntity> GetAll();
 
         public virtual IQueryable<TEntity> GetAllIncluding(params Expression<Func<TEntity, object>>[] propertySelectors)

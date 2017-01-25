@@ -6,7 +6,7 @@ using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
 
-namespace CoverageDashBoard.Core.Dependency
+namespace CoverageDashboard.Core.Dependency
 {
     /// <summary>
     /// This class is used to directly perform dependency injection tasks.

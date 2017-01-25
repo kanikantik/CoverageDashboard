@@ -1,6 +1,6 @@
 ﻿using Castle.DynamicProxy;
 
-namespace CoverageDashBoard.Core.Dependency
+namespace CoverageDashboard.Core.Dependency
 {
     /// <summary>
     /// This class is used to pass configuration/options while registering classes in conventional way.

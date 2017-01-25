@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CoverageDashBoard.Core.Dependency
+﻿
+namespace CoverageDashboard.Core.Dependency
 {/// <summary>
  /// Lifestyles of types used in dependency injection system.
  /// </summary>

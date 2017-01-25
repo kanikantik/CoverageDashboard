@@ -2,7 +2,7 @@
 using System.Reflection;
 
 
-namespace CoverageDashBoard.Core.Dependency
+namespace CoverageDashboard.Core.Dependency
 {
     public interface IIocRegistrar
     {

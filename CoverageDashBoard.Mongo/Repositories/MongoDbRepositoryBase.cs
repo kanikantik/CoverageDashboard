@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using CoverageDashBoard.Core.Repositories;
+using CoverageDashboard.Core.Repositories;
 using MongoDB.Driver;
 
 namespace CoverageDashBoard.Mongo.Repositories

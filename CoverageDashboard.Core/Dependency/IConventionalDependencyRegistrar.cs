@@ -1,4 +1,4 @@
-﻿namespace CoverageDashBoard.Core.Dependency
+﻿namespace CoverageDashboard.Core.Dependency
 {
     /// <summary>
     /// This interface is used to register dependencies by conventions. 
