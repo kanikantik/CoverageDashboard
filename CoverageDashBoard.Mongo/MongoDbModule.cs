@@ -7,7 +7,7 @@ namespace CoverageDashBoard.Mongo
   /// This module is used to implement "Data Access Layer" in MongoDB.
   /// </summary>
     
-    public class MongoDbModule : CoreModule
+    public class MongoDbModule : MainModule
     {
         public override void PreInitialize()
         {

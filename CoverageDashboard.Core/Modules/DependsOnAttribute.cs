@@ -5,7 +5,7 @@ namespace CoverageDashboard.Core.Modules
 {
     /// <summary>
     /// Used to define dependencies of an ABP module to other modules.
-    /// It should be used for a class derived from <see cref="CoreModule"/>.
+    /// It should be used for a class derived from <see cref="MainModule"/>.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class DependsOnAttribute : Attribute

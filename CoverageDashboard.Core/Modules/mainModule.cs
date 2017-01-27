@@ -2,14 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using CoverageDashboard.Core.Configurations;
 using CoverageDashboard.Core.Dependency;
+using CoverageDashboard.Core.Dependency.Installers;
 
 namespace CoverageDashboard.Core.Modules
 {
-    public abstract class CoreModule
+    public abstract class MainModule
     {
         protected internal IIocManager IocManager { get; internal set; }
         //public ILogger Logger { get; set; }
+
+        /// <summary>
+        /// Gets a reference to the ABP configuration.
+        /// </summary>
+        protected internal IDefaultConfigurations Configuration { get; internal set; }
 
         /// <summary>
         /// This is the first event called on application startup. 
@@ -25,6 +32,13 @@ namespace CoverageDashboard.Core.Modules
         /// </summary>
         public virtual void Initialize()
         {
+            IocManager.IocContainer.Install(new CoreInstallers());
+
+            IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly(),
+                new ConventionalRegistrationConfig
+                {
+                    InstallInstallers = false
+                });
 
         }
 
@@ -59,7 +73,7 @@ namespace CoverageDashboard.Core.Modules
                 type.IsClass &&
                 !type.IsAbstract &&
                 !type.IsGenericType &&
-                typeof(CoreModule).IsAssignableFrom(type);
+                typeof(MainModule).IsAssignableFrom(type);
         }
 
         /// <summary>
@@ -93,8 +107,8 @@ namespace CoverageDashboard.Core.Modules
         {
             var list = new List<Type>();
             AddModuleAndDependenciesResursively(list, moduleType);
-            if(!list.Contains(typeof(CoreModule)))
-                 list.Add(typeof(CoreModule));
+            if(!list.Contains(typeof(MainModule)))
+                 list.Add(typeof(MainModule));
 
             return list;
         }
