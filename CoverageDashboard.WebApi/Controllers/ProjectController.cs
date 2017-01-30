@@ -14,6 +14,10 @@ namespace CoverageDashboard.WebApi.Controllers
     public class ProjectController : BaseApiController
     {
         //TO Do: Write the logic for the Constructor injection
+        public ProjectController()
+        {
+
+        }
         private readonly IProjectAppService _projectAppService;
         public ProjectController(IProjectAppService projectAppService)
         {

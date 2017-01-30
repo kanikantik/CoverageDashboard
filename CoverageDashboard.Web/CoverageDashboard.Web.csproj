@@ -116,6 +116,7 @@
     <Content Include="app\view2\view2_test.js" />
     <Content Include="e2e-tests\protractor.conf.js" />
     <Content Include="e2e-tests\scenarios.js" />
+    <Content Include="gulpfile.js" />
     <Content Include="karma.conf.js" />
     <Content Include="packages.config" />
     <Content Include=".bowerrc" />
