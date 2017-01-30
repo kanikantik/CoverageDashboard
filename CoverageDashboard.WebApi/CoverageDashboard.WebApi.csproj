@@ -106,7 +106,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoverageDashboard.Application\CoverageDashboard.Application.csproj">
+      <Project>{6c8879d9-2f10-4151-a6e6-cf518076f408}</Project>
+      <Name>CoverageDashboard.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoverageDashboard.Core\CoverageDashboard.Core.csproj">
+      <Project>{B95E8722-1277-48F8-A854-4DDD2A37FE56}</Project>
+      <Name>CoverageDashboard.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

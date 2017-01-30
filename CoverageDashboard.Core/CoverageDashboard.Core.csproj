@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\IApplicationService.cs" />
     <Compile Include="CdBootstrapper.cs" />
     <Compile Include="Configurations\DefaultConfigurations.cs" />
     <Compile Include="Configurations\IDefaultConfigurations.cs" />

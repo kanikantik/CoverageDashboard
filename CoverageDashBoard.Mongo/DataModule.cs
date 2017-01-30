@@ -12,10 +12,12 @@ using  System.Configuration;
 namespace CoverageDashboard.Mongo
 {
     [DependsOn(typeof(Core.CoreModule))]
-    public class DataModule : Core.Modules.MainModule
+    public class DataModule : MainModule
     {
         public override void PreInitialize()
         {
+            IocManager.Register<IMongoDatabaseProvider, MongoDbContext>();
+
             Configuration.DefaultNameOrConnectionString = ConfigurationManager.AppSettings["connectionString"].ToString();
         }
 

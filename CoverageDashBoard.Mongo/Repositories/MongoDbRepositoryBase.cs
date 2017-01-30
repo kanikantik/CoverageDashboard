@@ -2,8 +2,10 @@
 using System.Linq;
 using CoverageDashboard.Core.Repositories;
 using MongoDB.Driver;
+using CoverageDashboard.Mongo;
 
-namespace CoverageDashBoard.Mongo.Repositories
+
+namespace CoverageDashboard.Mongo.Repositories
 {
         /// <summary>
         /// Implements IRepository for MongoDB.
@@ -12,6 +14,7 @@ namespace CoverageDashBoard.Mongo.Repositories
         public class MongoDbRepositoryBase<TEntity> : MongoDbRepositoryBase<TEntity, int>, IRepository<TEntity>
             where TEntity : class, IEntity<int>
         {
+           
             public MongoDbRepositoryBase(IMongoDatabaseProvider databaseProvider)
                 : base(databaseProvider)
             {
@@ -26,6 +29,8 @@ namespace CoverageDashBoard.Mongo.Repositories
         public class MongoDbRepositoryBase<TEntity, TPrimaryKey> : RepositoryBase<TEntity, TPrimaryKey>
             where TEntity : class, IEntity<TPrimaryKey>
         {
+            private readonly IMongoDatabaseProvider _databaseProvider;
+
             public virtual IMongoDatabase Database
             {
                 get { return _databaseProvider.Database; }
@@ -37,9 +42,7 @@ namespace CoverageDashBoard.Mongo.Repositories
                 {
                     return _databaseProvider.Database.GetCollection<TEntity>(typeof(TEntity).Name);
                 }
-            }
-
-            private readonly IMongoDatabaseProvider _databaseProvider;
+            }            
 
             public MongoDbRepositoryBase(IMongoDatabaseProvider databaseProvider)
             {

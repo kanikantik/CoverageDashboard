@@ -30,7 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationModule.cs" />
+    <Compile Include="Projects\Dto\CreateUpdateProject.cs" />
+    <Compile Include="Projects\Dto\SelectProject.cs" />
     <Compile Include="Projects\IProjectAppService.cs" />
     <Compile Include="Projects\ProjectAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,9 +57,13 @@
       <Project>{b95e8722-1277-48f8-a854-4ddd2a37fe56}</Project>
       <Name>CoverageDashboard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CoverageDashBoard.Mongo\CoverageDashboard.Mongo.csproj">
+      <Project>{9c66bcef-de7e-4d9e-b73b-3772f8ec948a}</Project>
+      <Name>CoverageDashboard.Mongo</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Projects\Dto\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
