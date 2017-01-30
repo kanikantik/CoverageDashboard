@@ -1,7 +1,7 @@
 ﻿
 namespace CoverageDashboard.Application.Projects
 {
-    interface IProjectAppService
+    public interface IProjectAppService
     {
     }
 }
