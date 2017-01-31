@@ -1,83 +1,108 @@
 ﻿using CoverageDashboard.Application.Projects;
+using CoverageDashboard.Application.Projects.Dto;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace CoverageDashboard.WebApi.Controllers
 {
-
-    [Route("api")]
     public class ProjectController : BaseApiController
     {
-        //TO Do: Write the logic for the Constructor injection
-        public ProjectController()
-        {
-
-        }
+        /// <summary>
+        /// categories application service object
+        /// </summary>
         private readonly IProjectAppService _projectAppService;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProjectController"/> class.
+        /// </summary>
         public ProjectController(IProjectAppService projectAppService)
         {
             _projectAppService = projectAppService;
         }
 
+        /// <summary>
+        /// Get All Projects 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
-        [Route("ping")]
-        public async Task<IHttpActionResult> Ping()
-        {
-            return Ok("pong");
-        }
-
-        [HttpGet]
-        [Route("projects")]
+        [Route("Get")]
         public IHttpActionResult GetAllProjects()
         {
-            return GetAllProjectsInternal();
-
+            var projects = _projectAppService.GetProjects();
+            return Ok(projects);
         }
 
+        /// <summary>
+        /// Get All Projects 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
-        [Route("projects/{name}")]
-        public IHttpActionResult GetProjectByName(string name)
+        [Route("Get")]
+        public IHttpActionResult GetProject([FromUri]int projectId)
         {
-            return GetProjectByNameInternal(name);
+            var project = _projectAppService.GetProject(projectId);
+            return Ok(project);
         }
 
-
-
-        #region ProjectControllerPrivateMethods
-        private IHttpActionResult GetAllProjectsInternal()
+        /// <summary>
+        ///  delete specific project by id
+        /// </summary>
+        /// <param name="projectId">project id</param>
+        [HttpDelete]
+        [Route("Delete")]
+        public void DeleteProject([FromUri]int projectId)
         {
-            //var result = await _businessLayer.GetAll();
-            var result = "{Id:1,Name=CapabilityDashboard}";
-            if (result != null)
-            {
-                return Ok(result);
-            }
-            else
-                return NotFound();
+            _projectAppService.DeleteProject(projectId);
         }
 
-
-        private IHttpActionResult GetProjectByNameInternal(string name)
+        /// <summary>
+        /// Post method for creating project
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns>CreateUpdateProject dto</returns>
+        [HttpPost]
+        [Route("CreateProject")]
+        public IHttpActionResult Post(ProjectInputDto item)
         {
-            if (string.IsNullOrEmpty(name))
+            if (ModelState.IsValid)
             {
-                return BadRequest();
+                try
+                {
+                    var itemId = _projectAppService.CreateorUpdateProject(item);
+                    if (itemId.Result == 1)
+                        return Ok(item);
+                }
+                catch (Exception execption)
+                {
+                    return BadRequest(execption.Message);
+                }
+
             }
 
-            var result = "Projectbyname";
-            if (result != null && result.Count() > 0)
-            {
-                return Ok(result);
-            }
-            else
-                return NotFound();
+            return BadRequest(ModelState);
         }
-        #endregion
-
+        /// <summary>
+        /// Put method for updating project
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns>CreateUpdateProject Dto</returns>
+        [HttpPut]
+        [Route("UpdateProject")]
+        public IHttpActionResult Put(ProjectInputDto item)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var itemId = _projectAppService.CreateorUpdateProject(item);
+                    if (itemId.Result == 1)
+                        return Ok(item);
+                }
+                catch (Exception execption)
+                {
+                    return BadRequest(execption.Message);
+                }
+            }
+            return BadRequest(ModelState);
+        }
     }
 }

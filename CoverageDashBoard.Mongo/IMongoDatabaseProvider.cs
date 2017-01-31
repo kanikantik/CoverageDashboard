@@ -1,7 +1,7 @@
 ﻿
 using MongoDB.Driver;
 
-namespace CoverageDashBoard.Mongo
+namespace CoverageDashboard.Mongo
 {
     /// <summary>
   /// Defines interface to obtain a <see cref="IMongoDatabase"/> object.

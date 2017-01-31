@@ -16,6 +16,7 @@ namespace CoverageDashboard.Mongo
     {
         public override void PreInitialize()
         {
+            //IocManager.Register<IMongoDbModuleConfiguration, MongoDbModuleConfiguration>();
             Configuration.DefaultNameOrConnectionString = ConfigurationManager.AppSettings["connectionString"].ToString();
         }
 

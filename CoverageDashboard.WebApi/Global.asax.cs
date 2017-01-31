@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
+using CoverageDashboard.WebApi;
 
 namespace CoverageDashBoard.WebApi
 {

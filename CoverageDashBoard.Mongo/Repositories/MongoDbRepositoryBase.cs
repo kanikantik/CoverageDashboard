@@ -3,7 +3,7 @@ using System.Linq;
 using CoverageDashboard.Core.Repositories;
 using MongoDB.Driver;
 
-namespace CoverageDashBoard.Mongo.Repositories
+namespace CoverageDashboard.Mongo.Repositories
 {
         /// <summary>
         /// Implements IRepository for MongoDB.

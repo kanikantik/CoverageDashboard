@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace CoverageDashBoard.WebApi
+namespace CoverageDashboard.WebApi
 {
     public static class WebApiConfig
     {
