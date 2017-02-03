@@ -1,12 +1,12 @@
 
 using System.Web.Http;
 using WebActivatorEx;
-using CoverageDashboard.WebApi;
+using CoverageDashboard.Core;
 using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace CoverageDashboard.WebApi
+namespace CoverageDashboard.Core
 {
     public class SwaggerConfig
     {

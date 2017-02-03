@@ -6,15 +6,22 @@ using CoverageDashboard.Mongo.Collections;
 using System.Threading.Tasks;
 using AutoMapper;
 using System.Linq;
+using CoverageDashboard.Core.Application;
 
 namespace CoverageDashboard.Application.Projects
 {
-    public class ProjectAppService : IProjectAppService
+    public class ProjectAppService : ApplicationService, IProjectAppService
     {
         /// <summary>
         ///  project repository
         /// </summary>
         private readonly IProjectRepository _projectRepository;
+
+
+        public ProjectAppService(IProjectRepository projectRepository)
+        {
+            _projectRepository = projectRepository;
+        }
 
 
         public Task<int> CreateorUpdateProject(ProjectInputDto input)

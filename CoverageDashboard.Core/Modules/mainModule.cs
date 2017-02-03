@@ -5,6 +5,7 @@ using System.Reflection;
 using CoverageDashboard.Core.Configurations;
 using CoverageDashboard.Core.Dependency;
 using CoverageDashboard.Core.Dependency.Installers;
+using CoverageDashboard.Dependency;
 
 namespace CoverageDashboard.Core.Modules
 {
@@ -18,6 +19,13 @@ namespace CoverageDashboard.Core.Modules
         /// </summary>
         protected internal IDefaultConfigurations Configuration { get; internal set; }
 
+
+        protected MainModule()
+        {
+            //Logger = NullLogger.Instance;
+        }
+
+
         /// <summary>
         /// This is the first event called on application startup. 
         /// Codes can be placed here to run before dependency injection registrations.
@@ -25,6 +33,7 @@ namespace CoverageDashboard.Core.Modules
         public virtual void PreInitialize()
         {
             IocManager.AddConventionalRegistrar(new BasicConventionalRegistrar());
+            IocManager.Register<IScopedIocResolver, ScopedIocResolver>(DependencyLifeStyle.Transient);
         }
 
         /// <summary>
@@ -107,8 +116,8 @@ namespace CoverageDashboard.Core.Modules
         {
             var list = new List<Type>();
             AddModuleAndDependenciesResursively(list, moduleType);
-            if(!list.Contains(typeof(MainModule)))
-                 list.Add(typeof(MainModule));
+            //if(!list.Contains(typeof(MainModule)))
+            //     list.Add(typeof(MainModule));
 
             return list;
         }

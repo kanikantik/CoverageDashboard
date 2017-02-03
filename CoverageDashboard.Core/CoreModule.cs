@@ -8,7 +8,7 @@ using CoverageDashboard.Core.Modules;
 
 namespace CoverageDashboard.Core
 {
-    public class CoreModule : Modules.MainModule
+    public class CoreModule : MainModule
     {
 
         public override void PreInitialize()

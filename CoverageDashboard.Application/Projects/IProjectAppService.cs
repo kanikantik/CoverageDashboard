@@ -1,7 +1,7 @@
 ﻿using CoverageDashboard.Application.Projects.Dto;
-using CoverageDashboard.Core.Application;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CoverageDashboard.Core.Application;
 
 namespace CoverageDashboard.Application.Projects
 {

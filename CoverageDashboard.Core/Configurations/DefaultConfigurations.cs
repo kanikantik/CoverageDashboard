@@ -1,10 +1,11 @@
 ﻿
-
+using System;
 using CoverageDashboard.Core.Dependency;
+using CoverageDashboard.Core.Configurations;
 
 namespace CoverageDashboard.Core.Configurations
 {
-    public class DefaultConfigurations : IDefaultConfigurations
+    public class DefaultConfigurations : DictionaryBasedConfig, IDefaultConfigurations
     {
 
         /// <summary>
@@ -18,6 +19,8 @@ namespace CoverageDashboard.Core.Configurations
         /// </summary>
         public string DefaultNameOrConnectionString { get; set; }
 
+        public IModuleConfigurations Modules { get; private set; }
+
         /// <summary>
         /// Private constructor for singleton pattern.
         /// </summary>
@@ -25,5 +28,15 @@ namespace CoverageDashboard.Core.Configurations
         {
             IocManager = iocManager;
         }
-    }
+
+        public void Initialize()
+        {
+            Modules = IocManager.Resolve<IModuleConfigurations>();
+        }
+        
+        public T Get<T>()
+        {
+            return GetOrCreate(typeof(T).FullName, () => IocManager.Resolve<T>());
+        }
+     }
 }

@@ -8,15 +8,16 @@ using CoverageDashboard.Core;
 using CoverageDashboard.Core.Dependency;
 using CoverageDashboard.Core.Modules;
 using  System.Configuration;
+using CoverageDashboard.Core.Configuration;
 
 namespace CoverageDashboard.Mongo
 {
-    [DependsOn(typeof(Core.CoreModule))]
-    public class DataModule : Core.Modules.MainModule
+    [DependsOn(typeof(CoreModule))]
+    public class DataModule : MainModule
     {
         public override void PreInitialize()
         {
-            //IocManager.Register<IMongoDbModuleConfiguration, MongoDbModuleConfiguration>();
+            IocManager.Register<IMongoDbModuleConfiguration, MongoDbModuleConfiguration>();
             Configuration.DefaultNameOrConnectionString = ConfigurationManager.AppSettings["connectionString"].ToString();
         }
 

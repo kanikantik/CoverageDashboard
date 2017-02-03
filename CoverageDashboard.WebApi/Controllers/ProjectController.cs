@@ -3,14 +3,28 @@ using CoverageDashboard.Application.Projects.Dto;
 using System;
 using System.Web.Http;
 
+using CoverageDashboard.Core.Application;
+using CoverageDashboard.Core.Controllers;
+using CoverageDashboard.Core.Dependency;
+using CoverageDashboard.Application.Projects;
+
+
 namespace CoverageDashboard.WebApi.Controllers
 {
-    public class ProjectController : BaseApiController
+    [Route("api")]
+    public class ProjectController : WebApiController
     {
+        private readonly IProjectAppService _projectAppService;
+
+        public ProjectController()
+        {
+            _projectAppService = IocManager.Instance.Resolve<IProjectAppService>();
+        }
+
         /// <summary>
         /// categories application service object
         /// </summary>
-        private readonly IProjectAppService _projectAppService;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="ProjectController"/> class.
         /// </summary>
@@ -36,7 +50,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("Get")]
+        [Route("Get/{projectId}")]
         public IHttpActionResult GetProject([FromUri]int projectId)
         {
             var project = _projectAppService.GetProject(projectId);

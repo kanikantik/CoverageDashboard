@@ -15,7 +15,7 @@ namespace CoverageDashboard.Core.Configurations
     /// and implements some action in module events on application startup and shutdown.
     /// It also defines depended modules.
     /// </remarks>
-    public interface IDefaultConfigurations
+    public interface IDefaultConfigurations : IDictionaryBasedConfig
     {
         /// <summary>
         /// Gets/sets default connection string used by ORM module.
@@ -27,6 +27,10 @@ namespace CoverageDashboard.Core.Configurations
         /// Gets the IOC manager associated with this configuration.
         /// </summary>
         IIocManager IocManager { get; }
+
+        IModuleConfigurations Modules { get; }
+
+        T Get<T>();
 
     }
 }

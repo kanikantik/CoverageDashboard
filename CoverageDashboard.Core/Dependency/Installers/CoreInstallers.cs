@@ -7,6 +7,7 @@ using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using CoverageDashboard.Core.Configurations;
+using CoverageDashboard.Core.Modules;
 
 namespace CoverageDashboard.Core.Dependency.Installers
 {
@@ -16,7 +17,10 @@ namespace CoverageDashboard.Core.Dependency.Installers
         {
             //TODO: Register to IIocManager to not depend on Castle Windsor
             container.Register(
-                 Component.For<IDefaultConfigurations, DefaultConfigurations>().ImplementedBy<DefaultConfigurations>().LifestyleSingleton()
+                 Component.For<IModuleConfigurations, ModuleConfigurations>().ImplementedBy<ModuleConfigurations>().LifestyleSingleton(),
+                 Component.For<IDefaultConfigurations, DefaultConfigurations>().ImplementedBy<DefaultConfigurations>().LifestyleSingleton(),
+                 Component.For<IModuleManager, ModuleManager>().ImplementedBy<ModuleManager>().LifestyleSingleton()
+
             );
         }
     }
