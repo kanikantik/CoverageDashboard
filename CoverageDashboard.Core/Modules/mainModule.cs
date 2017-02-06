@@ -32,8 +32,6 @@ namespace CoverageDashboard.Core.Modules
         /// </summary>
         public virtual void PreInitialize()
         {
-            IocManager.AddConventionalRegistrar(new BasicConventionalRegistrar());
-            IocManager.Register<IScopedIocResolver, ScopedIocResolver>(DependencyLifeStyle.Transient);
         }
 
         /// <summary>
@@ -41,14 +39,7 @@ namespace CoverageDashboard.Core.Modules
         /// </summary>
         public virtual void Initialize()
         {
-            IocManager.IocContainer.Install(new CoreInstallers());
-
-            IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly(),
-                new ConventionalRegistrationConfig
-                {
-                    InstallInstallers = false
-                });
-
+            
         }
 
         /// <summary>
@@ -116,8 +107,8 @@ namespace CoverageDashboard.Core.Modules
         {
             var list = new List<Type>();
             AddModuleAndDependenciesResursively(list, moduleType);
-            //if(!list.Contains(typeof(MainModule)))
-            //     list.Add(typeof(MainModule));
+            if (!list.Contains(typeof(KernelModule)))
+                list.Add(typeof(KernelModule));
 
             return list;
         }

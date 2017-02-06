@@ -56,7 +56,7 @@
     <Compile Include="Collections\Project.cs" />
     <Compile Include="Configuration\Startup\MongoDbConfigurationExtensions.cs" />
     <Compile Include="DataModule.cs" />
-    <Compile Include="IMongoDatabaseProvider.cs" />
+    <Compile Include="IMongoDbContextProvider.cs" />
     <Compile Include="MongoDbContext.cs" />
     <Compile Include="Configuration\IMongoDbModuleConfiguration.cs" />
     <Compile Include="Configuration\MongoDbModuleConfiguration.cs" />

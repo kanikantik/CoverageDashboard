@@ -50,7 +50,7 @@ namespace CoverageDashboard.Core.Modules
 
         public static void EnsureKernelModuleToBeFirst(List<ModuleInfo> modules)
         {
-            var kernelModuleIndex = modules.FindIndex(m => m.Type == typeof(MainModule));
+            var kernelModuleIndex = modules.FindIndex(m => m.Type == typeof(KernelModule));
             if (kernelModuleIndex <= 0)
             {
                 //It's already the first!

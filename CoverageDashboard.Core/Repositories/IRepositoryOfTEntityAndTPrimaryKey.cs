@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using CoverageDashboard.Core.Dependency;
 
 namespace CoverageDashboard.Core.Repositories
 {
@@ -343,7 +344,7 @@ namespace CoverageDashboard.Core.Repositories
     /// This interface must be implemented by all repositories to identify them by convention.
     /// Implement generic version instead of this one.
     /// </summary>
-    public interface IRepository 
+    public interface IRepository : ITransientDependency
     {
 
     }

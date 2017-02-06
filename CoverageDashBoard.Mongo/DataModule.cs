@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -12,12 +13,13 @@ using CoverageDashboard.Core.Configuration;
 
 namespace CoverageDashboard.Mongo
 {
-    [DependsOn(typeof(CoreModule))]
+    [DependsOn(typeof(KernelModule), typeof(CoreModule))]
     public class DataModule : MainModule
     {
         public override void PreInitialize()
         {
             IocManager.Register<IMongoDbModuleConfiguration, MongoDbModuleConfiguration>();
+            IocManager.Register<IMongoDbContextProvider, MongoDbContext>();
             Configuration.DefaultNameOrConnectionString = ConfigurationManager.AppSettings["connectionString"].ToString();
         }
 

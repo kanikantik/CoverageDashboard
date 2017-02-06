@@ -12,7 +12,7 @@ namespace CoverageDashboard.Mongo.Repositories
         public class MongoDbRepositoryBase<TEntity> : MongoDbRepositoryBase<TEntity, int>, IRepository<TEntity>
             where TEntity : class, IEntity<int>
         {
-            public MongoDbRepositoryBase(IMongoDatabaseProvider databaseProvider)
+            public MongoDbRepositoryBase(IMongoDbContextProvider databaseProvider)
                 : base(databaseProvider)
             {
             }
@@ -39,9 +39,9 @@ namespace CoverageDashboard.Mongo.Repositories
                 }
             }
 
-            private readonly IMongoDatabaseProvider _databaseProvider;
+            private readonly IMongoDbContextProvider _databaseProvider;
 
-            public MongoDbRepositoryBase(IMongoDatabaseProvider databaseProvider)
+            public MongoDbRepositoryBase(IMongoDbContextProvider databaseProvider)
             {
                 _databaseProvider = databaseProvider;
             }

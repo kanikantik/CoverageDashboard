@@ -82,6 +82,7 @@
     <Compile Include="Dependency\SingletonDependency.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="HttpVerb.cs" />
+    <Compile Include="KernelModule.cs" />
     <Compile Include="Modules\CDWebApplication.cs" />
     <Compile Include="Modules\IModuleManager.cs" />
     <Compile Include="Modules\MainModule.cs" />

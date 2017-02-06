@@ -1,11 +1,10 @@
-﻿using System;
-
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using System.Configuration;
+
 
 namespace CoverageDashboard.Mongo
 {
-    public class MongoDbContext : IMongoDatabaseProvider
+    public class MongoDbContext : IMongoDbContextProvider
     {
         public IMongoDatabase Database
         {

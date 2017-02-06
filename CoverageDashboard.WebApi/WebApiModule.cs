@@ -11,20 +11,15 @@ namespace CoverageDashboard.WebApi
 {
     [DependsOn(typeof(ApplicationModule), typeof(CoreModule))]
     public class WebApiModule : MainModule
-    {public override void PreInitialize()
+    {
+        public override void PreInitialize()
         {
-            IocManager.AddConventionalRegistrar(new ApiControllerConventionalRegistrar());
             IocManager.Register<IWebApiConfiguration, WebApiConfiguration>();
         }
 
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-
-            
-            //Configuration.Modules.WebApi().DynamicApiControllerBuilder
-            //    .ForAll<IApplicationService>(typeof(ApplicationModule).Assembly, "app")
-            //    .Build();
         }
 
         public override void PostInitialize()
