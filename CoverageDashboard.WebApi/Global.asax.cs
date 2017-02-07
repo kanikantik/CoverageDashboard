@@ -7,6 +7,7 @@ using System.Web.Routing;
 using CoverageDashboard.Core;
 using CoverageDashboard.Core.Modules;
 using CoverageDashboard.WebApi;
+using CoverageDashboard.WebApi.DependencyResolver;
 
 namespace CoverageDashBoard.WebApi
 {
@@ -15,6 +16,7 @@ namespace CoverageDashBoard.WebApi
         protected override void Application_Start(object sender, EventArgs e)
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
             base.Application_Start(sender, e);
         }
     }

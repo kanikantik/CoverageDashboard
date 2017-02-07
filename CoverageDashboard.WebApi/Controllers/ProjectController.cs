@@ -16,10 +16,6 @@ namespace CoverageDashboard.WebApi.Controllers
     {
         private readonly IProjectAppService _projectAppService;
 
-        public ProjectController()
-        {
-            _projectAppService = IocManager.Instance.Resolve<IProjectAppService>();
-        }
 
         /// <summary>
         /// categories application service object
