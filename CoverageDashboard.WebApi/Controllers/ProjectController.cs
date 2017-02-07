@@ -18,10 +18,6 @@ namespace CoverageDashboard.WebApi.Controllers
 
 
         /// <summary>
-        /// categories application service object
-        /// </summary>
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="ProjectController"/> class.
         /// </summary>
         public ProjectController(IProjectAppService projectAppService)
