@@ -10,7 +10,7 @@ namespace CoverageDashboard.Mongo.Collections
 {
     public class Project : IEntity
     {
-        [BsonElement("imagetitle")]
+        [BsonElement("projectId")]
         [BsonId]
         public int Id { get; set; }
 
