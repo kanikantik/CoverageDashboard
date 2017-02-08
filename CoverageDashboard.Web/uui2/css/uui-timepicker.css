@@ -1,0 +1,213 @@
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+.uui-timepicker {
+  display: inline-block;
+  border: 1px solid #cccccc;
+  position: relative;
+  width: 80px;
+  height: 36px;
+  background: #ffffff;
+}
+.uui-timepicker:hover,
+.uui-timepicker.focus {
+  border-color: #999999;
+}
+.uui-timepicker .uui-form-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  border: none;
+  background: transparent;
+}
+.uui-timepicker.large {
+  height: 48px;
+  width: 100px;
+}
+.uui-timepicker.large .uui-form-element {
+  padding: 10px 18px;
+}
+.uui-timepicker.small {
+  height: 24px;
+  width: 60px;
+}
+.uui-timepicker.small .uui-form-element {
+  padding: 1px 6px 3px 6px;
+  font-size: 12px;
+}
+.uui-timepicker.disable {
+  cursor: not-allowed;
+  background: #e5e5e5;
+  border-color: #cccccc;
+}
+.uui-timepicker.disable .uui-form-element {
+  cursor: not-allowed;
+  color: #cccccc;
+}
+.uui-timepicker.error {
+  border-color: #e4445f;
+}
+.uui-timepicker.time-button {
+  width: 110px;
+}
+.uui-timepicker.time-button .uui-form-element {
+  min-width: 82px;
+  padding-right: 40px;
+}
+.uui-timepicker.time-button .add-on {
+  width: 100%;
+  height: 100%;
+  padding: 7px 12px 6px 82px;
+  border: none;
+  background: transparent;
+}
+.uui-timepicker.time-button .add-on i {
+  font-size: 16px;
+  color: #cccccc;
+}
+.uui-timepicker.time-button:hover .add-on i,
+.uui-timepicker.time-button.focus .add-on i {
+  color: #39c2d7;
+}
+.uui-timepicker.time-button.large {
+  width: 130px;
+}
+.uui-timepicker.time-button.large .uui-form-element {
+  min-width: 88px;
+  padding-right: 60px;
+}
+.uui-timepicker.time-button.large .add-on {
+  padding: 9px 18px 12px 88px;
+}
+.uui-timepicker.time-button.large .add-on i {
+  font-size: 24px;
+}
+.uui-timepicker.time-button.small {
+  width: 80px;
+}
+.uui-timepicker.time-button.small .uui-form-element {
+  min-width: 62px;
+  padding-right: 22px;
+}
+.uui-timepicker.time-button.small .add-on {
+  padding: 0 6px 0 62px;
+}
+.uui-timepicker.time-button.small .add-on i {
+  font-size: 12px;
+}
+.uui-timepicker.time-button.disable .add-on {
+  cursor: not-allowed;
+}
+.uui-timepicker.time-button.disable .add-on i {
+  color: #cccccc;
+}
+.bootstrap-timepicker-widget {
+  width: 160px;
+  height: 108px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-bottom {
+  margin-top: -9px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-bottom:before {
+  bottom: -8px;
+  border-top: 8px solid rgba(102, 102, 102, 0.1);
+}
+.bootstrap-timepicker-widget.timepicker-orient-top {
+  margin-top: 9px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-left:before {
+  left: 5px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-top:before {
+  top: -8px;
+}
+.bootstrap-timepicker-widget.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 3px 0 rgba(51, 51, 51, 0.2);
+  padding: 0 12px;
+}
+.bootstrap-timepicker-widget.dropdown-menu:before {
+  border-bottom-color: rgba(102, 102, 102, 0.1);
+  border-bottom-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+.bootstrap-timepicker-widget.dropdown-menu.timepicker-orient-bottom:before {
+  border-top-color: #eee;
+}
+.bootstrap-timepicker-widget.dropdown-menu table {
+  height: 100%;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td {
+  height: 36px;
+  width: 36px;
+  padding: 0;
+  vertical-align: middle;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td input {
+  width: 36px;
+  height: 36px;
+  border-radius: 0;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  padding: 6px 0;
+  color: #666666;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td input:hover,
+.bootstrap-timepicker-widget.dropdown-menu table tr td input:focus {
+  border-color: #999999;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td a {
+  padding: 0;
+  border: none;
+  color: #999999;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td a .glyphicon {
+  font-size: 18px;
+  color: #999999;
+  top: 0;
+  font-weight: normal;
+  font-family: inherit;
+  line-height: normal;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td a .glyphicon.glyphicon-chevron-up:before {
+  font-family: 'FontAwesome';
+  content: "\f106";
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td a .glyphicon.glyphicon-chevron-down:before {
+  font-family: 'FontAwesome';
+  content: "\f107";
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td a:hover {
+  border-radius: 0;
+  border: none;
+  background-color: #ffffff;
+}
+.bootstrap-timepicker-widget.dropdown-menu table tr td a:hover .glyphicon {
+  color: #39c2d7;
+}
+/* Lime-green */
+.uui-timepicker.lime-green.time-button:hover .add-on i {
+  color: #a3c644;
+}
+.bootstrap-timepicker-widget.lime-green.dropdown-menu table tr td a:hover .glyphicon {
+  color: #a3c644;
+}
+/* Dark Gray */
+.uui-timepicker.dark-gray.time-button:hover .add-on i {
+  color: #464547;
+}
+.bootstrap-timepicker-widget.dark-gray.dropdown-menu table tr td a:hover .glyphicon {
+  color: #464547;
+}
+/* Fuchsia */
+.uui-timepicker.fuchsia.time-button:hover .add-on i {
+  color: #e4445f;
+}
+.bootstrap-timepicker-widget.fuchsia.dropdown-menu table tr td a:hover .glyphicon {
+  color: #e4445f;
+}

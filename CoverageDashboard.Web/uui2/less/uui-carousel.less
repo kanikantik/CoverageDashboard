@@ -1,0 +1,302 @@
+@import 'uui-colors.less';
+
+.uui-carousel {
+    border: 1px solid @gray_light;
+
+    .carousel-caption {
+        text-shadow: none;
+        color: inherit;
+
+        h3 {
+            font-weight: normal;
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    .item {
+        text-align: center;
+        min-height: 150px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0;
+
+        li {
+            width: 12px;
+            height: 12px;
+            margin: 1px;
+            background-color: @gray_light;
+            border: none;
+
+            &.active {
+                background-color: @gray_dark;
+            }
+        }
+    }
+
+    .carousel-control {
+        width: 45px;
+        background: none;
+        color: @gray;
+        text-shadow: none;
+        font-size: 20px;
+        filter: none;
+
+        &:hover, &:focus {
+            color: @gray;
+        }
+
+        i {
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+            position: absolute;
+            top: 50%;
+            width: 20px;
+        }
+    }
+}
+
+/* PRIMARY COLORS */
+/*  Blue  */
+.uui-carousel.blue {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @blue;
+            }
+        }
+    }
+}
+
+/*  Lime Green  */
+.uui-carousel.lime-green {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @green_lime;
+            }
+        }
+    }
+}
+
+/*  Dark Gray  */
+.uui-carousel.dark-gray {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @gray_dark;
+            }
+        }
+    }
+}
+
+/* SECONDARY COLORS */
+/*  Raspberry  */
+.uui-carousel.raspberry {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @raspberry;
+            }
+        }
+    }
+}
+
+/*  Plum  */
+.uui-carousel.plum {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @plum;
+            }
+        }
+    }
+}
+
+/*  Dark Blue  */
+.uui-carousel.dark-blue {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @blue_dark;
+            }
+        }
+    }
+}
+
+/*  Dark Green  */
+.uui-carousel.dark-green {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @green_dark;
+            }
+        }
+    }
+}
+
+/*  Medium Gray  */
+.uui-carousel.medium-gray {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @gray_medium;
+            }
+        }
+    }
+}
+
+/*  Gray  */
+.uui-carousel.gray {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @gray;
+            }
+        }
+    }
+}
+
+/* ADDITIONAL COLORS */
+/*  Yellow  */
+.uui-carousel.yellow {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @yellow;
+            }
+        }
+    }
+}
+
+/* Orange*/
+.uui-carousel.orange {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @orange;
+            }
+        }
+    }
+}
+
+/*  Red  */
+.uui-carousel.red {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @red;
+            }
+        }
+    }
+}
+
+/* Fuchsia*/
+.uui-carousel.fuchsia {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @fuchsia;
+            }
+        }
+    }
+}
+
+/*  Violet  */
+.uui-carousel.violet {
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: @violet;
+            }
+        }
+    }
+}
+
+/**  SLICK CAROUSEL  **/
+.uui-slick-carousel {
+    margin-bottom: 0;
+
+    .slick-prev, .slick-next {
+        &:before {
+            color: @gray_medium;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-list {
+        margin: 0 25px;
+    }
+
+    .slick-item {
+        text-align: center;
+        position: relative;
+
+        .content {
+            margin: 5px;
+
+            img {
+                width: 100%;
+                height: auto;
+                min-height: 150px;
+                overflow: hidden;
+            }
+
+            .text {
+                position: absolute;
+                top: 20px;
+                left: 0;
+                right: 0;
+
+                h3 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin: 0 0 10px 0;
+                    color: @white;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: auto;
+        margin-bottom: 0;
+    }
+
+    &.center {
+        .slick-item {
+            margin: 5px;
+
+            .content {
+                opacity: 0.7;
+                transition: all 300ms ease;
+            }
+
+            &.slick-center {
+                .content {
+                    -moz-transform: scale(1.08);
+                    -ms-transform: scale(1.08);
+                    -o-transform: scale(1.08);
+                    -webkit-transform: scale(1.08);
+                    opacity: 1;
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+}

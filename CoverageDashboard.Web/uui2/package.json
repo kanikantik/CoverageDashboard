@@ -1,0 +1,39 @@
+{
+  "name": "uui-framework",
+  "version": "2.0.1",
+  "description": "EPAM UUI is a framework that extends Bootstrap to provide the minimum set of customizable tools for a company-wide unified UI (UUI).",
+  "keywords": [
+    "css",
+    "less",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://uui.epam.com",
+  "author": {
+    "name": "EPAM Systems, Inc."
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-compress": "~0.12.0",
+    "grunt-contrib-less": "~0.11.4",
+    "grunt-contrib-copy": "~0.6.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-jasmine": "~1.0.3",
+    "grunt-newer": "~1.2.0",
+    "jshint-stylish": "2.2.0",
+    "jquery": "~2.2.3",
+    "karma": "~0.13.22",
+    "karma-cli": "~1.0.0",
+    "jasmine-core": "~2.4.1",
+    "jasmine-jquery": "~2.1.1",
+    "karma-jasmine": "~1.0.2",
+    "karma-jasmine-jquery": "~0.1.1"
+  }
+}

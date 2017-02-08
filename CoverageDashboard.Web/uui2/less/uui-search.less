@@ -1,0 +1,551 @@
+﻿@import 'uui-colors.less';
+@import 'uui-fonts.less';
+
+header {
+    .uui-header {
+        .uui-header-tools {
+            > li {
+                &.uui-global-search {
+                    .search-field {
+                        height: 60px;
+                        line-height: 60px;
+
+                        .uui-search {
+                            width: 100px;
+                            height: 34px;
+                            line-height: 34px;
+                            font-size: 14px;
+                            border: 1px solid @black;
+                            background: @black;
+                            padding: 0 5px 0 35px;
+                            border-radius: 25px;
+                            color: lighten(@gray, 20%);
+                            -webkit-transition: width 0.3s ease;
+                            -moz-transition: width 0.3s ease;
+                            -o-transition: width 0.3s ease;
+                            -ms-transition: width 0.3s ease;
+                            transition: width 0.3s ease;
+
+                            &::-webkit-input-placeholder {
+                                color: lighten(@gray, 20%);
+                            }
+
+                            &::-moz-placeholder {
+                                color: lighten(@gray, 20%);
+                            }
+
+                            &:-ms-input-placeholder {
+                                color: lighten(@gray, 20%);
+                            }
+
+                            &:focus {
+                                width: 400px;
+                                background-color: @white;
+                                color: @gray_dark;
+
+                                &::-webkit-input-placeholder {
+                                    color: @gray;
+                                }
+
+                                &::-moz-placeholder {
+                                    color: @gray;
+                                }
+
+                                &:-ms-input-placeholder {
+                                    color: @gray;
+                                }
+                            }
+                        }
+
+                        label {
+                            position: absolute;
+                            top: 50%;
+                            left: 23px;
+                            height: 16px;
+                            width: 16px;
+                            margin-top: -8px;
+                            margin-bottom: 0;
+                            line-height: normal;                         
+                            font-weight: normal;
+
+                            &:before {
+                                width: 16px;
+                                height: 16px;
+                                display: inline-block;
+                                content: '\f002';
+                                font-family: 'FontAwesome';
+                                color: lighten(@gray, 20%);
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .dropdown-menu {
+                        width: 400px;
+                        min-width: 400px;
+                        right: 9px;
+                        margin-right: auto;
+                        background: @white;
+
+                        .menu-arrow {
+                            border-color: transparent transparent @white transparent;
+                        }
+
+                        .menu-scroll {
+                            max-height: 225px;
+
+                            .mCSB_container {
+                                margin-right: 0;
+                            }
+
+                            .mCSB_scrollTools {
+                                width: 0;
+                            }
+
+                            .search-links {
+                                width: 400px;
+
+                                > li {
+                                    box-shadow: none;
+
+                                    > a {
+                                        .title {
+                                            color: @gray_medium;
+                                        }
+
+                                        .description {
+                                            font-size: 14px;
+                                            color: @gray;
+                                        }
+
+                                        &:hover, &:focus {
+                                            .title {
+                                                color: @black;
+                                            }
+                                        }
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: #eeeeee;
+                                        }
+                                    }
+
+                                    &.no-results {
+                                        display: none;
+                                        text-align: center;
+
+                                        img {
+                                            margin: 30px 10px 15px 10px;
+                                            height: 93px;
+                                            width: auto;
+                                        }
+
+                                        h4 {
+                                            font-family: @Oswald_Regular;
+                                            font-size: 18px;
+                                            color: @gray;
+                                            margin: 0;
+                                        }
+
+                                        p {
+                                            font-family: @Source_Sans_Pro_Regular;
+                                            font-size: 14px;
+                                            color: @gray_light;
+                                            padding-bottom: 25px;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .all-results {
+                            text-align: center;
+
+                            > a {
+                                display: inline-block;
+                                width: 100%;
+                                padding: 15px;
+                                background: @green_lime;
+                                color: @white;
+
+                                &:hover {
+                                    background: darken(@green_lime, 8%);
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-of-type {
+                        .dropdown-menu {
+                            right: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .uui-responsive-header {
+            .responsive-global-search {
+                display: none;
+
+                .search-header {
+                    position: absolute;
+                    z-index: 1004;
+                    top: 0;
+                    left: 0;
+                    height: 60px;
+                    width: 100%;
+                    min-width: 320px;
+                    background: @white;
+                    box-shadow: 0 1px 3px 0 rgba(51, 51, 51, .2);
+
+                    .header-wrapper {
+                        display: table;
+                        width: 100%;
+
+                        .search-field {
+                            display: table-cell;
+
+                            .uui-search {
+                                border: none;
+                                width: 100%;
+                                height: 60px;
+                                padding: 12px 10px 12px 50px;
+                                font-size: 18px;
+                                font-family: @Source_Sans_Pro_Light;
+                            }
+
+                            label {
+                                position: absolute;
+                                top: 50%;
+                                left: 20px;
+                                height: 20px;
+                                width: 20px;
+                                margin-top: -10px;
+                                margin-bottom: 0;
+                                line-height: normal;
+                                font-weight: normal;
+                                
+                                &:before {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    content: '\f002';
+                                    font-family: 'FontAwesome';
+                                    color: lighten(@gray, 20%);
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        .hide-search {
+                            display: table-cell;
+                            position: relative;
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                            text-align: center;
+                            cursor: pointer;
+
+                            span {
+                                display: block;
+                                position: absolute;
+                                height: 2px;
+                                width: 26px;
+                                background: @gray;
+                                top: 29px;
+                                left: 17px;
+
+                                &:nth-child(1) {
+                                    -webkit-transform: rotate(45deg);
+                                    -moz-transform: rotate(45deg);
+                                    -o-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                }
+
+                                &:nth-child(2) {
+                                    -webkit-transform: rotate(-45deg);
+                                    -moz-transform: rotate(-45deg);
+                                    -o-transform: rotate(-45deg);
+                                    transform: rotate(-45deg);
+                                }
+                            }
+
+                            &.show {
+                                right: 0;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                .search-list {
+                    position: fixed;
+                    z-index: 1003;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    min-width: 320px;
+                    height: 100%;
+                    margin-top: 60px;
+                    background: #f1f1f1;
+
+                    .list-wrapper {
+                        display: none;
+                        height: 100%;
+                        width: 100%;
+
+                        .all-results {
+                            height: 40px;
+                            text-align: center;
+                            background: #dddddd;
+
+                            > a {
+                                display: inline-block;
+                                width: 100%;
+                                padding: 10px;
+                                color: @gray;
+
+                                &:hover, &:focus, &:active {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        .menu-scroll {
+                            width: 100%;
+
+                            .mCustomScrollBox {
+                                .mCSB_container {
+                                    margin-right: 0;
+                                }
+
+                                .mCSB_scrollTools {
+                                    width: 0;
+                                }
+                            }
+
+                            ul {
+                                width: 100%;
+                                margin: 0;
+
+                                > li {
+                                    margin-bottom: 0;
+                                    box-shadow: inset 0 -1px #dddddd;
+
+                                    > a {
+                                        display: block;
+                                        padding: 10px 20px;
+
+                                        &:hover, &:focus, &:active {
+                                            text-decoration: none;
+                                        }
+
+                                        p {
+                                            margin-bottom: 0;
+
+                                            &.title {
+                                                font-size: 16px;
+                                                color: @gray_medium;
+                                            }
+
+                                            &.description {
+                                                font-size: 14px;
+                                                color: @gray;
+                                            }
+                                        }
+                                    }
+
+                                    &.no-results {
+                                        width: 100%;
+                                        height: 100%;
+                                        text-align: center;
+                                        box-shadow: none;
+                                        display: none;
+
+                                        .no-results-content {
+                                            box-sizing: border-box;
+                                            min-height: 100%;
+                                            padding-bottom: 70px;
+
+                                            img {
+                                                margin: 50px 10px 20px 10px;
+                                                height: 178px;
+                                                width: auto;
+                                            }
+
+                                            h4 {
+                                                font-family: @Oswald_Regular;
+                                                font-size: 20px;
+                                                color: @gray_medium;
+                                                margin: 0;
+                                            }
+
+                                            p {
+                                                font-family: @Source_Sans_Pro_Regular;
+                                                font-size: 16px;
+                                                color: @gray;
+                                                padding-bottom: 25px;
+                                                margin: 0;
+                                            }
+                                        }
+
+                                        .no-results-footer {
+                                            height: 70px;
+                                            margin-top: -70px;
+                                            line-height: 70px;
+
+                                            > a {
+                                                display: inline-block;
+                                                height: 44px;
+                                                line-height: 44px;
+                                                color: @blue_dark;
+                                                font-family: @Source_Sans_Pro_Regular;
+                                                font-size: 18px;
+
+                                                i {
+                                                    font-size: 20px;
+                                                    margin-right: 10px;
+                                                }
+
+                                                &:hover, &:focus, &:active {
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+
+                                        &:hover, &:focus, &:active {
+                                            .no-results-footer {
+                                                a {
+                                                    text-decoration: none;
+                                                    background: none;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: #dddddd;
+
+                                            p {
+                                                &.title {
+                                                    color: @black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Blue  */
+.uui-header.blue {
+    .uui-header-tools {
+        > li {
+            &.uui-global-search {
+                .search-field {
+                    .uui-search {
+                        border: 1px solid darken(@blue_dark, 8%);
+                        background: darken(@blue_dark, 8%);
+
+                        &::-webkit-input-placeholder {
+                            color: @blue;
+                        }
+
+                        &::-moz-placeholder {
+                            color: @blue;
+                        }
+
+                        &:-ms-input-placeholder {
+                            color: @blue;
+                        }
+
+                        &:focus {
+                            border: 1px solid @white;
+                            background-color: @white;
+
+                            &::-webkit-input-placeholder {
+                                color: @gray;
+                            }
+
+                            &::-moz-placeholder {
+                                color: @gray;
+                            }
+
+                            &:-ms-input-placeholder {
+                                color: @gray;
+                            }
+                        }
+                    }
+
+                    label {
+                        &:before {
+                            color: @blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Green  */
+.uui-header.green {
+    .uui-header-tools {
+        > li {
+            &.uui-global-search {
+                .search-field {
+                    .uui-search {
+                        border: 1px solid darken(@green_dark, 8%);
+                        background: darken(@green_dark, 8%);
+
+                        &::-webkit-input-placeholder {
+                            color: @green_lime;
+                        }
+
+                        &::-moz-placeholder {
+                            color: @green_lime;
+                        }
+
+                        &:-ms-input-placeholder {
+                            color: @green_lime;
+                        }
+
+                        &:focus {
+                            border: 1px solid @white;
+                            background-color: @white;
+
+                            &::-webkit-input-placeholder {
+                                color: @gray;
+                            }
+
+                            &::-moz-placeholder {
+                                color: @gray;
+                            }
+
+                            &:-ms-input-placeholder {
+                                color: @gray;
+                            }
+                        }
+                    }
+
+                    label {
+                        &:before {
+                            color: @green_lime;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

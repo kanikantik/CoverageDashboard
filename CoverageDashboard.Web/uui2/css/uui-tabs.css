@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url(../fonts/font-oswald/oswald-regular.eot);
+  src: url(../fonts/font-oswald/oswald-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-regular.woff) format('woff'), url(../fonts/font-oswald/oswald-regular.ttf) format('truetype'), url(../fonts/font-oswald/oswald-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../fonts/font-oswald/oswald-bold.eot);
+  src: url(../fonts/font-oswald/oswald-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-bold.woff) format('woff'), url(../fonts/font-oswald/oswald-bold.ttf) format('truetype'), url(../fonts/font-oswald/oswald-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src: url(../fonts/font-oswald/oswald-light.eot);
+  src: url(../fonts/font-oswald/oswald-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-light.woff) format('woff'), url(../fonts/font-oswald/oswald-light.ttf) format('truetype'), url(../fonts/font-oswald/oswald-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-light.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-it.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+.uui-tabs {
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 1px 3px 0 rgba(51, 51, 51, 0.2);
+}
+.uui-tabs .tabs-heading {
+  float: left;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.uui-tabs .tabs-heading .nav-tabs {
+  padding: 0 9px;
+  border: none;
+  height: 48px;
+}
+.uui-tabs .tabs-heading .nav-tabs > li {
+  position: relative;
+  height: 100%;
+  line-height: 48px;
+  margin: 0 9px;
+}
+.uui-tabs .tabs-heading .nav-tabs a {
+  position: relative;
+  top: 1px;
+  height: 100%;
+  line-height: inherit;
+  font-family: 'Oswald Regular', Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  color: #666666;
+  letter-spacing: .25px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.uui-tabs .tabs-heading .nav-tabs a .additional-text {
+  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-size: 14px;
+  color: #999999;
+}
+.uui-tabs .tabs-heading .nav-tabs a .uui-label {
+  position: relative;
+  top: -1px;
+  right: 0;
+  z-index: 1;
+  margin-left: 5px;
+  background: transparent;
+  color: #e4445f !important;
+}
+.uui-tabs .tabs-heading .nav-tabs a:hover,
+.uui-tabs .tabs-heading .nav-tabs a:focus {
+  border: none;
+  color: #1a9cb0;
+  background: transparent;
+}
+.uui-tabs .tabs-heading .nav-tabs .active a,
+.uui-tabs .tabs-heading .nav-tabs .active a:hover {
+  border: none;
+  color: #1a9cb0;
+  background-color: transparent;
+  border-bottom: 2px solid #1a9cb0;
+}
+.uui-tabs .tabs-body {
+  float: left;
+  width: 100%;
+  border: none;
+}
+.uui-tabs .tabs-body .tab-content {
+  padding: 10px 18px;
+}
+.uui-tabs.right .tabs-heading ul.nav-tabs {
+  float: right;
+}

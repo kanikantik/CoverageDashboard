@@ -1,0 +1,34 @@
+﻿{
+  "Common": {
+
+    "yes": "Yes",
+    "no": "No",
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "saveadd": "Save and add another",
+    "saveclose": "Save and close",
+    "savecalc": "Save and calculate",
+    "comment": "Comment",
+    "search": "Search...",
+    "next": "Next",
+    "backtotop": "Back to top",
+
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirmTitle": "Confirm delete",
+    "deleteConfirmMessage": "Are you sure you wish to delete?",
+    "action": "Action",
+    "logout": "Logout",
+
+    "Error": {
+      "save": "Save error",
+      "delete": "Delete error",
+      "auth": "Authentication Error"
+
+
+    }
+  }
+}

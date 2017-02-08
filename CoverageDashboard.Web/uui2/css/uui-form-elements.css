@@ -1,0 +1,634 @@
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url(../fonts/font-oswald/oswald-regular.eot);
+  src: url(../fonts/font-oswald/oswald-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-regular.woff) format('woff'), url(../fonts/font-oswald/oswald-regular.ttf) format('truetype'), url(../fonts/font-oswald/oswald-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../fonts/font-oswald/oswald-bold.eot);
+  src: url(../fonts/font-oswald/oswald-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-bold.woff) format('woff'), url(../fonts/font-oswald/oswald-bold.ttf) format('truetype'), url(../fonts/font-oswald/oswald-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src: url(../fonts/font-oswald/oswald-light.eot);
+  src: url(../fonts/font-oswald/oswald-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-light.woff) format('woff'), url(../fonts/font-oswald/oswald-light.ttf) format('truetype'), url(../fonts/font-oswald/oswald-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-light.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-it.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+::-ms-clear {
+  display: none;
+}
+input:not([type=checkbox]):not([type=radio]):not(.uui-search),
+textarea,
+select {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+  resize: none;
+}
+input:not([type=checkbox]):not([type=radio]):-moz-placeholder {
+  color: #cccccc;
+}
+input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder {
+  color: #cccccc;
+}
+textarea:-moz-placeholder {
+  color: #cccccc;
+}
+textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+/* UUI Text Field */
+.uui-form-element {
+  min-width: 220px;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  color: #666666;
+}
+.uui-form-element:hover,
+.uui-form-element:focus,
+.uui-form-element:active {
+  border-color: #999999;
+}
+.uui-form-element.large {
+  height: 48px;
+  padding: 10px 18px;
+  font-size: 16px;
+}
+.uui-form-element.small {
+  height: 24px;
+  padding: 0 6px;
+  font-size: 12px;
+  vertical-align: top;
+}
+.uui-form-element.disable {
+  cursor: not-allowed;
+  background: #e5e5e5;
+  color: #cccccc;
+}
+.uui-form-element.disable:hover,
+.uui-form-element.disable:focus,
+.uui-form-element.disable:active {
+  border-color: #cccccc;
+}
+.uui-form-element.error {
+  border-color: #e4445f;
+}
+/* UUI Multiline text field */
+textarea.uui-form-element {
+  min-width: 360px;
+  height: auto;
+  line-height: normal;
+  min-height: 120px;
+  padding: 6px 12px;
+}
+/* UUI Checkbox */
+.uui-checkbox input {
+  display: none;
+}
+.uui-checkbox input:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  opacity: 1;
+}
+.uui-checkbox input:disabled + label {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.uui-checkbox input:disabled + label:before {
+  border-color: #e5e5e5;
+}
+.uui-checkbox input:disabled + label:after {
+  color: #e5e5e5;
+}
+.uui-checkbox label {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  cursor: pointer;
+  padding-left: 18px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+}
+.uui-checkbox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 3px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+}
+.uui-checkbox label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 3px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 8px;
+  color: #39c2d7;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+.uui-checkbox.large label {
+  padding-left: 25px;
+}
+.uui-checkbox.large label:before {
+  margin-top: 1px;
+  width: 16px;
+  height: 16px;
+}
+.uui-checkbox.large label:after {
+  margin-top: 1px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+}
+.uui-checkbox.error label:before {
+  border-color: #e4445f;
+}
+.uui-checkbox.error label:after {
+  color: #e4445f;
+}
+.uui-checkbox.disable label {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.uui-checkbox.disable label:before {
+  border-color: #e5e5e5;
+}
+.uui-checkbox.disable label:after {
+  color: #e5e5e5;
+}
+.uui-checkbox.square-skin input:checked + label:after {
+  background: #39c2d7;
+  border-color: #39c2d7;
+}
+.uui-checkbox.square-skin input:disabled + label:after {
+  border-color: #e5e5e5;
+}
+.uui-checkbox.square-skin label:after {
+  line-height: 10px;
+  color: #ffffff;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-transition: opacity 0.3s ease-in, background 0.3s ease-in, border-color 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in, background 0.3s ease-in, border-color 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in, background 0.3s ease-in, border-color 0.3s ease-in;
+  transition: opacity 0.3s ease-in, background 0.3s ease-in, border-color 0.3s ease-in;
+}
+.uui-checkbox.square-skin.error input:checked + label:after {
+  background: #e4445f;
+  border-color: #e4445f;
+}
+.uui-checkbox.square-skin.error label:before {
+  border-color: #e4445f;
+}
+.uui-checkbox.square-skin.error label:after {
+  border-color: #e4445f;
+}
+.uui-checkbox.square-skin.large label:after {
+  line-height: 14px;
+}
+/* UUI Radio buttons */
+.uui-radio input {
+  display: none;
+}
+.uui-radio input:checked + label:before {
+  border-color: #39c2d7;
+}
+.uui-radio input:checked + label:after {
+  background: #39c2d7;
+}
+.uui-radio input:disabled + label {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.uui-radio input:disabled + label:before {
+  border-color: #e5e5e5;
+}
+.uui-radio input:disabled:checked + label:after {
+  background: #e5e5e5;
+}
+.uui-radio label {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  cursor: pointer;
+  padding-left: 18px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+}
+.uui-radio label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 3px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  -webkit-transition: border-color 0.3s ease-in;
+  -moz-transition: border-color 0.3s ease-in;
+  -o-transition: border-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
+}
+.uui-radio label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  margin-left: 2px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+.uui-radio.large label {
+  padding-left: 25px;
+}
+.uui-radio.large label:before {
+  margin-top: 1px;
+  width: 16px;
+  height: 16px;
+}
+.uui-radio.large label:after {
+  margin-top: 4px;
+  margin-left: 3px;
+  width: 10px;
+  height: 10px;
+}
+.uui-radio.error input:checked + label:before {
+  border-color: #e4445f;
+}
+.uui-radio.error input:checked + label:after {
+  background: #e4445f;
+}
+.uui-radio.error label:before {
+  border-color: #e4445f;
+}
+.uui-radio.disable input:checked + label {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.uui-radio.disable input:checked + label:before {
+  border-color: #e5e5e5;
+}
+.uui-radio.disable input:checked + label:after {
+  background: #e5e5e5;
+}
+.uui-radio.disable label {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.uui-radio.disable label:before {
+  border-color: #e5e5e5;
+}
+/* UUI Drop-down */
+.uui-form-element.bootstrap-select {
+  padding: 0;
+}
+.uui-form-element.bootstrap-select > select {
+  min-width: .5px !important;
+}
+.uui-form-element.bootstrap-select.bs-container {
+  height: 0;
+  border: none;
+}
+.uui-form-element.bootstrap-select.open {
+  border-color: #999999;
+}
+.uui-form-element.bootstrap-select .dropdown-toggle {
+  box-shadow: none;
+}
+.uui-form-element.bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+}
+.uui-form-element.bootstrap-select .btn {
+  border: none;
+  background: #ffffff;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  padding: 6px 32px 6px 12px;
+}
+.uui-form-element.bootstrap-select .btn span {
+  color: #666666;
+  font-size: 14px;
+}
+.uui-form-element.bootstrap-select .btn span.bs-caret .caret {
+  border: none;
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  width: 11px;
+  height: 17px;
+  margin-top: -11px;
+}
+.uui-form-element.bootstrap-select .btn span.bs-caret .caret:before {
+  content: "\f107";
+}
+.uui-form-element.bootstrap-select .btn:hover,
+.uui-form-element.bootstrap-select .btn:focus,
+.uui-form-element.bootstrap-select .btn:active {
+  box-shadow: none;
+  background: #ffffff;
+}
+.uui-form-element.bootstrap-select.dropup .btn span.bs-caret .caret:before {
+  content: "\f106";
+}
+.uui-form-element.bootstrap-select .dropdown-menu {
+  border-radius: 0;
+  margin: 5px 0;
+  border: none;
+  padding: 0;
+  box-shadow: 0 1px 3px 0 rgba(51, 51, 51, 0.2);
+}
+.uui-form-element.bootstrap-select .dropdown-menu li {
+  margin: 0;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 12px 7px 12px;
+  color: #999999;
+  font-weight: normal;
+  line-height: 18px;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li a span.text {
+  color: #999999;
+  font-size: 14px;
+  margin-right: 40px;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li a:hover {
+  background: #eee;
+  color: #666666;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li a:hover span.text {
+  color: #666666;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.dropdown-header span.text {
+  font-size: 14px;
+  color: #999999;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.disabled a {
+  color: #cccccc;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.disabled a span.text {
+  color: #cccccc;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.disabled a:hover {
+  background: none;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.selected a,
+.uui-form-element.bootstrap-select .dropdown-menu li.active a {
+  background: none;
+  color: #39c2d7;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.selected a span.text,
+.uui-form-element.bootstrap-select .dropdown-menu li.active a span.text {
+  color: #39c2d7;
+}
+.uui-form-element.bootstrap-select .dropdown-menu li.selected a:hover,
+.uui-form-element.bootstrap-select .dropdown-menu li.active a:hover {
+  background: #eee;
+}
+.uui-form-element.bootstrap-select .dropdown-menu .bootstrap-select-searchbox {
+  padding: 2px 8px 8px 8px;
+}
+.uui-form-element.bootstrap-select .dropdown-menu .bootstrap-select-searchbox .form-control {
+  border-radius: 0;
+  width: 100%;
+  font-size: 15px;
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  vertical-align: middle;
+  color: #999999;
+  height: 34px;
+}
+.uui-form-element.bootstrap-select .dropdown-menu .bootstrap-select-searchbox .form-control:focus {
+  color: #666666;
+  border: 1px solid black;
+  box-shadow: none;
+}
+.uui-form-element.bootstrap-select .bs-searchbox {
+  padding: 0;
+}
+.uui-form-element.bootstrap-select .bs-searchbox .form-control {
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+  color: #cccccc;
+  height: 36px;
+  box-shadow: none;
+}
+.uui-form-element.bootstrap-select .bs-searchbox .form-control:focus,
+.uui-form-element.bootstrap-select .bs-searchbox .form-control:active {
+  border-color: #f5f5f5;
+  color: #666666;
+  box-shadow: none;
+}
+.uui-form-element.bootstrap-select.no-results {
+  background: #f5f5f5;
+}
+.uui-form-element.bootstrap-select.large .dropdown-menu li a {
+  padding: 9px 18px;
+}
+.uui-form-element.bootstrap-select.large .dropdown-menu li a.opt {
+  padding: 9px 18px 9px 2.25em;
+}
+.uui-form-element.bootstrap-select.large .btn {
+  padding: 10px 44px 10px 18px;
+}
+.uui-form-element.bootstrap-select.large .btn span {
+  font-size: 16px;
+}
+.uui-form-element.bootstrap-select.large .btn span.caret {
+  right: 18px;
+}
+.uui-form-element.bootstrap-select.large .bs-searchbox .form-control {
+  padding: 10px 18px;
+}
+.uui-form-element.bootstrap-select.large.show-tick .dropdown-menu li.selected a span.text {
+  margin-right: 50px;
+}
+.uui-form-element.bootstrap-select.large.show-tick .dropdown-menu li.selected a span.check-mark {
+  right: 18px;
+}
+.uui-form-element.bootstrap-select.small .dropdown-menu li a {
+  padding: 2px 6px 3px 6px;
+}
+.uui-form-element.bootstrap-select.small .dropdown-menu li a.opt {
+  padding: 2px 6px 3px 1.25em;
+}
+.uui-form-element.bootstrap-select.small .dropdown-menu li a span.text,
+.uui-form-element.bootstrap-select.small .dropdown-menu li a span.check-mark {
+  font-size: 12px;
+}
+.uui-form-element.bootstrap-select.small .dropdown-menu li.dropdown-header {
+  padding: 2px 6px 3px 6px;
+}
+.uui-form-element.bootstrap-select.small .dropdown-menu li.dropdown-header span.text {
+  font-size: 12px;
+}
+.uui-form-element.bootstrap-select.small .btn {
+  padding: 2px 20px 3px 6px;
+}
+.uui-form-element.bootstrap-select.small .btn span {
+  font-size: 12px;
+}
+.uui-form-element.bootstrap-select.small .btn span.caret {
+  right: 6px;
+}
+.uui-form-element.bootstrap-select.small .bs-searchbox .form-control {
+  padding: 2px 6px 3px 6px;
+  font-size: 12px;
+  height: 24px;
+}
+.uui-form-element.bootstrap-select.small.show-tick .dropdown-menu li.selected a span.text {
+  margin-right: 24px;
+}
+.uui-form-element.bootstrap-select.small.show-tick .dropdown-menu li.selected a span.check-mark {
+  font-size: 12px;
+  right: 6px;
+}
+.uui-form-element.bootstrap-select.disable .btn {
+  background: #e5e5e5;
+}
+.uui-form-element.bootstrap-select.disable .btn span {
+  color: #cccccc;
+}
+.uui-form-element.bootstrap-select.show-tick .dropdown-menu li.selected a span.text {
+  margin-right: 26px;
+}
+.uui-form-element.bootstrap-select.show-tick .dropdown-menu li.selected a span.check-mark {
+  top: 50%;
+  right: 12px;
+  margin-top: -9px;
+  color: #39c2d7;
+  font-size: 14px;
+}
+.uui-input-group {
+  position: relative;
+  display: inline-block;
+}
+.uui-input-group.horizontal .uui-checkbox,
+.uui-input-group.horizontal .uui-radio {
+  display: inline-block;
+  margin-right: 18px;
+}
+.uui-input-group.horizontal .uui-checkbox.large,
+.uui-input-group.horizontal .uui-radio.large {
+  margin-right: 25px;
+}
+.uui-input-group.vertical {
+  display: inline-block;
+}
+.uui-input-group.input-error .uui-form-element {
+  display: block;
+}
+.uui-input-group.input-error .error-notification {
+  padding: 2px 13px 3px 13px;
+  background: #e4445f;
+}
+.uui-input-group.input-error .error-notification p {
+  color: #ffffff !important;
+  font-size: 11px;
+  margin: 0;
+  line-height: 13px;
+  max-height: 26px;
+  overflow: hidden;
+}
+.uui-input-group.input-error input[type=text].uui-form-element + .error-notification {
+  width: 220px;
+}
+.uui-input-group.input-error textarea.uui-form-element + .error-notification {
+  width: 360px;
+}
+@media screen and (max-width: 576px) {
+  input[type=text].uui-form-element,
+  textarea.uui-form-element {
+    width: 100%;
+    min-width: 100%;
+  }
+  .uui-input-group.input-error {
+    width: 100%;
+  }
+  .uui-input-group.input-error input[type=text].uui-form-element + .error-notification {
+    width: 100%;
+  }
+  .uui-input-group.input-error textarea.uui-form-element + .error-notification {
+    width: 100%;
+  }
+}

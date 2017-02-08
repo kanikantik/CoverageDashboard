@@ -1,0 +1,183 @@
+@import 'uui-colors.less';
+@import 'uui-fonts.less';
+
+.uui-pagination {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        margin: 0;
+
+        &.pages-wrapper {
+            .pagination-items {
+                margin: 0 3px;
+            }
+        }
+
+        &.actions-wrapper {
+            .pagination-items {
+                > li {
+                    margin: 0 3px;
+                }
+            }
+        }
+
+        .pagination-items {
+            display: inline-block;
+            list-style: none;
+
+            > li {
+                float: left;
+                margin: 0;
+
+                > a {
+                    display: inline-block;
+                    min-width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    padding: 0 5px;
+                    font-family: @Oswald_Light;
+                    white-space: nowrap;
+                    color: @gray;
+                    font-size: 14px;
+                    letter-spacing: .25px;
+                    text-decoration: none;
+                    border: 1px solid @gray_light;
+                    position: relative;
+                    margin-right: -1px;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    span {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    i {
+                        font-size: 14px;
+                        vertical-align: top;
+                        margin-top: 9px;
+                    }
+                }
+
+                &:hover:not(.active):not(.disable) {
+                    > a {
+                        z-index: 1;
+                        color: @blue;
+                        border-color: @blue;
+                    }
+                }
+
+                &.first-page,
+                &.prev-page,
+                &.back-pages {
+                    a {
+                        text-align: left;
+                        padding: 0 12px;
+
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+                &.first-page {
+                    a {
+                        span {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                &.last-page,
+                &.next-page,
+                &.forward-pages {
+                    a {
+                        text-align: right;
+                        padding: 0 12px;
+
+                        span {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                &.last-page {
+                    a {
+                        span {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        z-index: 1;
+                        color: @white;
+                        background: @blue;
+                        border-color: @blue;
+                    }
+                }
+
+                &.disable {
+                    > a {
+                        z-index: 1;
+                        color: @gray_light;
+                        background: #e5e5e5;
+                        border-color: @gray_light;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Lime green */
+.uui-pagination.lime-green {
+    li {
+        .pagination-items {
+            > li {
+                &:hover:not(.active):not(.disable) {
+                    > a {
+                        color: @green_dark;
+                        border-color: @green_lime;
+                    }
+                }
+
+                &.active {
+                    > a {
+                        background: @green_lime;
+                        border-color: @green_lime;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Dark gray */
+.uui-pagination.dark-gray {
+    li {
+        .pagination-items {
+            > li {
+                &:hover:not(.active):not(.disable) {
+                    > a {
+                        color: @gray_dark;
+                        border-color: @gray_dark;
+                    }
+                }
+
+                &.active {
+                    > a {
+                        background: @gray_dark;
+                        border-color: @gray_dark;
+                    }
+                }
+            }
+        }
+    }
+}

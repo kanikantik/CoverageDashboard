@@ -1,0 +1,518 @@
+﻿@import 'uui-colors.less';
+
+.uui-info-panel-horizontal,
+.uui-info-panel-vertical {
+    position: relative;
+
+    .info-panel-body {
+        position: relative;
+        z-index: 10;
+        display: table;
+        width: 100%;
+
+        .info-panel-section {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 15px;
+        }
+    }
+
+    .info-panel-footer {
+        position: relative;
+        z-index: 20;
+        display: table;
+        width: 100%;
+
+        .info-panel-section {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 12px 15px;
+        }
+    }
+
+    .light-hover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        display: none;
+    }
+
+    .solid-hover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #5c5e66;
+        z-index: 15;
+        display: none;
+
+        p {
+            color: #ffffff;
+            font-size: 15px;
+            margin: 0;
+            padding: 15px;
+        }
+    }
+
+    .corner {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 50px solid #5c5e66;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        top: 0;
+        left: 0;
+        z-index: 20;
+
+        span {
+            position: absolute;
+            font-size: 15px;
+            top: -42px;
+            left: 10px;
+            z-index: 25;
+            color: @white;
+        }
+    }
+
+    &.hover {
+        cursor: pointer;
+    }
+}
+
+.uui-info-panel-vertical {
+    .info-panel-section {
+        text-align: center;
+    }
+}
+
+/*  Blue  */
+.uui-info-panel-horizontal.blue,
+.uui-info-panel-vertical.blue {
+    background: @blue;
+
+    .light-hover {
+        background: multiply(@blue, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@blue, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.blue {
+    background: @blue;
+    color: @white;
+}
+
+/*  Lime Green  */
+.uui-info-panel-horizontal.lime-green,
+.uui-info-panel-vertical.lime-green {
+    background: @green_lime;
+
+    .light-hover {
+        background: multiply(@green_lime, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@green_lime, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.lime-green {
+    background: @green_lime;
+    color: @white;
+}
+
+/*  Dark Gray  */
+.uui-info-panel-horizontal.dark-gray,
+.uui-info-panel-vertical.dark-gray {
+    background: @gray_dark;
+
+    .light-hover {
+        background: darken(@gray_dark, 8%);
+    }
+
+    .info-panel-footer {
+        background: darken(@gray_dark, 8%);
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.dark-gray {
+    color: @white;
+    background-color: @gray_dark;
+}
+
+/*  White  */
+.uui-info-panel-horizontal.white,
+.uui-info-panel-vertical.white {
+    background: @white;
+
+    .light-hover {
+        background: lighten(@gray, 36%);
+    }
+
+    .info-panel-footer {
+        background: @gray_bg;
+    }
+}
+
+.uui-info-panel-horizontal.white {
+    border: 1px solid @gray_light;
+}
+
+.uui-info-panel-vertical.white {
+    .info-panel-body {
+        border: 1px solid @gray_bg;
+    }
+}
+
+.info-panel-section.white {
+    background: @white;
+}
+
+/*  Raspberry  */
+.uui-info-panel-horizontal.raspberry,
+.uui-info-panel-vertical.raspberry {
+    background: @raspberry;
+
+    .light-hover {
+        background: multiply(@raspberry, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@raspberry, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.raspberry {
+    background: @raspberry;
+    color: @white;
+}
+
+/*  Plum  */
+.uui-info-panel-horizontal.plum,
+.uui-info-panel-vertical.plum {
+    background: @plum;
+
+    .light-hover {
+        background: multiply(@plum, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@plum, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.plum {
+    background: @plum;
+    color: @white;
+}
+
+/*  Dark Blue  */
+.uui-info-panel-horizontal.dark-blue,
+.uui-info-panel-vertical.dark-blue {
+    background: @blue_dark;
+
+    .light-hover {
+        background: multiply(@blue_dark, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@blue_dark, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.dark-blue {
+    background: @blue_dark;
+    color: @white;
+}
+
+/*  Dark Green  */
+.uui-info-panel-horizontal.dark-green,
+.uui-info-panel-vertical.dark-green {
+    background: @green_dark;
+
+    .light-hover {
+        background: multiply(@green_dark, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@green_dark, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.dark-green {
+    background: @green_dark;
+    color: @white;
+}
+
+/*  Medium Gray  */
+.uui-info-panel-horizontal.medium-gray,
+.uui-info-panel-vertical.medium-gray {
+    background: @gray_medium;
+
+    .light-hover {
+        background: darken(@gray_medium, 8%);
+    }
+
+    .info-panel-footer {
+        background: darken(@gray_medium, 8%);
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.medium-gray {
+    background: @gray_medium;
+    color: @white;
+}
+
+/*  Gray  */
+.uui-info-panel-horizontal.gray,
+.uui-info-panel-vertical.gray {
+    background: @gray;
+
+    .light-hover {
+        background: darken(@gray, 8%);
+    }
+
+    .info-panel-footer {
+        background: darken(@gray, 8%);
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.gray {
+    background: @gray;
+    color: @white;
+}
+
+/*  Light Gray  */
+.uui-info-panel-horizontal.light-gray,
+.uui-info-panel-vertical.light-gray {
+    background: @gray_light;
+
+    .light-hover {
+        background: darken(@gray_light, 8%);
+    }
+
+    .info-panel-footer {
+        background: darken(@gray_light, 8%);
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.light-gray {
+    background: @gray_light;
+    color: @white;
+}
+
+/*  Yellow  */
+.uui-info-panel-horizontal.yellow,
+.uui-info-panel-vertical.yellow {
+    background: @yellow;
+
+    .light-hover {
+        background: multiply(@yellow, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@yellow, lighten(@gray, 34%));
+    }
+}
+
+.info-panel-section.yellow {
+    background: @yellow;
+}
+
+/*  Orange  */
+.uui-info-panel-horizontal.orange,
+.uui-info-panel-vertical.orange {
+    background: @orange;
+
+    .light-hover {
+        background: multiply(@orange, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@orange, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.orange {
+    background: @orange;
+    color: @white;
+}
+
+/*  Red  */
+.uui-info-panel-horizontal.red,
+.uui-info-panel-vertical.red {
+    background: @red;
+
+    .light-hover {
+        background: multiply(@red, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@red, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.red {
+    background: @red;
+    color: @white;
+}
+
+/*  Fuchsia  */
+.uui-info-panel-horizontal.fuchsia,
+.uui-info-panel-vertical.fuchsia {
+    background: @fuchsia;
+
+    .light-hover {
+        background: multiply(@fuchsia, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@fuchsia, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.fuchsia {
+    background: @fuchsia;
+    color: @white;
+}
+
+/*  Black  */
+.uui-info-panel-horizontal.black,
+.uui-info-panel-vertical.black {
+    background: @black;
+
+    .light-hover {
+        background: darken(@black, 8%);
+    }
+
+    .info-panel-footer {
+        background: darken(@black, 8%);
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.black {
+    background: @black;
+    color: @white;
+}
+
+/*  Violet  */
+.uui-info-panel-horizontal.violet,
+.uui-info-panel-vertical.violet {
+    background: @violet;
+
+    .light-hover {
+        background: multiply(@violet, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@violet, lighten(@gray, 34%));
+    }
+
+    .info-panel-section {
+        color: @white;
+    }
+}
+
+.info-panel-section.violet {
+    background: @violet;
+    color: @white;
+}
+
+/*  Bg Gray  */
+.uui-info-panel-horizontal.bg-gray,
+.uui-info-panel-vertical.bg-gray {
+    background: @gray_bg;
+
+    .light-hover {
+        background: multiply(@gray_bg, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@gray_bg, lighten(@gray, 34%));
+    }
+}
+
+.info-panel-section.bg-gray {
+    background: @gray_bg;
+}
+
+/*  Dark Bg Gray  */
+.uui-info-panel-horizontal.dark-bg-gray,
+.uui-info-panel-vertical.dark-bg-gray {
+    background: @gray_bg_dark;
+
+    .light-hover {
+        background: multiply(@gray_bg_dark, lighten(@gray, 34%));
+    }
+
+    .info-panel-footer {
+        background: multiply(@gray_bg_dark, lighten(@gray, 34%));
+    }
+}
+
+.info-panel-section.dark-bg-gray {
+    background: @gray_bg_dark;
+}

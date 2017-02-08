@@ -1,0 +1,338 @@
+﻿@import 'uui-colors.less';
+
+.uui-timepicker {
+    display: inline-block;
+    border: 1px solid @gray_light;
+    position: relative;
+    width: 80px;
+    height: 36px;
+    background: @white;
+
+    &:hover, &.focus {
+        border-color: @gray;
+    }
+
+    .uui-form-element {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 100%;
+        border: none;
+        background: transparent;
+    }
+
+    &.large {
+        height: 48px;
+        width: 100px;
+
+        .uui-form-element {
+            padding: 10px 18px;
+        }
+    }
+
+    &.small {
+        height: 24px;
+        width: 60px;
+
+        .uui-form-element {
+            padding: 1px 6px 3px 6px;
+            font-size: 12px;
+        }
+    }
+
+    &.disable {
+        cursor: not-allowed;
+        background: #e5e5e5;
+        border-color: @gray_light;
+
+        .uui-form-element {
+            cursor: not-allowed;
+            color: @gray_light;
+        }
+    }
+
+    &.error {
+        border-color: @fuchsia;
+    }
+
+    &.time-button {
+        width: 110px;
+
+        .uui-form-element {
+            min-width: 82px;
+            padding-right: 40px;
+        }
+
+        .add-on {
+            width: 100%;
+            height: 100%;
+            padding: 7px 12px 6px 82px;
+            border: none;
+            background: transparent;
+
+            i {
+                font-size: 16px;
+                color: @gray_light;
+            }
+        }
+
+        &:hover, &.focus {
+            .add-on {
+                i {
+                    color: @blue;
+                }
+            }
+        }
+
+        &.large {
+            width: 130px;
+
+            .uui-form-element {
+                min-width: 88px;
+                padding-right: 60px;
+            }
+
+            .add-on {
+                padding: 9px 18px 12px 88px;
+
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &.small {
+            width: 80px;
+
+            .uui-form-element {
+                min-width: 62px;
+                padding-right: 22px;
+            }
+
+            .add-on {
+                padding: 0 6px 0 62px;
+
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &.disable {
+            .add-on {
+                cursor: not-allowed;
+
+                i {
+                    color: @gray_light;
+                }
+            }
+        }
+    }
+}
+
+.bootstrap-timepicker-widget {
+    width: 160px;
+    height: 108px;
+
+    &.timepicker-orient-bottom {
+        margin-top: -9px;
+
+        &:before {
+            bottom: -8px;
+            border-top: 8px solid fade(@gray_medium, 10%);
+        }
+    }
+
+    &.timepicker-orient-top {
+        margin-top: 9px;
+    }
+
+    &.timepicker-orient-left:before {
+        left: 5px;
+    }
+
+    &.timepicker-orient-top:before {
+        top: -8px;
+    }
+
+    &.dropdown-menu {
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 0 3px 0 rgba(51, 51, 51, 0.2);
+        padding: 0 12px;
+
+        &:before {
+            border-bottom-color: fade(@gray_medium, 10%);
+            border-bottom-width: 8px;
+            border-left-width: 8px;
+            border-right-width: 8px;
+        }
+
+        &.timepicker-orient-bottom {
+            &:before {
+                border-top-color: #eee;
+            }
+        }
+
+        table {
+            height: 100%;
+
+            tr {
+                td {
+                    height: 36px;
+                    width: 36px;
+                    padding: 0;
+                    vertical-align: middle;
+
+                    input {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 0;
+                        font-size: 14px;
+                        border: 1px solid @gray_light;
+                        padding: 6px 0;
+                        color: @gray_medium;
+
+                        &:hover, &:focus {
+                            border-color: @gray;
+                        }
+                    }
+
+                    a {
+                        padding: 0;
+                        border: none;
+                        color: @gray;
+
+                        .glyphicon {
+                            font-size: 18px;
+                            color: @gray;
+                            top: 0;
+                            font-weight: normal;
+                            font-family: inherit;
+                            line-height: normal;
+
+                            &.glyphicon-chevron-up {
+                                &:before {
+                                    font-family: 'FontAwesome';
+                                    content: "\f106";
+                                }
+                            }
+
+                            &.glyphicon-chevron-down {
+                                &:before {
+                                    font-family: 'FontAwesome';
+                                    content: "\f107";
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            border-radius: 0;
+                            border: none;
+                            background-color: @white;
+
+                            .glyphicon {
+                                color: @blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Lime-green */
+.uui-timepicker.lime-green {
+    &.time-button {
+        &:hover {
+            .add-on {
+                i {
+                    color: @green_lime;
+                }
+            }
+        }
+    }
+}
+
+.bootstrap-timepicker-widget.lime-green {
+    &.dropdown-menu {
+        table {
+            tr {
+                td {
+                    a {
+                        &:hover {
+                            .glyphicon {
+                                color: @green_lime;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Dark Gray */
+.uui-timepicker.dark-gray {
+    &.time-button {
+        &:hover {
+            .add-on {
+                i {
+                    color: @gray_dark;
+                }
+            }
+        }
+    }
+}
+
+.bootstrap-timepicker-widget.dark-gray {
+    &.dropdown-menu {
+        table {
+            tr {
+                td {
+                    a {
+                        &:hover {
+                            .glyphicon {
+                                color: @gray_dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Fuchsia */
+.uui-timepicker.fuchsia {
+    &.time-button {
+        &:hover {
+            .add-on {
+                i {
+                    color: @fuchsia;
+                }
+            }
+        }
+    }
+}
+
+.bootstrap-timepicker-widget.fuchsia {
+    &.dropdown-menu {
+        table {
+            tr {
+                td {
+                    a {
+                        &:hover {
+                            .glyphicon {
+                                color: @fuchsia;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

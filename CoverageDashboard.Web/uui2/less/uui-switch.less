@@ -1,0 +1,253 @@
+﻿@import 'uui-colors.less';
+
+.uui-switch {
+    display: inline-block;
+
+    .switch-toggle {
+        display: none;
+
+        + label {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+            margin-bottom: 0;
+            font-weight: normal;
+            width: 36px;
+            height: 18px;
+            border-radius: 18px;
+            background: @gray;
+            transition: background 0.4s;
+
+            &:before,
+            &:after {
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                bottom: 2px;
+                content: '';
+            }
+
+            &:before {
+                right: 2px;
+                border-radius: 18px;
+                background: @gray;
+                transition: background 0.4s;
+            }
+
+            &:after {
+                width: 14px;
+                background: @white;
+                border-radius: 100%;
+                transition: margin 0.4s;
+            }
+        }
+
+        &:checked {
+            + label {
+                background: @blue;
+
+                &:before {
+                    background: @blue;
+                }
+
+                &:after {
+                    margin-left: 18px;
+                }
+            }
+        }
+
+        &:disabled {
+            + label {
+                cursor: not-allowed;
+                background: #e5e5e5;
+
+                &:before {
+                    background: #e5e5e5;
+                }
+            }
+
+            &:checked {
+                + label {
+                    background: #e5e5e5;
+
+                    &:before {
+                        background: #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+
+    &.disable {
+        .switch-toggle {
+            + label {
+                cursor: not-allowed;
+                background: #e5e5e5;
+
+                &:before {
+                    background: #e5e5e5;
+                }
+            }
+
+            &:checked {
+                + label {
+                    background: #e5e5e5;
+
+                    &:before {
+                        background: #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+
+    &.switch-text {
+        .switch-toggle {
+            + label {
+                width: 78px;
+                height: 24px;
+                border-radius: 24px;
+
+                span {
+                    color: @white;
+                    font-size: 12px;
+                    line-height: 24px;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+
+                    &.off-text {
+                        display: block;
+                        padding-left: 28px;
+                        padding-right: 10px;
+                        opacity: 1;
+                        transition: opacity 0.4s;
+                    }
+
+                    &.on-text {
+                        display: none;
+                        padding-right: 28px;
+                        padding-left: 10px;
+                        opacity: 0;
+                        transition: opacity 0.4s;
+                    }
+                }
+
+                &:before,
+                &:after {
+                    top: 3px;
+                    left: 3px;
+                    bottom: 3px;
+                }
+
+                &:before {
+                    right: 3px;
+                    border-radius: 24px;
+                }
+
+                &:after {
+                    width: 18px;
+                }
+            }
+
+            &:checked {
+                + label {
+                    span {
+                        &.off-text {
+                            display: none;
+                            opacity: 0;
+                        }
+
+                        &.on-text {
+                            display: block;
+                            opacity: 1;
+                        }
+                    }
+
+                    &:after {
+                        margin-left: 54px;
+                    }
+                }
+            }
+
+            &:disabled {
+                + label {
+                    span {
+                        color: @gray_light;
+                    }
+                }
+            }
+        }
+
+        &.disable {
+            .switch-toggle {
+                + label {
+                    span {
+                        color: @gray_light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Lime Green  */
+
+.uui-switch.lime-green {
+    .switch-toggle {
+        &:checked {
+            + label {
+                background: @green_lime;
+
+                &:before {
+                    background: @green_lime;
+                }
+            }
+        }
+
+        &:disabled {
+            + label {                
+                background: #e5e5e5;
+
+                &:before {
+                    background: #e5e5e5;
+                }
+            }
+
+            &:checked {
+                + label {
+                    background: #e5e5e5;
+
+                    &:before {
+                        background: #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+
+    &.disable {
+        .switch-toggle {
+            + label {
+                background: #e5e5e5;
+
+                &:before {
+                    background: #e5e5e5;
+                }
+            }
+
+            &:checked {
+                + label {
+                    background: #e5e5e5;
+
+                    &:before {
+                        background: #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+}

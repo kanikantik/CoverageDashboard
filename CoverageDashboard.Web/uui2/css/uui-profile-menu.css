@@ -1,0 +1,32 @@
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+header .uui-header .uui-header-tools > li.uui-profile-menu > a .profile-photo {
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-top: 13px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+header .uui-header .uui-header-tools > li.uui-profile-menu > a .profile-photo img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+header .uui-header .uui-header-tools > li.uui-profile-menu .dropdown-menu .profile-links > li.logout > a {
+  background: #b22746;
+  color: #ffffff;
+}
+header .uui-header .uui-header-tools > li.uui-profile-menu .dropdown-menu .profile-links > li.logout > a i {
+  color: #ffffff;
+}
+header .uui-header .uui-header-tools > li.uui-profile-menu .dropdown-menu .profile-links > li.logout:hover > a,
+header .uui-header .uui-header-tools > li.uui-profile-menu .dropdown-menu .profile-links > li.logout:focus > a {
+  background: #8e244d;
+  color: #ffffff;
+}
+header .uui-header .uui-header-tools > li.uui-profile-menu .dropdown-menu .profile-links > li.logout:hover i,
+header .uui-header .uui-header-tools > li.uui-profile-menu .dropdown-menu .profile-links > li.logout:focus i {
+  color: #ffffff;
+}

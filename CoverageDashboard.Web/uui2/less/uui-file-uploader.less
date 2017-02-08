@@ -1,0 +1,178 @@
+﻿@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+/* UUI File Uploader */
+.uui-file-uploader {
+    margin: 0;
+
+    .btn {
+        float: left;
+        border-radius: 0;
+        padding: 7px 18px 5px 18px;
+
+        &:focus, &:active {
+            outline: none;
+            box-shadow: none;
+        }
+
+        &.btn-file {
+            > input {
+                width: auto;
+            }
+        }
+    }
+
+    .fileinput-filename {
+        float: left;
+        line-height: 36px;
+        font-size: 14px;
+        color: @gray_medium;
+        margin-left: 5px;
+    }
+
+    .close {
+        float: none;
+        text-shadow: none;
+        opacity: 1;
+        margin-left: 5px;
+        color: @gray;
+
+        &:hover {
+            color: @fuchsia;
+        }
+    }
+
+    &.large {
+        .btn {
+            height: 48px;
+            padding: 10px 24px;
+            font-size: 18px;
+
+            i {
+                font-size: 20px;
+            }
+
+            img {
+                height: 20px;
+            }
+        }
+
+        .fileinput-filename {
+            line-height: 48px;
+            font-size: 16px;
+        }
+    }
+
+    &.small {
+        .btn {
+            height: 24px;
+            padding: 1px 12px 2px 12px;
+            font-size: 14px;
+
+            i {
+                font-size: 15px;
+            }
+
+            img {
+                height: 15px;
+            }
+        }
+
+        .fileinput-filename {
+            line-height: 24px;
+            font-size: 12px;
+        }
+    }
+
+    &.disable {
+        .btn {
+            cursor: not-allowed;
+            background: #e5e5e5;
+            border-color: #e5e5e5;
+            color: @gray_light;
+
+            i {
+                color: @gray_light;
+            }
+
+            input[type=file] {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Blue */
+.uui-file-uploader.blue {
+    .btn {
+        background: @blue;
+        border-color: @blue;
+        color: @white;
+
+        &:hover, &:focus, &:active {
+            background: @blue_dark;
+            border-color: @blue_dark;
+            color: @white;
+        }
+    }
+}
+
+/* Lime green */
+.uui-file-uploader.lime-green {
+    .btn {
+        background: @green_lime;
+        border-color: @green_lime;
+        color: @white;
+
+        &:hover, &:focus, &:active {
+            background: @green_dark;
+            border-color: @green_dark;
+            color: @white;
+        }
+    }
+}
+
+/* Dark Gray */
+.uui-file-uploader.dark-gray {
+    .btn {
+        background: @gray_dark;
+        border-color: @gray_dark;
+        color: @white;
+
+        &:hover, &:focus, &:active {
+            background: @black;
+            border-color: @black;
+            color: @white;
+        }
+    }
+}
+
+/* Raspberry */
+.uui-file-uploader.raspberry {
+    .btn {
+        background: @raspberry;
+        border-color: @raspberry;
+        color: @white;
+
+        &:hover, &:focus, &:active {
+            background: @plum;
+            border-color: @plum;
+            color: @white;
+        }
+    }
+}
+
+/* Orange */
+.uui-file-uploader.orange {
+    .btn {
+        background: @orange;
+        border-color: @orange;
+        color: @white;
+
+        &:hover, &:focus, &:active {
+            background: #df7e01;
+            border-color: #df7e01;
+            color: @white;
+        }
+    }
+}
