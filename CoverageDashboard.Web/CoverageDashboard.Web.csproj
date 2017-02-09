@@ -98,22 +98,30 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="app\app.css" />
-    <Content Include="app\app.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\app.route.js" />
+    <Content Include="app\associates\associate.controller.js" />
+    <Content Include="app\associates\associate.controller.spec.js" />
+    <Content Include="app\associates\partial-associate.html" />
+    <Content Include="app\common\services\base\services.baseApi.service.js" />
+    <Content Include="app\common\services\services.dashboard.service.js" />
     <Content Include="app\components\version\interpolate-filter.js" />
     <Content Include="app\components\version\interpolate-filter_test.js" />
     <Content Include="app\components\version\version-directive.js" />
     <Content Include="app\components\version\version-directive_test.js" />
     <Content Include="app\components\version\version.js" />
     <Content Include="app\components\version\version_test.js" />
-    <Content Include="app\index-async.html" />
-    <Content Include="app\index.html" />
-    <Content Include="app\view1\view1.html" />
-    <Content Include="app\view1\view1.js" />
-    <Content Include="app\view1\view1_test.js" />
-    <Content Include="app\view2\view2.html" />
-    <Content Include="app\view2\view2.js" />
-    <Content Include="app\view2\view2_test.js" />
+    <Content Include="app\dashboard\dashboard.controller.js" />
+    <Content Include="app\dashboard\dashboard.controller.spec.js" />
+    <Content Include="app\dashboard\partial-dashboard.html" />
+    <Content Include="app\exports\export.controller.js" />
+    <Content Include="app\exports\partial-export.html" />
+    <Content Include="app\home\home.controller.js" />
+    <Content Include="app\home\partial-home.html" />
+    <Content Include="app\settings\partial-settings.html" />
+    <Content Include="app\settings\settings.controller.js" />
+    <Content Include="app\trainings\partial-training.html" />
+    <Content Include="app\trainings\training.controller.js" />
     <Content Include="e2e-tests\protractor.conf.js" />
     <Content Include="e2e-tests\scenarios.js" />
     <Content Include="gulpfile.js" />
@@ -327,6 +335,8 @@
     <Content Include="uui2\tinymce\skins\epamuui\fonts\tinymce.json" />
     <Content Include="uui2\tinymce\skins\epamuui\fonts\tinymce.ttf" />
     <Content Include="uui2\tinymce\skins\epamuui\fonts\tinymce.woff" />
+    <Content Include="app\i18n\common\en.json" />
+    <Content Include="app\i18n\dashboard\en.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

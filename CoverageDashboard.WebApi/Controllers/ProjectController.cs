@@ -3,7 +3,6 @@ using CoverageDashboard.Application.Projects.Dto;
 using System;
 using System.Threading.Tasks;
 using System.Web.Http;
-
 using CoverageDashboard.Core.Application;
 using CoverageDashboard.Core.Controllers;
 using CoverageDashboard.Core.Dependency;
@@ -123,6 +122,17 @@ namespace CoverageDashboard.WebApi.Controllers
                 }
             }
             return BadRequest(ModelState);
+        }
+        /// <summary>
+        /// Test method for the api availability
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("ping")]
+        public async Task<IHttpActionResult> Ping()
+        {
+
+            return Ok("pong");
         }
     }
 }
