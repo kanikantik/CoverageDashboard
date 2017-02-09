@@ -10,6 +10,8 @@ namespace CoverageDashboard.Application
     {
         public override void PreInitialize()
         {
+            //// Register automappers
+            AutoMapperConfig.RegisterMappings();
         }
 
         public override void Initialize()

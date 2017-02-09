@@ -26,14 +26,8 @@ namespace CoverageDashboard.Application.Projects
 
         public Task<int> CreateorUpdateProject(ProjectInputDto input)
         {
-            Project proj = new Project();
-            proj.Id = input.Id;
-            proj.Name = input.Code;
-            proj.Code = input.Code;
-            proj.Description = input.Description;
-            proj.AssignedTo = input.AssignedTo;
-
-            return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
+            var proj = AutoMapperConfig.Mapper.Map<Project>(input);
+           return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
         }
 
         public void DeleteProject(int projectId)

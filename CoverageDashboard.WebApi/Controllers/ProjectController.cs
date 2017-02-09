@@ -1,6 +1,7 @@
 ﻿using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 using CoverageDashboard.Core.Application;
@@ -15,7 +16,6 @@ namespace CoverageDashboard.WebApi.Controllers
     public class ProjectController : WebApiController
     {
         private readonly IProjectAppService _projectAppService;
-
 
         /// <summary>
         /// categories application service object
@@ -78,8 +78,13 @@ namespace CoverageDashboard.WebApi.Controllers
                 try
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
-                    if (itemId.Result == 1)
+                    if(itemId.Status == TaskStatus.RanToCompletion)
                         return Ok(item);
+                    else
+                    {
+                        if(itemId.Exception!= null)
+                        return BadRequest( itemId.Exception.Message);
+                    }
                 }
                 catch (Exception execption)
                 {
@@ -104,8 +109,13 @@ namespace CoverageDashboard.WebApi.Controllers
                 try
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
-                    if (itemId.Result == 1)
+                    if (itemId.Status == TaskStatus.RanToCompletion)
                         return Ok(item);
+                    else
+                    {
+                        if (itemId.Exception != null)
+                            return BadRequest(itemId.Exception.Message);
+                    }
                 }
                 catch (Exception execption)
                 {

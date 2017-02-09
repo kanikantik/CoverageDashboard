@@ -27,7 +27,7 @@ namespace CoverageDashboard.Mongo.Collections
 
         public bool IsTransient()
         {
-            return true;
+            return false;
         }
 
     }
