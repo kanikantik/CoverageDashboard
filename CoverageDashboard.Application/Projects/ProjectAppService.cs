@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using System.Linq;
 using CoverageDashboard.Core.Application;
+using CoverageDashboard.Application.AutoMapper;
 
 namespace CoverageDashboard.Application.Projects
 {
@@ -16,26 +17,44 @@ namespace CoverageDashboard.Application.Projects
         ///  project repository
         /// </summary>
         private readonly IProjectRepository _projectRepository;
-
+        //shekar DI
+        //private readonly IMapping _mapper;
 
         public ProjectAppService(IProjectRepository projectRepository)
         {
             _projectRepository = projectRepository;
+
         }
 
+        //shekar DI
+        //public ProjectAppService(IProjectRepository projectRepository, IMapping mapper)
+        //{
+        //    _projectRepository = projectRepository;
+        //    _mapper = mapper;
+        //}
 
-        public Task<string> CreateorUpdateProject(ProjectInputDto input)
+
+        //shekar DI
+        //public Task<int> CreateorUpdateProject(ProjectInputDto input)
+        //{
+        //    var proj = _mapper.Map<ProjectInputDto, Project>(input);
+        //    return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
+        //}
+
+
+        public Task<int> CreateorUpdateProject(ProjectInputDto input)
         {
             var proj = AutoMapperConfig.Mapper.Map<Project>(input);
-           return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
+            return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
         }
 
-        public void DeleteProject(string projectId)
+
+        public void DeleteProject(int projectId)
         {
             _projectRepository.Delete(projectId);
         }
 
-        public ProjectViewDto GetProject(string projectId)
+        public ProjectViewDto GetProject(int projectId)
         {
             var project = _projectRepository.Get(projectId);
             return Mapper.Map<Project, ProjectViewDto>(project);

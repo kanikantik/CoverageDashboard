@@ -47,6 +47,9 @@
   <ItemGroup>
     <Compile Include="ApplicationModule.cs" />
     <Compile Include="AutoMapperConfig.cs" />
+    <Compile Include="AutoMapper\EntityMapper.cs" />
+    <Compile Include="AutoMapper\IMapping.cs" />
+    <Compile Include="AutoMapper\MapperConfig.cs" />
     <Compile Include="Projects\Dto\ProjectInputDto.cs" />
     <Compile Include="Projects\Dto\ProjectViewDto.cs" />
     <Compile Include="Projects\IProjectAppService.cs" />
