@@ -7,12 +7,12 @@ namespace CoverageDashboard.Application.Projects
 {
     public interface IProjectAppService : IApplicationService
     {
-        Task<int> CreateorUpdateProject(ProjectInputDto input);
+        Task<string> CreateorUpdateProject(ProjectInputDto input);
 
-        ProjectViewDto GetProject(int projectId);
+        ProjectViewDto GetProject(string projectId);
 
         IList<ProjectViewDto> GetProjects();
 
-        void DeleteProject(int projectId); // soft delete
+        void DeleteProject(string projectId); // soft delete
     }
 }

@@ -46,7 +46,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("Get/{projectId}")]
-        public IHttpActionResult GetProject([FromUri]int projectId)
+        public IHttpActionResult GetProject([FromUri]string projectId)
         {
             var project = _projectAppService.GetProject(projectId);
             return Ok(project);
@@ -58,7 +58,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// <param name="projectId">project id</param>
         [HttpDelete]
         [Route("Delete")]
-        public void DeleteProject([FromUri]int projectId)
+        public void DeleteProject([FromUri]string projectId)
         {
             _projectAppService.DeleteProject(projectId);
         }

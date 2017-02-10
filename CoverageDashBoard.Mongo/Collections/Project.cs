@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CoverageDashboard.Core.Repositories;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson.Serialization.IdGenerators;
 
 namespace CoverageDashboard.Mongo.Collections
 {
-    public class Project : IEntity
+    public class Project : IEntity<string>
     {
-        [BsonElement("projectId")]
-        [BsonId]
-        public int Id { get; set; }
+        [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
+        public string Id { get; set; }
 
         [BsonElement("code")]
         public string Code { get; set; }
@@ -27,7 +28,7 @@ namespace CoverageDashboard.Mongo.Collections
 
         public bool IsTransient()
         {
-            return false;
+            return string.IsNullOrEmpty(Id);
         }
 
     }

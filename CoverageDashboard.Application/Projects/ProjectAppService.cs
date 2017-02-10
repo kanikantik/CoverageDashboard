@@ -24,18 +24,18 @@ namespace CoverageDashboard.Application.Projects
         }
 
 
-        public Task<int> CreateorUpdateProject(ProjectInputDto input)
+        public Task<string> CreateorUpdateProject(ProjectInputDto input)
         {
             var proj = AutoMapperConfig.Mapper.Map<Project>(input);
            return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
         }
 
-        public void DeleteProject(int projectId)
+        public void DeleteProject(string projectId)
         {
             _projectRepository.Delete(projectId);
         }
 
-        public ProjectViewDto GetProject(int projectId)
+        public ProjectViewDto GetProject(string projectId)
         {
             var project = _projectRepository.Get(projectId);
             return Mapper.Map<Project, ProjectViewDto>(project);

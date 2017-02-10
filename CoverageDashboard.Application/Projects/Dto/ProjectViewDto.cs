@@ -6,7 +6,7 @@ namespace CoverageDashboard.Application.Projects.Dto
 {
     public class ProjectViewDto
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
 
         public string Code { get; set; }
