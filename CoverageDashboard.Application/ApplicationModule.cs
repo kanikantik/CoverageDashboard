@@ -11,16 +11,14 @@ namespace CoverageDashboard.Application
     {
         public override void PreInitialize()
         {
+           
             //// Register automappers
             AutoMapperConfig.RegisterMappings();
-            //shekar DI
-            //MapperConfig.RegisterMapping();
         }
 
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            //shekar DI
             //IocManager.Register<IMapping, EntityMapper>();
         }
     }

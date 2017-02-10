@@ -17,44 +17,29 @@ namespace CoverageDashboard.Application.Projects
         ///  project repository
         /// </summary>
         private readonly IProjectRepository _projectRepository;
-        //shekar DI
+      
+        ///
         //private readonly IMapping _mapper;
 
         public ProjectAppService(IProjectRepository projectRepository)
         {
             _projectRepository = projectRepository;
-
+            //_mapper = mapper;
         }
-
-        //shekar DI
-        //public ProjectAppService(IProjectRepository projectRepository, IMapping mapper)
-        //{
-        //    _projectRepository = projectRepository;
-        //    _mapper = mapper;
-        //}
-
-
-        //shekar DI
-        //public Task<int> CreateorUpdateProject(ProjectInputDto input)
-        //{
-        //    var proj = _mapper.Map<ProjectInputDto, Project>(input);
-        //    return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
-        //}
-
-
-        public Task<int> CreateorUpdateProject(ProjectInputDto input)
+        
+        public Task<string> CreateorUpdateProject(ProjectInputDto input)
         {
-            var proj = AutoMapperConfig.Mapper.Map<Project>(input);
+            var proj = AutoMapperConfig.Mapper.Map<ProjectInputDto, Project>(input);
             return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
         }
 
 
-        public void DeleteProject(int projectId)
+        public void DeleteProject(string projectId)
         {
             _projectRepository.Delete(projectId);
         }
 
-        public ProjectViewDto GetProject(int projectId)
+        public ProjectViewDto GetProject(string projectId)
         {
             var project = _projectRepository.Get(projectId);
             return Mapper.Map<Project, ProjectViewDto>(project);
