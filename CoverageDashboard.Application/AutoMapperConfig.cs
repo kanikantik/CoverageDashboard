@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using CoverageDashboard.Application.Projects.Dto;
+using CoverageDashboard.Mongo.Collections;
 
 namespace CoverageDashboard.Application
 {
@@ -27,6 +28,7 @@ namespace CoverageDashboard.Application
             {
                 cfg.CreateMap<CoverageDashboard.Mongo.Collections.Project, ProjectInputDto>().ReverseMap();
                 cfg.CreateMap<CoverageDashboard.Mongo.Collections.Project, ProjectViewDto>().ReverseMap();
+
             });
 
             Mapper = config.CreateMapper();

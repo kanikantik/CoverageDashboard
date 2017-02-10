@@ -1,6 +1,7 @@
 ﻿using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Web.Http;
 using CoverageDashboard.Core.Application;
@@ -40,6 +41,8 @@ namespace CoverageDashboard.WebApi.Controllers
             return Ok(projects);
         }
 
+
+
         /// <summary>
         /// Get All Projects 
         /// </summary>
@@ -77,12 +80,12 @@ namespace CoverageDashboard.WebApi.Controllers
                 try
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
-                    if(itemId.Status == TaskStatus.RanToCompletion)
+                    if (itemId.Status == TaskStatus.RanToCompletion)
                         return Ok(item);
                     else
                     {
-                        if(itemId.Exception!= null)
-                        return BadRequest( itemId.Exception.Message);
+                        if (itemId.Exception != null)
+                            return BadRequest(itemId.Exception.Message);
                     }
                 }
                 catch (Exception execption)
@@ -133,6 +136,17 @@ namespace CoverageDashboard.WebApi.Controllers
         {
 
             return Ok("pong");
+        }
+        /// <summary>
+        /// Get All Projects Async
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetAll")]
+        public async Task<IHttpActionResult> GetAllProjectAsync()
+        {
+            var result = await _projectAppService.GetAllProjectAsync();
+            return Ok(result);
         }
     }
 }
