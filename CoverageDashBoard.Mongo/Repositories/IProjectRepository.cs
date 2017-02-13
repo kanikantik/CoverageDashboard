@@ -11,6 +11,5 @@ namespace CoverageDashboard.Mongo.Repositories
 {
     public interface IProjectRepository : IRepository<Project,string>
     {
-
     }
 }
