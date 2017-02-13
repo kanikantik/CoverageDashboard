@@ -1,6 +1,7 @@
 ﻿using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Web.Http;
 using CoverageDashboard.Core.Application;
@@ -15,10 +16,6 @@ namespace CoverageDashboard.WebApi.Controllers
     public class ProjectController : WebApiController
     {
         private readonly IProjectAppService _projectAppService;
-
-        /// <summary>
-        /// categories application service object
-        /// </summary>
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ProjectController"/> class.
@@ -40,13 +37,15 @@ namespace CoverageDashboard.WebApi.Controllers
             return Ok(projects);
         }
 
+
+
         /// <summary>
         /// Get All Projects 
         /// </summary>
         /// <returns></returns>
         [HttpGet]
         [Route("Get/{projectId}")]
-        public IHttpActionResult GetProject([FromUri]int projectId)
+        public IHttpActionResult GetProject([FromUri]string projectId)
         {
             var project = _projectAppService.GetProject(projectId);
             return Ok(project);
@@ -58,7 +57,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// <param name="projectId">project id</param>
         [HttpDelete]
         [Route("Delete")]
-        public void DeleteProject([FromUri]int projectId)
+        public void DeleteProject([FromUri]string projectId)
         {
             _projectAppService.DeleteProject(projectId);
         }
@@ -77,12 +76,12 @@ namespace CoverageDashboard.WebApi.Controllers
                 try
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
-                    if(itemId.Status == TaskStatus.RanToCompletion)
+                    if (itemId.Status == TaskStatus.RanToCompletion)
                         return Ok(item);
                     else
                     {
-                        if(itemId.Exception!= null)
-                        return BadRequest( itemId.Exception.Message);
+                        if (itemId.Exception != null)
+                            return BadRequest(itemId.Exception.Message);
                     }
                 }
                 catch (Exception execption)
@@ -133,6 +132,17 @@ namespace CoverageDashboard.WebApi.Controllers
         {
 
             return Ok("pong");
+        }
+        /// <summary>
+        /// Get All Projects Async
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetAll")]
+        public async Task<IHttpActionResult> GetAllProjectAsync()
+        {
+            var result = await _projectAppService.GetAllProjectAsync();
+            return Ok(result);
         }
     }
 }

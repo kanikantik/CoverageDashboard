@@ -105,6 +105,7 @@
     <Content Include="app\associates\partial-associate.html" />
     <Content Include="app\common\services\base\services.baseApi.service.js" />
     <Content Include="app\common\services\services.dashboard.service.js" />
+    <Content Include="app\common\services\services.home.service.js" />
     <Content Include="app\components\version\interpolate-filter.js" />
     <Content Include="app\components\version\interpolate-filter_test.js" />
     <Content Include="app\components\version\version-directive.js" />

@@ -1,5 +1,5 @@
 ﻿<section class="promo-section">
-    <div class="section-wrapper" ng-controller="HomeController">
+    <div class="section-wrapper">
         <div class="content-container">
             <div class="content-section">
                 <div class="cards-wrapper row">
@@ -102,7 +102,10 @@
                     </div>
                 </div>
                 <div class="cards-wrapper row">
-                    &nbsp;
+                    <li ng-repeat="name in vm.names"> {{name}}</li>
+                    <p>Datafrom Controller Count : {{vm.getProjectCount()}}</p>
+                    <p>Datafrom Service Count : {{vm.getCountFromService}}</p>
+
                 </div>
 
             </div>

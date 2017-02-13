@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using AutoMapper;
 using System.Linq;
 using CoverageDashboard.Core.Application;
+using CoverageDashboard.Application.AutoMapper;
+using System;
 
 namespace CoverageDashboard.Application.Projects
 {
@@ -17,34 +19,44 @@ namespace CoverageDashboard.Application.Projects
         /// </summary>
         private readonly IProjectRepository _projectRepository;
 
+        ///
+        //private readonly IMapping _mapper;
 
         public ProjectAppService(IProjectRepository projectRepository)
         {
             _projectRepository = projectRepository;
+            //_mapper = mapper;
         }
 
-
-        public Task<int> CreateorUpdateProject(ProjectInputDto input)
+        public Task<string> CreateorUpdateProject(ProjectInputDto input)
         {
-            var proj = AutoMapperConfig.Mapper.Map<Project>(input);
-           return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
+            var proj = AutoMapperConfig.Mapper.Map<ProjectInputDto, Project>(input);
+            return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
         }
 
-        public void DeleteProject(int projectId)
+
+        public void DeleteProject(string projectId)
         {
             _projectRepository.Delete(projectId);
         }
 
-        public ProjectViewDto GetProject(int projectId)
+        public ProjectViewDto GetProject(string projectId)
         {
             var project = _projectRepository.Get(projectId);
-            return Mapper.Map<Project, ProjectViewDto>(project);
+            return AutoMapperConfig.Mapper.Map<Project, ProjectViewDto>(project);
         }
 
         public IList<ProjectViewDto> GetProjects()
         {
             var prs = _projectRepository.GetAll();
-            return new List<ProjectViewDto>(Mapper.Map<IQueryable<Project>, IList<ProjectViewDto>>(prs));
+            return new List<ProjectViewDto>(AutoMapperConfig.Mapper.Map<IQueryable<Project>, IList<ProjectViewDto>>(prs));
         }
+
+        public async Task<IList<ProjectViewDto>> GetAllProjectAsync()
+        {
+            var prs = await _projectRepository.GetAllListAsync();
+            return new List<ProjectViewDto>(AutoMapperConfig.Mapper.Map<IList<Project>, IList<ProjectViewDto>>(prs));
+        }
+
     }
 }
