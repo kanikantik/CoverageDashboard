@@ -8,6 +8,7 @@ using AutoMapper;
 using System.Linq;
 using CoverageDashboard.Core.Application;
 using CoverageDashboard.Application.AutoMapper;
+using System;
 
 namespace CoverageDashboard.Application.Projects
 {
@@ -17,7 +18,7 @@ namespace CoverageDashboard.Application.Projects
         ///  project repository
         /// </summary>
         private readonly IProjectRepository _projectRepository;
-      
+
         ///
         //private readonly IMapping _mapper;
 
@@ -26,7 +27,7 @@ namespace CoverageDashboard.Application.Projects
             _projectRepository = projectRepository;
             //_mapper = mapper;
         }
-        
+
         public Task<string> CreateorUpdateProject(ProjectInputDto input)
         {
             var proj = AutoMapperConfig.Mapper.Map<ProjectInputDto, Project>(input);
@@ -42,13 +43,20 @@ namespace CoverageDashboard.Application.Projects
         public ProjectViewDto GetProject(string projectId)
         {
             var project = _projectRepository.Get(projectId);
-            return Mapper.Map<Project, ProjectViewDto>(project);
+            return AutoMapperConfig.Mapper.Map<Project, ProjectViewDto>(project);
         }
 
         public IList<ProjectViewDto> GetProjects()
         {
             var prs = _projectRepository.GetAll();
-            return new List<ProjectViewDto>(Mapper.Map<IQueryable<Project>, IList<ProjectViewDto>>(prs));
+            return new List<ProjectViewDto>(AutoMapperConfig.Mapper.Map<IQueryable<Project>, IList<ProjectViewDto>>(prs));
         }
+
+        public async Task<IList<ProjectViewDto>> GetAllProjectAsync()
+        {
+            var prs = await _projectRepository.GetAllListAsync();
+            return new List<ProjectViewDto>(AutoMapperConfig.Mapper.Map<IList<Project>, IList<ProjectViewDto>>(prs));
+        }
+
     }
 }

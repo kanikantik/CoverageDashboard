@@ -15,7 +15,7 @@ namespace CoverageDashboard.Application.AutoMapper
         public static void RegisterMapping()
         {
             Mapper.Initialize(cfg => cfg.CreateMap<CoverageDashboard.Mongo.Collections.Project, ProjectInputDto>().ReverseMap());
-            Mapper.Initialize(cfg => cfg.CreateMap<CoverageDashboard.Mongo.Collections.Project, ProjectInputDto>().ReverseMap());
+            Mapper.Initialize(cfg => cfg.CreateMap<CoverageDashboard.Mongo.Collections.Project, ProjectViewDto>().ReverseMap());
 
             Mapper.Configuration.AssertConfigurationIsValid();
 

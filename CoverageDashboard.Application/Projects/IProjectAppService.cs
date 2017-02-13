@@ -14,5 +14,7 @@ namespace CoverageDashboard.Application.Projects
         IList<ProjectViewDto> GetProjects();
 
         void DeleteProject(string projectId); // soft delete
+
+        Task<IList<ProjectViewDto>> GetAllProjectAsync();
     }
 }
