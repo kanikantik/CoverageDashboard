@@ -1,0 +1,155 @@
+﻿@import 'uui-colors.less';
+
+.uui-image-text {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    overflow: hidden;
+
+    .image-section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;               
+    }
+
+    .image-text-section {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;  
+        padding: 20px;     
+        background-color: fade(@black, 85%);
+        color: @white;       
+    }
+}
+
+/* PRIMARY COLORS */
+/*  Blue  */
+.uui-image-text.blue {
+    .image-text-section {
+        background-color: fade(@blue, 85%);
+    }
+}
+
+/*  Lime Green  */
+.uui-image-text.lime-green {
+    .image-text-section {
+        background-color: fade(@green_lime, 85%);
+    }
+}
+
+/*  Dark Gray  */
+.uui-image-text.dark-gray {
+    .image-text-section {
+        background-color: fade(@gray_dark, 85%);
+    }
+}
+
+/* White */
+.uui-image-text.white {
+    .image-text-section {
+        background-color: fade(@white, 85%);
+        color: @gray_dark;
+    }
+}
+
+/* SECONDARY COLORS */
+/*  Raspberry  */
+.uui-image-text.raspberry {
+    .image-text-section {
+        background-color: fade(@raspberry, 85%);
+    }
+}
+
+/*  Plum  */
+.uui-image-text.plum {
+    .image-text-section {
+        background-color: fade(@plum, 85%);
+    }
+}
+
+/*  Dark Blue  */
+.uui-image-text.dark-blue {
+    .image-text-section {
+        background-color: fade(@blue_dark, 85%);
+    }
+}
+
+/*  Dark Green  */
+.uui-image-text.dark-green {
+    .image-text-section {
+        background-color: fade(@green_dark, 85%);
+    }
+}
+
+/*  Medium Gray  */
+.uui-image-text.medium-gray {
+    .image-text-section {
+        background-color: fade(@gray_medium, 85%);
+    }
+}
+
+/*  Light Gray  */
+.uui-image-text.gray {
+    .image-text-section {
+        background-color: fade(@gray, 85%);
+    }
+}
+
+/*  Gray  */
+.uui-image-text.light-gray {
+    .image-text-section {
+        background-color: fade(@gray_light, 85%);
+    }
+}
+
+/* ADDITIONAL COLORS */
+/*  Yellow  */
+.uui-image-text.yellow {
+    .image-text-section {
+        background-color: fade(@yellow, 85%);
+        color: @gray_dark;
+    }
+}
+
+/*  Orange  */
+.uui-image-text.orange {
+    .image-text-section {
+        background-color: fade(@orange, 85%);
+    }
+}
+
+/*  Red  */
+.uui-image-text.red {
+    .image-text-section {
+        background-color: fade(@red, 85%);
+    }
+}
+
+/*  Fuchsia  */
+.uui-image-text.fuchsia {
+    .image-text-section {
+        background-color: fade(@fuchsia, 85%);
+    }
+}
+
+/*  Black  */
+.uui-image-text.black {
+    .image-text-section {
+        background-color: fade(@black, 85%);
+    }
+}
+
+/*  Violet  */
+.uui-image-text.violet {
+    .image-text-section {
+        background-color: fade(@violet, 85%);
+    }
+}

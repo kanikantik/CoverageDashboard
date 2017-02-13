@@ -1,0 +1,393 @@
+﻿@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+.uui-table {
+    width: 100%;
+    border: 1px solid @gray_light;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    tr {
+        border-top: 1px solid #ddd;
+    }
+
+    td {
+        font-family: @Source_Sans_Pro_Regular;
+        font-size: 16px;
+        padding: 13px 15px;
+        line-height: 21px;
+        vertical-align: top;
+        color: @gray_medium;
+    }
+
+    thead {
+        tr {
+            border-bottom: 1px solid @gray_light;
+
+            th {
+                font-family: @Source_Sans_Pro_Semibold;
+                font-size: 16px;
+                vertical-align: bottom;
+                text-align: left;
+                padding: 12px 15px;
+                line-height: 1.45;
+                font-weight: normal;
+                color: @gray_medium;
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            border-top: 1px solid @gray_light;
+
+            th {
+                font-family: @Source_Sans_Pro_Semibold;
+                font-size: 16px;
+                vertical-align: bottom;
+                text-align: left;
+                padding: 12px 15px;
+                line-height: 1.45;
+                font-weight: normal;
+                color: @gray_medium;
+            }
+        }
+    }
+
+    &.small {
+        td {
+            font-size: 14px;
+            padding: 8px 15px;
+            line-height: 1.4;
+        }
+
+        thead {
+            tr {
+                th {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        tfoot {
+            tr {
+                th {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+    &.stripe {
+        tbody tr {
+            &:nth-child(odd) {
+                background-color: @gray_bg;
+            }
+        }
+    }
+
+    &.border {
+        tr {
+            td {
+                border: 1px solid @gray_light;
+            }
+
+            th {
+                border-right: 1px solid @gray_light;
+                border-left: 1px solid @gray_light;
+            }
+        }
+    }
+
+    &.no-border {
+        thead {
+            tr {
+                border-bottom: none;
+            }
+        }
+
+        tr {
+            border-top: none;
+
+            th {
+                border-right: none;
+                border-left: none;
+            }
+
+            td {
+                border: none;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &.sort {
+        thead {
+            th {
+                i {
+                    color: @gray_light;
+                    margin-left: 10px;
+                }
+
+                &.hover {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: @black;
+
+                        i {
+                            color: @black;
+                        }
+                    }
+                }
+
+                &.active {
+                    color: @black;
+                    border-bottom: 1px solid @black;
+
+                    i {
+                        color: @black;
+                    }
+                }
+            }
+        }
+    }
+
+    &.hover {
+        tbody {
+            tr {
+                &:hover {
+                    background-color: @gray_bg;
+                }
+            }
+        }
+    }
+
+    &.treegrid {
+        .treegrid-caret {
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+            margin: 3px 10px 0 0;
+            width: 9px;
+        }
+
+        &.small {
+            .treegrid-caret {
+                font-size: 14px;
+                margin: 2px 10px 0 0;
+            }
+        }
+    }
+
+    &.dataTable {
+        thead {
+            tr {
+                th {
+                    border-bottom: 1px solid @gray_light;
+                }
+            }
+        }
+
+        tbody {
+            th, td {
+                padding: 13px 12px;
+                line-height: 22px;
+            }
+        }
+
+        &.no-footer {
+            border-bottom: 1px solid @gray_light;
+        }
+
+        &.stripe, &.display {
+            tbody {
+                tr {
+                    &.odd {
+                        background-color: @gray_bg;
+                    }
+                }
+            }
+        }
+
+        &.hover {
+            tbody {
+                tr {
+                    &:hover {
+                        background-color: @gray_bg;
+                    }
+                }
+            }
+        }
+
+        &.small {
+            tbody {
+                td {
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+}
+
+.dataTables_wrapper {
+    .dataTables_length {
+        float: right;
+        padding: 15px 0 15px 15px;
+
+        label {
+            width: 100%;
+            font-weight: normal;
+            display: inline-block;
+            cursor: default;
+            margin-bottom: 0;
+
+            select {
+                width: 100px;
+                margin: 0 5px;
+                min-width: 100px;
+                height: 36px;
+                padding: 6px 12px;
+                font-size: 14px;
+                border: 1px solid @gray_light;
+                color: @gray_medium;
+
+                &:hover, &:focus, &:active {
+                    border-color: @gray;
+                }
+            }
+        }
+    }
+
+    .dataTables_filter {
+        float: left;
+        padding: 15px 15px 15px 0;
+        margin-top: 0;
+
+        label {
+            position: relative;
+            width: 100%;
+            font-weight: normal;
+            display: inline-block;
+            margin-bottom: 0;
+
+            &:before {
+                position: absolute;
+                top: 50%;
+                margin-top: -8px;
+                left: 57px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                content: '\f002';
+                font-family: 'FontAwesome';
+                color: #cccccc;
+                font-size: 16px;
+            }
+
+            input {
+                width: 200px;
+                margin: 0 0 0 5px;
+                min-width: 220px;
+                height: 36px;
+                padding: 6px 12px 6px 30px;
+                font-size: 14px;
+                border: 1px solid @gray_light;
+                color: @gray_medium;
+                
+                &:hover, &:focus, &:active {
+                    border-color: @gray;
+                }
+            }
+        }
+    }
+
+    .dataTables_info {
+        margin-top: 8px;
+        padding: 15px;
+    }
+
+    .dataTables_paginate {
+        padding: 15px;
+        margin-top: 0;
+
+        .paginate_button {
+            position: relative;
+            display: inline-block;
+            background: @white;
+            border: 1px solid @gray_light;
+            color: @gray !important;
+            min-width: 36px;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 6px;
+            margin: 0 0 0 -1px;
+            white-space: nowrap;
+            font-family: @Oswald_Light;
+            font-size: 14px;
+            letter-spacing: .25px;
+            text-align: center;
+            text-transform: uppercase;
+
+            &:hover, &:focus {
+                z-index: 1;
+                border: 1px solid @blue;
+                color: @blue !important;
+                background: @white;
+            }
+
+            &:active {
+                box-shadow: none;
+            }
+
+            &.previous {
+                margin-right: 9px;
+                padding: 0 12px;
+            }
+
+            &.next {
+                margin-left: 8px;
+                padding: 0 12px;
+            }
+
+            &.current {
+                z-index: 1;
+                border: 1px solid @blue;
+                color: @white !important;
+                background: @blue;
+
+                &:hover {
+                    border: 1px solid @blue;
+                    color: @white !important;
+                    background: @blue;
+                    cursor: default;
+                }
+            }
+
+            &.disabled {
+                border: 1px solid @gray_light;
+                color: @gray_light !important;
+                background: #e5e5e5;
+                z-index: 1;
+
+                &:hover {
+                    border: 1px solid @gray_light;
+                    color: @gray_light !important;
+                    background: #e5e5e5;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    &.no-footer {
+        .dataTables_scrollBody {
+            border-bottom: 1px solid @gray_light;
+        }
+    }
+}

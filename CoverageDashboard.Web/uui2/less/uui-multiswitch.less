@@ -1,0 +1,146 @@
+﻿@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+.uui-multiswitch {
+    display: table;
+    table-layout: fixed;
+    list-style: none;
+    height: 34px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background: @white;
+    margin: 0;
+
+    li {
+        display: table-cell;
+        height: 32px;
+        text-align: center;
+        vertical-align: middle;
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            font-size: 12px;
+            font-family: @Source_Sans_Pro_Semibold;
+            background: transparent;
+            color: @gray_medium;
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+            padding: 0px 18px;
+            border-right: solid 1px #e5e5e5;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            &.active {
+                background: @blue;
+                color: @white;
+                cursor: default;
+            }
+
+            &:hover:not(.active) {
+                background: #e5e5e5;
+            }
+        }
+    }
+
+    &.disable {
+        background: #e5e5e5;
+        color: @gray_light;
+        cursor: not-allowed;
+        border-color: #e5e5e5;
+
+        li {
+            label {
+                background: @white;
+                color: @gray_light;
+                cursor: not-allowed;
+                border-color: #e5e5e5;
+
+                &.active {
+                    background-color: #e5e5e5;
+                    color: @gray_light;
+                }
+
+                &:hover:not(.active) {
+                    background: @white;
+                }
+            }
+        }
+    }
+
+    &.error {
+        border-color: @fuchsia;
+
+        li {
+            label {
+                border-color: @fuchsia;
+
+                &.active {
+                    background: @fuchsia;
+                }
+            }
+        }
+    }
+
+    &.large {
+        height: 46px;
+
+        li {
+            height: 46px;
+
+            label {
+                height: 46px;
+                line-height: 46px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &.small {
+        height: 22px;
+
+        li {
+            height: 22px;
+
+            label {
+                height: 22px;
+                line-height: 22px;
+                font-size: 12px;
+                padding: 0px 11px;
+            }
+        }
+    }
+}
+
+/* Lime Green */
+.uui-multiswitch {
+    &.lime-green {
+        li {
+            label {
+                &.active {
+                    background: @green_lime;
+                    color: @white;
+                }
+            }
+        }
+
+        &.disable {
+            li {
+                label {
+                    &.active {
+                        background: #e5e5e5;
+                        color: @gray_light;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import 'uui-colors.less';
+
+.uui-rating {
+    display: inline-block;
+    vertical-align: bottom;
+
+    .star {
+        float: left;
+        font-size: 18px;
+        margin: 0 5px 0 0;
+        color: @blue;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &.error {
+        .star {
+            color: @fuchsia;
+        }
+    }
+
+    &.disable {
+        .star {
+            color: #e5e5e5;
+
+            &.disable {
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+/*  Lime Green  */
+.uui-rating.lime-green {
+    .star {
+        color: @green_lime;
+    }
+}
+
+/*  White  */
+.uui-rating.white {
+    .star {
+        color: @white;
+    }
+}
+
+/*  Medium Gray  */
+.uui-rating.medium-gray {
+    .star {
+        color: @gray_medium;
+    }
+}
+
+/*  Light Gray  */
+.uui-rating.light-gray {
+    .star {
+        color: @gray_light;
+    }
+}
+
+/*  Orange  */
+.uui-rating.orange {
+    .star {
+        color: @orange;
+    }
+}
+
+/*  Fuchsia  */
+.uui-rating.fuchsia {
+    .star {
+        color: @fuchsia;
+    }
+}
+
+/*  Violet  */
+.uui-rating.violet {
+    .star {
+        color: @violet;
+    }
+}

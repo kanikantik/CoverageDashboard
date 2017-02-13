@@ -1,0 +1,519 @@
+﻿@import 'uui-colors.less';
+
+.uui-person-vertical-profile {
+    position: relative;
+    background: @white;
+
+    .person-profile-body {
+        position: relative;
+        display: table;
+        width: 100%;
+        background: @gray_light;
+
+        .person-profile-section {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 15px;
+            text-align: center;
+
+            .person-profile-info {
+                h2 {
+                    margin-bottom: 0;
+                    text-transform: none;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .person-profile-photo {
+                width: 116px;
+                height: 116px;
+                overflow: hidden;
+                border-radius: 50%;
+                border: 8px solid @white;
+                display: inline-block;
+                margin: 0 0 -73px 0;
+
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .person-profile-footer {
+        position: relative;
+        display: table;
+        width: 100%;
+        padding: 73px 0 0 0;
+        border-left: 1px solid @gray_light;
+        border-right: 1px solid @gray_light;
+        border-bottom: 1px solid @gray_light;
+
+        .person-profile-section {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+}
+
+.uui-person-horizontal-profile {
+    position: relative;
+    background: @gray_light;
+
+    .person-profile-body {
+        position: relative;
+        display: table;
+        width: 100%;
+
+        .person-profile-section {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 15px;
+            text-align: left;
+
+            .person-profile-info {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 0 20px;
+
+                h2 {
+                    margin-bottom: 0;
+                    text-transform: none;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .person-profile-photo {
+                width: 116px;
+                height: 116px;
+                overflow: hidden;
+                border-radius: 50%;
+                border: 8px solid lighten(@gray_light, 10%);
+                display: table-cell;
+                margin: 0;
+
+                img {
+                    width: 100px;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .uui-profile-menu {
+        > a {
+            .profile-name {
+                display: none;
+            }
+        }
+    }
+}
+
+/* PRIMARY COLORS */
+/*  Blue  */
+.uui-person-horizontal-profile.blue {
+    background: @blue;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@blue, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.blue {
+    .person-profile-body {
+        background-color: @blue;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Lime Green  */
+.uui-person-horizontal-profile.lime-green {
+    background: @green_lime;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@green_lime, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.lime-green {
+    .person-profile-body {
+        background-color: @green_lime;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Dark Gray  */
+.uui-person-horizontal-profile.dark-gray {
+    background: @gray_dark;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@gray_dark, 10%);
+        }
+
+        h2, p {
+            color: @blue;
+        }
+    }
+}
+
+.uui-person-vertical-profile.dark-gray {
+    .person-profile-body {
+        background-color: @gray_dark;
+
+        h2, p {
+            color: @blue;
+        }
+    }
+}
+
+/*  White  */
+.uui-person-horizontal-profile.white {
+    background: @white;
+    border: 1px solid @gray_light;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid @gray_bg_dark;
+        }
+    }
+}
+
+.uui-person-vertical-profile.white {
+    .person-profile-body {
+        background-color:  @gray_bg_dark;
+    }
+}
+
+/* SECONDARY COLORS */
+
+/*  Raspberry  */
+.uui-person-horizontal-profile.raspberry {
+    background: @raspberry;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@raspberry, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.raspberry {
+    .person-profile-body {
+        background-color: @raspberry;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Plum  */
+.uui-person-horizontal-profile.plum {
+    background: @plum;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@plum, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.plum {
+    .person-profile-body {
+        background-color: @plum;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Dark Blue  */
+.uui-person-horizontal-profile.dark-blue {
+    background: @blue_dark;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@blue_dark, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.dark-blue {
+    .person-profile-body {
+        background-color: @blue_dark;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Dark Green  */
+.uui-person-horizontal-profile.dark-green {
+    background: @green_dark;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@green_dark, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.dark-green {
+    .person-profile-body {
+        background-color: @green_dark;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Medium Gray  */
+.uui-person-horizontal-profile.medium-gray {
+    background: @gray_medium;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@gray_medium, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.medium-gray {
+    .person-profile-body {
+        background-color: @gray_medium;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Gray  */
+.uui-person-horizontal-profile.gray {
+    background: @gray;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@gray, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.gray {
+    .person-profile-body {
+        background-color: @gray;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/* ADDITIONAL COLORS */
+/*  Yellow  */
+.uui-person-horizontal-profile.yellow {
+    background: @yellow;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@yellow, 10%);
+        }
+
+        h2, p {
+            color: @gray_dark;
+        }
+    }
+}
+
+.uui-person-vertical-profile.yellow {
+    .person-profile-body {
+        background-color: @yellow;
+
+        h2, p {
+            color: @gray_dark;
+        }
+    }
+}
+
+/*  Orange  */
+.uui-person-horizontal-profile.orange {
+    background: @orange;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@orange, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.orange {
+    .person-profile-body {
+        background-color: @orange;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Red  */
+.uui-person-horizontal-profile.red {
+    background: @red;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@red, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.red {
+    .person-profile-body {
+        background-color: @red;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Fuchsia  */
+.uui-person-horizontal-profile.fuchsia {
+    background: @fuchsia;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@fuchsia, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.fuchsia {
+    .person-profile-body {
+        background-color: @fuchsia;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Black  */
+.uui-person-horizontal-profile.black {
+    background: @black;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@black, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.black {
+    .person-profile-body {
+        background-color: @black;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+/*  Violet  */
+.uui-person-horizontal-profile.violet {
+    background: @violet;
+
+    .person-profile-body {
+        .person-profile-section .person-profile-photo {
+            border: 8px solid lighten(@violet, 10%);
+        }
+
+        h2, p {
+            color: @white;
+        }
+    }
+}
+
+.uui-person-vertical-profile.violet {
+    .person-profile-body {
+        background-color: @violet;
+
+        h2, p {
+            color: @white;
+        }
+    }
+}

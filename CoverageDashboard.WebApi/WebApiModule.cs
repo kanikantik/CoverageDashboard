@@ -26,7 +26,6 @@ namespace CoverageDashboard.WebApi
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            var dependencyResolver = new WindsorDependencyResolver(IocManager.IocContainer);
         }
 
         public override void PostInitialize()

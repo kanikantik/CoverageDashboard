@@ -1,0 +1,222 @@
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url(../fonts/font-oswald/oswald-regular.eot);
+  src: url(../fonts/font-oswald/oswald-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-regular.woff) format('woff'), url(../fonts/font-oswald/oswald-regular.ttf) format('truetype'), url(../fonts/font-oswald/oswald-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../fonts/font-oswald/oswald-bold.eot);
+  src: url(../fonts/font-oswald/oswald-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-bold.woff) format('woff'), url(../fonts/font-oswald/oswald-bold.ttf) format('truetype'), url(../fonts/font-oswald/oswald-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src: url(../fonts/font-oswald/oswald-light.eot);
+  src: url(../fonts/font-oswald/oswald-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-light.woff) format('woff'), url(../fonts/font-oswald/oswald-light.ttf) format('truetype'), url(../fonts/font-oswald/oswald-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-light.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-it.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.uui-progress-bar {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eeeeee;
+  height: 12px;
+}
+.uui-progress-bar .uui-progress {
+  float: left;
+  background: #39c2d7;
+  height: 12px;
+  border-radius: 8px;
+}
+.uui-progress-bar .uui-stack {
+  height: 12px;
+}
+.uui-progress-bar .uui-stack .uui-progress {
+  border-radius: 0;
+}
+.uui-progress-bar .uui-stack .uui-progress:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.uui-progress-bar .uui-stack .uui-progress:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.uui-progress-bar.small {
+  height: 6px;
+  border-radius: 3px;
+}
+.uui-progress-bar.small .uui-progress {
+  border-radius: 3px;
+  height: 6px;
+}
+.uui-progress-bar.small .uui-stack .uui-progress {
+  border-radius: 0px;
+}
+.uui-progress-bar.small .uui-stack .uui-progress:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.uui-progress-bar.small .uui-stack .uui-progress:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.uui-progress-bar.left-label {
+  display: table;
+  width: 100%;
+  background: none;
+}
+.uui-progress-bar.left-label .progress-bar-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.uui-progress-bar.left-label .progress-bar-wrapper .progress-bar-container {
+  background: #eeeeee;
+  border-radius: 8px;
+  width: 100%;
+  height: 12px;
+}
+.uui-progress-bar.left-label .progress-bar-wrapper .progress-bar-container .uui-progress {
+  float: left;
+  background: #39c2d7;
+  height: 12px;
+  border-radius: 8px;
+}
+.uui-progress-bar.left-label .progress-bar-label-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  width: 40px;
+  text-align: right;
+}
+.uui-progress-bar.left-label .progress-bar-label-wrapper .progress-bar-label {
+  font-family: 'Source Sans Pro Regular', Arial, sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+.uui-progress-bar.left-label.small .progress-bar-wrapper .progress-bar-container {
+  height: 6px;
+  border-radius: 3px;
+}
+.uui-progress-bar.left-label.small .progress-bar-wrapper .progress-bar-container .uui-progress {
+  height: 6px;
+  border-radius: 3px;
+}
+.uui-progress-bar.top-label {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.uui-progress-bar.top-label .progress-bar-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+.uui-progress-bar.top-label .progress-bar-wrapper .progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background: #eee;
+  border-radius: 8px;
+}
+.uui-progress-bar.top-label .progress-bar-wrapper .progress-bar-container .uui-progress {
+  float: left;
+  background: #39c2d7;
+  height: 12px;
+  border-radius: 8px;
+}
+.uui-progress-bar.top-label .progress-bar-label-wrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.uui-progress-bar.top-label .progress-bar-label-wrapper .progress-bar-label {
+  display: inline-block;
+  font-family: 'Source Sans Pro Regular', Arial, sans-serif;
+  font-size: 16px;
+  color: #999999;
+  margin-top: -1px;
+  padding-bottom: 3px;
+}
+.uui-progress-bar.top-label.small .progress-bar-wrapper .progress-bar-container {
+  height: 6px;
+  border-radius: 3px;
+}
+.uui-progress-bar.top-label.small .progress-bar-wrapper .progress-bar-container .uui-progress {
+  height: 6px;
+  border-radius: 3px;
+}
+/*  Blue  */
+.uui-progress-bar.blue .uui-progress {
+  background: #39c2d7;
+}
+.uui-progress-bar .uui-progress.blue {
+  background: #39c2d7;
+}
+/*  Lime Green  */
+.uui-progress-bar.lime-green .uui-progress {
+  background: #a3c644;
+}
+.uui-progress-bar .uui-progress.lime-green {
+  background: #a3c644;
+}
+/*  Raspberry  */
+.uui-progress-bar.raspberry .uui-progress {
+  background: #b22746;
+}
+.uui-progress-bar .uui-progress.raspberry {
+  background: #b22746;
+}
+/*  Orange  */
+.uui-progress-bar.orange .uui-progress {
+  background: #ff9b19;
+}
+.uui-progress-bar .uui-progress.orange {
+  background: #ff9b19;
+}
+/*  Black  */
+.uui-progress-bar.black .uui-progress {
+  background: #333333;
+}
+.uui-progress-bar .uui-progress.black {
+  background: #333333;
+}

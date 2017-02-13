@@ -1,0 +1,163 @@
+@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+.uui-modal {
+    padding-right: 0 !important;
+
+    .modal-dialog {
+        min-width: 300px;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 1px 3px rgba(51, 51, 51, 0.2);
+        -webkit-box-shadow: 0 1px 3px rgba(51, 51, 51, 0.2);
+    }
+
+    .modal-header {
+        background-color: @white;
+        color: @gray_medium;
+        overflow: hidden;
+        padding: 17px 24px;
+        border-bottom: solid 1px #eee;
+
+        .close {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            right: 0;
+            top: 0;
+            margin-top: 2px;
+            opacity: 0.4;
+            text-shadow: none;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            span {
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 20px;
+                background: @gray_medium;
+                top: 10px;
+                left: 0px;
+
+
+                &:nth-child(1) {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        .modal-title {
+            font-family: @Oswald_Regular;
+            font-size: 18px;
+            float: left;
+            width: 90%;
+            letter-spacing: .25px;
+        }
+    }
+
+    .modal-body {
+        min-height: 100px;
+        padding: 17px 24px 9px 24px;
+        color: @gray_medium;
+    }
+
+    .modal-footer {
+        padding: 8px 24px 17px 24px;
+        border-top: none;
+
+        .uui-button {
+            margin-left: 18px;
+        }
+    }
+}
+
+.modal-backdrop {
+    background-color: @black;
+}
+
+/*  Blue  */
+.uui-modal.blue {
+    .modal-header {
+        background: @blue;
+        color: @white;
+        border-bottom: solid 1px @blue;
+
+        .close {
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            span {
+                background: @white;
+            }
+        }
+    }
+}
+
+/*  Lime Green  */
+.uui-modal.lime-green {
+    .modal-header {
+        background: @green_lime;
+        color: @white;
+        border-bottom: solid 1px @green_lime;
+
+        .close {
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            span {
+                background: @white;
+            }
+        }
+    }
+}
+
+/*  Raspberry  */
+.uui-modal.raspberry {
+    .modal-header {
+        background: @raspberry;
+        color: @white;
+        border-bottom: solid 1px @raspberry;
+
+        .close {
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            span {
+                background: @white;
+            }
+        }
+    }
+}
+
+/*  Gray  */
+.uui-modal.light-gray {
+    .modal-header {
+        background: @gray_bg;
+        border-bottom: solid 1px @gray_bg;
+    }
+}

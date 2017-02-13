@@ -1,0 +1,232 @@
+@import 'uui-colors.less';
+@import 'uui-fonts.less';
+
+.uui-progress-bar {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #eeeeee;
+    height: 12px;
+
+    .uui-progress {
+        float: left;
+        background: @blue;
+        height: 12px;
+        border-radius: 8px;
+    }
+
+    .uui-stack {
+        height: 12px;
+
+        .uui-progress {
+            border-radius: 0;
+
+            &:first-child {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+    }
+
+    &.small {
+        height: 6px;
+        border-radius: 3px;
+
+        .uui-progress {
+            border-radius: 3px;
+            height: 6px;
+        }
+
+        .uui-stack {
+            .uui-progress {
+                border-radius: 0px;
+
+                &:first-child {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+            }
+        }
+    }
+
+    &.left-label {
+        display: table;
+        width: 100%;
+        background: none;
+
+        .progress-bar-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+
+            .progress-bar-container {
+                background: #eeeeee;
+                border-radius: 8px;
+                width: 100%;
+                height: 12px;
+
+                .uui-progress {
+                    float: left;
+                    background: @blue;
+                    height: 12px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .progress-bar-label-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+            width: 40px;
+            text-align: right;
+
+            .progress-bar-label {
+                font-family: @Source_Sans_Pro_Regular;
+                font-size: 16px;
+                color: @gray;
+            }
+        }
+
+        &.small {
+            .progress-bar-wrapper {
+                .progress-bar-container {
+                    height: 6px;
+                    border-radius: 3px;
+
+                    .uui-progress {
+                        height: 6px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.top-label {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        background: none;
+
+        .progress-bar-wrapper {
+            display: inline-block;
+            width: 100%;
+
+            .progress-bar-container {
+                width: 100%;
+                height: 12px;
+                background: #eee;
+                border-radius: 8px;
+
+                .uui-progress {
+                    float: left;
+                    background: @blue;
+                    height: 12px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .progress-bar-label-wrapper {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+
+            .progress-bar-label {
+                display: inline-block;
+                font-family: @Source_Sans_Pro_Regular;
+                font-size: 16px;
+                color: @gray;
+                margin-top: -1px;
+                padding-bottom: 3px;
+            }
+        }
+
+        &.small {
+            .progress-bar-wrapper {
+                .progress-bar-container {
+                    height: 6px;
+                    border-radius: 3px;
+
+                    .uui-progress {
+                        height: 6px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Blue  */
+.uui-progress-bar {
+    &.blue {
+        .uui-progress {
+            background: @blue;
+        }
+    }
+
+    .uui-progress.blue {
+        background: @blue;
+    }
+}
+
+/*  Lime Green  */
+.uui-progress-bar {
+    &.lime-green {
+        .uui-progress {
+            background: @green_lime;
+        }
+    }
+
+    .uui-progress.lime-green {
+        background: @green_lime;
+    }
+}
+
+/*  Raspberry  */
+.uui-progress-bar {
+    &.raspberry {
+        .uui-progress {
+            background: @raspberry;
+        }
+    }
+
+    .uui-progress.raspberry {
+        background: @raspberry;
+    }
+}
+
+/*  Orange  */
+.uui-progress-bar {
+    &.orange {
+        .uui-progress {
+            background: @orange;
+        }
+    }
+
+    .uui-progress.orange {
+        background: @orange;
+    }
+}
+
+/*  Black  */
+.uui-progress-bar {
+    &.black {
+        .uui-progress {
+            background: @black;
+        }
+    }
+
+    .uui-progress.black {
+        background: @black;
+    }
+}

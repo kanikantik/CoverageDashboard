@@ -1,0 +1,479 @@
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url(../fonts/font-oswald/oswald-regular.eot);
+  src: url(../fonts/font-oswald/oswald-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-regular.woff) format('woff'), url(../fonts/font-oswald/oswald-regular.ttf) format('truetype'), url(../fonts/font-oswald/oswald-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../fonts/font-oswald/oswald-bold.eot);
+  src: url(../fonts/font-oswald/oswald-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-bold.woff) format('woff'), url(../fonts/font-oswald/oswald-bold.ttf) format('truetype'), url(../fonts/font-oswald/oswald-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src: url(../fonts/font-oswald/oswald-light.eot);
+  src: url(../fonts/font-oswald/oswald-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-oswald/oswald-light.woff) format('woff'), url(../fonts/font-oswald/oswald-light.ttf) format('truetype'), url(../fonts/font-oswald/oswald-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-regular.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-light.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-light.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-light.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-bold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-semibold.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-semibold.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot);
+  src: url(../fonts/font-sourcesanspro/sourcesanspro-it.eot?#iefix) format('embedded-opentype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.woff) format('woff'), url(../fonts/font-sourcesanspro/sourcesanspro-it.ttf) format('truetype'), url(../fonts/font-sourcesanspro/sourcesanspro-it.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field {
+  height: 60px;
+  line-height: 60px;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search {
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  border: 1px solid #333333;
+  background: #333333;
+  padding: 0 5px 0 35px;
+  border-radius: 25px;
+  color: #cccccc;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search::-webkit-input-placeholder {
+  color: #cccccc;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search::-moz-placeholder {
+  color: #cccccc;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search:-ms-input-placeholder {
+  color: #cccccc;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search:focus {
+  width: 400px;
+  background-color: #ffffff;
+  color: #464547;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search:focus::-webkit-input-placeholder {
+  color: #999999;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search:focus::-moz-placeholder {
+  color: #999999;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field .uui-search:focus:-ms-input-placeholder {
+  color: #999999;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field label {
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  height: 16px;
+  width: 16px;
+  margin-top: -8px;
+  margin-bottom: 0;
+  line-height: normal;
+  font-weight: normal;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .search-field label:before {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  content: '\f002';
+  font-family: 'FontAwesome';
+  color: #cccccc;
+  font-size: 16px;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu {
+  width: 400px;
+  min-width: 400px;
+  right: 9px;
+  margin-right: auto;
+  background: #ffffff;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-arrow {
+  border-color: transparent transparent #ffffff transparent;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll {
+  max-height: 225px;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .mCSB_container {
+  margin-right: 0;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .mCSB_scrollTools {
+  width: 0;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links {
+  width: 400px;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li {
+  box-shadow: none;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li > a .title {
+  color: #666666;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li > a .description {
+  font-size: 14px;
+  color: #999999;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li > a:hover .title,
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li > a:focus .title {
+  color: #333333;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li:hover > a,
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li:focus > a {
+  background: #eeeeee;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li.no-results {
+  display: none;
+  text-align: center;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li.no-results img {
+  margin: 30px 10px 15px 10px;
+  height: 93px;
+  width: auto;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li.no-results h4 {
+  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-size: 18px;
+  color: #999999;
+  margin: 0;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .menu-scroll .search-links > li.no-results p {
+  font-family: 'Source Sans Pro Regular', Arial, sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  padding-bottom: 25px;
+  margin: 0;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .all-results {
+  text-align: center;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .all-results > a {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background: #a3c644;
+  color: #ffffff;
+}
+header .uui-header .uui-header-tools > li.uui-global-search .dropdown-menu .all-results > a:hover {
+  background: #8cad35;
+  text-decoration: none;
+}
+header .uui-header .uui-header-tools > li.uui-global-search:last-of-type .dropdown-menu {
+  right: 18px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search {
+  display: none;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header {
+  position: absolute;
+  z-index: 1004;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  min-width: 320px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(51, 51, 51, 0.2);
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper {
+  display: table;
+  width: 100%;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .search-field {
+  display: table-cell;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .search-field .uui-search {
+  border: none;
+  width: 100%;
+  height: 60px;
+  padding: 12px 10px 12px 50px;
+  font-size: 18px;
+  font-family: 'Source Sans Pro Light', Arial, sans-serif;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .search-field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  margin-top: -10px;
+  margin-bottom: 0;
+  line-height: normal;
+  font-weight: normal;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .search-field label:before {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  content: '\f002';
+  font-family: 'FontAwesome';
+  color: #cccccc;
+  font-size: 20px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .hide-search {
+  display: table-cell;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .hide-search span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 26px;
+  background: #999999;
+  top: 29px;
+  left: 17px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .hide-search span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .hide-search span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-header .header-wrapper .hide-search.show {
+  right: 0;
+  opacity: 1;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list {
+  position: fixed;
+  z-index: 1003;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  margin-top: 60px;
+  background: #f1f1f1;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .all-results {
+  height: 40px;
+  text-align: center;
+  background: #dddddd;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .all-results > a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  color: #999999;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .all-results > a:hover,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .all-results > a:focus,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .all-results > a:active {
+  text-decoration: none;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll {
+  width: 100%;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll .mCustomScrollBox .mCSB_container {
+  margin-right: 0;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll .mCustomScrollBox .mCSB_scrollTools {
+  width: 0;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul {
+  width: 100%;
+  margin: 0;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li {
+  margin-bottom: 0;
+  box-shadow: inset 0 -1px #dddddd;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a {
+  display: block;
+  padding: 10px 20px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a:hover,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a:focus,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a:active {
+  text-decoration: none;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a p {
+  margin-bottom: 0;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a p.title {
+  font-size: 16px;
+  color: #666666;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li > a p.description {
+  font-size: 14px;
+  color: #999999;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: none;
+  display: none;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-content {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 70px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-content img {
+  margin: 50px 10px 20px 10px;
+  height: 178px;
+  width: auto;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-content h4 {
+  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-size: 20px;
+  color: #666666;
+  margin: 0;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-content p {
+  font-family: 'Source Sans Pro Regular', Arial, sans-serif;
+  font-size: 16px;
+  color: #999999;
+  padding-bottom: 25px;
+  margin: 0;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-footer {
+  height: 70px;
+  margin-top: -70px;
+  line-height: 70px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-footer > a {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  color: #1a9cb0;
+  font-family: 'Source Sans Pro Regular', Arial, sans-serif;
+  font-size: 18px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-footer > a i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-footer > a:hover,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-footer > a:focus,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results .no-results-footer > a:active {
+  text-decoration: none;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results:hover .no-results-footer a,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results:focus .no-results-footer a,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li.no-results:active .no-results-footer a {
+  text-decoration: none;
+  background: none;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li:hover > a,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li:focus > a {
+  background: #dddddd;
+}
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li:hover > a p.title,
+header .uui-header .uui-responsive-header .responsive-global-search .search-list .list-wrapper .menu-scroll ul > li:focus > a p.title {
+  color: #333333;
+}
+/*  Blue  */
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search {
+  border: 1px solid #157c8c;
+  background: #157c8c;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search::-webkit-input-placeholder {
+  color: #39c2d7;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search::-moz-placeholder {
+  color: #39c2d7;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search:-ms-input-placeholder {
+  color: #39c2d7;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search:focus {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search:focus::-webkit-input-placeholder {
+  color: #999999;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search:focus::-moz-placeholder {
+  color: #999999;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field .uui-search:focus:-ms-input-placeholder {
+  color: #999999;
+}
+.uui-header.blue .uui-header-tools > li.uui-global-search .search-field label:before {
+  color: #39c2d7;
+}
+/*  Green  */
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search {
+  border: 1px solid #667b2f;
+  background: #667b2f;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search::-webkit-input-placeholder {
+  color: #a3c644;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search::-moz-placeholder {
+  color: #a3c644;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search:-ms-input-placeholder {
+  color: #a3c644;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search:focus {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search:focus::-webkit-input-placeholder {
+  color: #999999;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search:focus::-moz-placeholder {
+  color: #999999;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field .uui-search:focus:-ms-input-placeholder {
+  color: #999999;
+}
+.uui-header.green .uui-header-tools > li.uui-global-search .search-field label:before {
+  color: #a3c644;
+}

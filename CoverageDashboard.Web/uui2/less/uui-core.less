@@ -1,0 +1,3344 @@
+﻿@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    overflow-y: scroll;
+}
+
+body {
+    height: 100%;
+    padding-right: 0 !important;
+    background: @white;
+    font-family: @Source_Sans_Pro_Regular;
+    font-size: 14px;
+    line-height: 18px;
+    color: @black;
+}
+
+h1, h2, h3, h4, h5, h6,
+.uui-promo-heading {
+    text-transform: uppercase;
+
+    a {
+        color: @blue_dark;
+        text-decoration: none;
+        font-size: inherit;
+
+        &:hover {
+            color: @blue_dark;
+            text-decoration: underline;
+            outline: 0;
+        }
+    }
+}
+
+.uui-promo-heading {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-family: @Oswald_Regular;
+    font-size: 38px;
+    line-height: 44px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-family: @Oswald_Regular;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: @Oswald_Regular;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: @Oswald_Regular;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: @Source_Sans_Pro_Bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: @Source_Sans_Pro_Bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: @Source_Sans_Pro_Bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    /* Blue */
+    h1.blue, h2.blue,
+    h3.blue, h4.blue,
+    h5.blue, h6.blue {
+        color: @blue;
+    }
+
+    /* Dark Blue */
+    h1.dark-blue, h2.dark-blue,
+    h3.dark-blue, h4.dark-blue,
+    h5.dark-blue, h6.dark-blue {
+        color: @blue_dark;
+    }
+
+    /* Lime green */
+    h1.lime-green, h2.lime-green,
+    h3.lime-green, h4.lime-green,
+    h5.lime-green, h6.lime-green {
+        color: @green_lime;
+    }
+
+    /* Dark green */
+    h1.dark-green, h2.dark-green,
+    h3.dark-green, h4.dark-green,
+    h5.dark-green, h6.dark-green {
+        color: @green_dark;
+    }
+
+    /* Dark gray */
+    h1.dark-gray, h2.dark-gray,
+    h3.dark-gray, h4.dark-gray,
+    h5.dark-gray, h6.dark-gray {
+        color: @gray_dark;
+    }
+
+    /* White */
+    h1.white, h2.white,
+    h3.white, h4.white,
+    h5.white, h6.white {
+        color: @white;
+    }
+
+    /* Medium gray */
+    h1.medium-gray, h2.medium-gray,
+    h3.medium-gray, h4.medium-gray,
+    h5.medium-gray, h6.medium-gray {
+        color: @gray_medium;
+    }
+
+    /* Gray */
+    h1.gray, h2.gray,
+    h3.gray, h4.gray,
+    h5.gray, h6.gray {
+        color: @gray;
+    }
+
+    /* Fuchsia */
+    h1.fuchsia, h2.fuchsia,
+    h3.fuchsia, h4.fuchsia,
+    h5.fuchsia, h6.fuchsia {
+        color: @fuchsia;
+    }
+
+/* Medium gray */
+p.medium-gray {
+    color: @gray_medium;
+}
+
+/* Gray */
+p.gray {
+    color: @gray;
+}
+
+/* White */
+p.white {
+    color: @white;
+}
+
+.uui-big-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.uui-small-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.uui-uppercase-text {
+    text-transform: uppercase;
+}
+
+.uui-lowercase-text {
+    text-transform: none;
+}
+
+.uui-description-text {
+    color: @gray_light;
+}
+
+    /* Medium gray */
+    .uui-description-text.medium-gray {
+        color: @gray_medium;
+    }
+
+strong, b, .bold {
+    font-family: @Source_Sans_Pro_Bold;
+}
+
+em, i, .italic {
+    font-family: @Source_Sans_Pro_Italic;
+}
+
+    /* Dark Green */
+    strong.dark-green, em.dark-green,
+    b.dark-green, i.dark-green, span.dark-green {
+        color: @green_dark;
+    }
+
+    /* Raspberry */
+    strong.raspberry, em.raspberry,
+    b.raspberry, i.raspberry, span.raspberry {
+        color: @fuchsia;
+    }
+
+    /* Violet */
+    strong.violet, em.violet,
+    b.violet, i.violet, span.violet {
+        color: @violet;
+    }
+
+.highlight-text {
+    background: #fded96;
+    padding: 2px 4px;
+}
+
+a {
+    color: @blue_dark;
+    text-decoration: none;
+
+    &:active, &:hover, &:focus {
+        color: @blue_dark;
+        text-decoration: underline;
+        outline: 0;
+    }
+}
+
+.uui-ordered-list,
+.uui-unordered-list {
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+    li {
+        font-size: 14px;
+        line-height: 18px;
+        color: @blue_dark;
+        margin-bottom: 10px;
+
+        span {
+            color: @black;
+        }
+    }
+}
+
+    /* Dark green */
+    .uui-ordered-list.dark-green,
+    .uui-unordered-list.dark-green {
+        li {
+            color: @green_dark;
+        }
+    }
+
+    /* Raspberry */
+    .uui-ordered-list.raspberry,
+    .uui-unordered-list.raspberry {
+        li {
+            color: @raspberry;
+        }
+    }
+
+    /* Gray */
+    .uui-ordered-list.gray,
+    .uui-unordered-list.gray {
+        li {
+            color: @gray;
+        }
+    }
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1002;
+    height: 60px;
+    width: 100%;
+    min-width: 320px;
+
+    .uui-header {
+        height: 60px;
+        background: @gray_dark;
+
+        .uui-toggle-box {
+            position: relative;
+            float: left;
+            width: 54px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            cursor: pointer;
+            background: @black;
+
+            span {
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 18px;
+                background: @white;
+                left: 18px;
+
+                &:nth-child(1) {
+                    top: 20px;
+                }
+
+                &:nth-child(2) {
+                    top: 27px;
+                }
+
+                &:nth-child(3) {
+                    top: 34px;
+                }
+            }
+        }
+
+        .brand-logo {
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            font-size: 22px;
+            color: @white;
+            padding: 0 18px;
+            font-family: @Oswald_Regular;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: transparent;
+            white-space: nowrap;
+
+            .logo {
+                float: left;
+                width: auto;
+                height: 34px;
+                margin: 13px 6px 0 0;
+
+                img {
+                    vertical-align: top;
+                    width: auto;
+                    height: 34px;
+                }
+            }
+        }
+
+        .uui-navigation {
+            height: 60px;
+            margin: 0;
+            float: left;
+
+            > li {
+                float: left;
+                margin: 0;
+
+                > a {
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0 18px;
+                    font-family: @Oswald_Regular;
+                    text-transform: uppercase;
+                    letter-spacing: .15px;
+                    font-size: 16px;
+                    color: @white;
+
+                    &:hover, &:focus, &:active {
+                        color: @white;
+                        background: none;
+                        text-decoration: none;
+                    }
+
+                    .arrow {
+                        color: @white;
+                        line-height: 60px;
+                        font-size: 12px;
+                        vertical-align: top;
+                    }
+                }
+
+                &:hover, &:focus, &.open {
+                    > a {
+                        color: @white;
+                        background: @black;
+
+                        .arrow {
+                            color: @white;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: #3cc2d7;
+
+                        .arrow {
+                            color: #3cc2d7;
+                        }
+                    }
+
+                    &:hover, &:focus, .open {
+                        > a {
+                            color: @white;
+
+                            .arrow {
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+
+                &.dropdown {
+                    &:hover, &:focus, &.open {
+                        > a {
+                            color: @white;
+                            background: @black;
+
+                            .arrow {
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    position: absolute;
+                    float: left;
+                    background: @black;
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                    box-shadow: none;
+
+                    > li {
+                        margin: 0;
+
+                        > a {
+                            padding: 9px 18px 8px 18px;
+                            font-family: @Oswald_Light;
+                            letter-spacing: 0.15px;
+                            font-size: 18px;
+                            color: @white;
+                            white-space: normal;
+
+                            &:hover, &:focus, &:active {
+                                color: @white;
+                                background: none;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: @blue_dark;
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: #3cc2d7;
+                                background: none;
+                            }
+
+                            &:hover, &:focus, &.open {
+                                > a {
+                                    color: @white;
+                                    background: @blue_dark;
+                                }
+                            }
+                        }
+
+                        &.dropdown-submenu {
+                            position: relative;
+
+                            > a {
+                                color: @white;
+
+                                &:after {
+                                    display: block;
+                                    font: normal normal normal 14px/1 FontAwesome;
+                                    content: "\f105";
+                                    float: right;
+                                    font-size: 12px;
+                                    margin-top: 7px;
+                                    margin-right: -6px;
+                                    color: @white;
+                                }
+                            }
+
+                            &:hover, &:focus, &.open {
+                                > a {
+                                    color: @white;
+                                    background: @blue_dark;
+
+                                    &:after {
+                                        color: @white;
+                                    }
+                                }
+                            }
+
+                            &.active {
+                                > a {
+                                    color: #3cc2d7;
+
+                                    &:after {
+                                        color: #3cc2d7;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        &:after {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            > .dropdown-menu {
+                                top: 0;
+                                left: 100%;
+                                margin-top: 0;
+                                background: @blue_dark;
+
+                                > li {
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: @blue;
+                                        }
+                                    }
+
+                                    &.active {
+                                        > a {
+                                            color: #a6f1fd;
+                                            background: none;
+                                        }
+
+                                        &:hover, &:focus {
+                                            > a {
+                                                color: @white;
+                                                background: @blue;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .uui-header-tools {
+            height: 60px;
+            margin: 0;
+            float: right;
+
+            > li {
+                float: left;
+                margin: 0;
+                padding: 0 9px;
+
+                &:last-of-type {
+                    padding: 0 18px 0 9px;
+                }
+
+                > a {
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0;
+
+                    &:hover, &:focus, &:active {
+                        background: none;
+                        text-decoration: none;
+                    }
+                }
+
+                &.uui-header-icon {
+                    > a {
+                        line-height: 56px;
+
+                        i {
+                            font-size: 22px;
+                            color: @white;
+                            opacity: 1;
+                            vertical-align: middle;
+                        }
+
+                        .uui-label {
+                            position: absolute;
+                            top: 8px;
+                            right: -12px;
+                        }
+
+                        img {
+                            height: 22px;
+                            width: auto;
+                            opacity: 0.8;
+                        }
+                    }
+
+                    &:hover, &:focus {
+                        > a {
+                            i {
+                                opacity: 0.8;
+                            }
+
+                            img {
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+
+                &.uui-header-button {
+                    > a {
+                        &.uui-button {
+                            height: 34px;
+                            line-height: normal;
+                            border-radius: 20px;
+                            padding: 6px 18px;
+                            margin: 13px 0;
+                            background: @green_lime;
+                            border-color: @green_lime;
+                            color: @white;
+
+                            &:hover, &:focus, &:active {
+                                background: darken(@green_lime, 8%);
+                                border-color: darken(@green_lime, 8%);
+                                color: @white;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
+                    &.open {
+                        > a {
+                            background: @green_lime;
+                            border-color: @green_lime;
+                        }
+                    }
+                }
+
+                &.global-menu {
+                    height: 60px;
+                    width: 60px;
+                    padding: 0;
+                    cursor: pointer;
+
+                    img {
+                        opacity: .8;
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &.open {
+                    > a {
+                        background: none;
+                    }
+                }
+
+                .dropdown-menu {
+                    width: 154px;
+                    min-width: 154px;
+                    position: absolute;
+                    left: auto;
+                    right: 50%;
+                    margin-right: -(154px / 2);
+                    float: left;
+                    background: @gray_bg;
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                    box-shadow: 0 1px 3px 0 rgba(51, 51, 51, .2);
+
+                    .menu-arrow {
+                        position: absolute;
+                        top: -6px;
+                        right: 50%;
+                        margin-right: -6px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 6px 6px 6px;
+                        border-color: transparent transparent @gray_bg transparent;
+                    }
+
+                    ul {
+                        margin: 0;
+                        list-style: none;
+
+                        > li {
+                            box-shadow: inset 0 -1px #dddddd;
+                            margin: 0;
+
+                            &:last-child {
+                                box-shadow: none;
+                            }
+
+                            > a {
+                                display: block;
+                                padding: 12px 18px;
+                                font-size: 16px;
+                                color: @gray_medium;
+
+                                i {
+                                    color: @gray_medium;
+                                    font-size: 16px;
+                                    margin-right: 5px;
+                                    min-width: 16px;
+                                }
+
+
+                                img {
+                                    height: 16px;
+                                    width: auto;
+                                    min-width: 16px;
+                                    margin-right: 5px;
+                                    margin-bottom: 3px;
+                                    opacity: .8;
+                                }
+
+                                p {
+                                    margin-bottom: 0;
+                                }
+
+                                &:hover, &:focus, &:active {
+                                    color: @gray_dark;
+                                    background: none;
+                                    text-decoration: none;
+                                }
+                            }
+
+                            &:hover, &:focus {
+                                > a {
+                                    background: #dddddd;
+                                    color: @gray_dark;
+
+                                    i {
+                                        color: @gray_dark;
+                                    }
+
+                                    img {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.navigation-header {
+            .brand-logo {
+                background: darken(@black, 4%);
+            }
+        }
+
+        &.sidebar-header {
+            nav {
+                .brand-logo {
+                    background: @gray_dark;
+                }
+
+                .responsive-menu {
+                    ul {
+                        > li {
+                            &.active {
+                                > a {
+                                    span, i {
+                                        color: #3cc2d7;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.sub-menu {
+                                .sub {
+                                    > li {
+                                        &.active {
+                                            > a {
+                                                span {
+                                                    color: #3cc2d7;
+                                                }
+                                            }
+
+                                            &:hover, &:focus {
+                                                > a {
+                                                    color: @white;
+
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.breadcrumb-header {
+            .brand-logo {
+                position: relative;
+                background: @gray_dark;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 8px 0 8px 8px;
+                    border-color: transparent transparent transparent @gray_dark;
+                    right: -8px;
+                    top: 50%;
+                    margin-top: -8px;
+                }
+            }
+
+            .uui-navigation {
+                &.breadcrumb-main-nav {
+                    > li {
+                        margin: 0;
+
+                        &.active-nav {
+                            position: relative;
+                            background: @black;
+                            cursor: pointer;
+                            width: 160px;
+
+                            > a {
+                                .toggle-nav {
+                                    position: relative;
+                                    float: left;
+                                    width: 18px;
+                                    height: 60px;
+                                    line-height: 60px;
+                                    margin-right: 10px;
+
+                                    span {
+                                        display: block;
+                                        position: absolute;
+                                        height: 2px;
+                                        width: 18px;
+                                        background: @white;
+                                        left: 0;
+
+                                        &:nth-child(1) {
+                                            top: 21px;
+                                        }
+
+                                        &:nth-child(2) {
+                                            top: 28px;
+                                        }
+
+                                        &:nth-child(3) {
+                                            top: 35px;
+                                        }
+                                    }
+                                }
+
+                                .active-title {
+                                    display: inline-block;
+                                    max-width: 84px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    margin-top: 1px;
+                                    line-height: 59px;
+                                    color: @white;
+                                }
+
+                                .arrow {
+                                    color: @white;
+                                }
+                            }
+
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                z-index: 1;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 8px 0 8px 8px;
+                                border-color: transparent transparent transparent @black;
+                                right: -8px;
+                                top: 50%;
+                                margin-top: -8px;
+                            }
+
+                            &:hover, &:focus, &.open {
+                                > a {
+                                    background: @black;
+                                }
+                            }
+
+                            .dropdown-menu {
+                                background: @black;
+                                width: 140px;
+
+                                > li {
+                                    margin: 0;
+
+                                    > a {
+                                        i {
+                                            font-size: 18px;
+                                            color: @white;
+                                            margin-right: 10px;
+                                            min-width: 20px;
+                                        }
+
+                                        img {
+                                            height: 18px;
+                                            width: auto;
+                                            min-width: 20px;
+                                            margin-right: 10px;
+                                            margin-bottom: 3px;
+                                        }
+
+                                        span {
+                                            display: inline-block;
+                                            font-family: @Oswald_Light;
+                                            letter-spacing: .15px;
+                                            color: @white;
+                                            font-size: 18px;
+                                        }
+
+                                        &:after {
+                                            color: @white;
+                                        }
+                                    }
+
+                                    &:hover, &:focus, &.open {
+                                        > a {
+                                            background: @blue_dark;
+
+                                            i, span {
+                                                color: @white;
+                                            }
+
+                                            &:after {
+                                                color: @white;
+                                            }
+                                        }
+                                    }
+
+                                    &.active {
+                                        > a {
+                                            i, span {
+                                                color: @blue;
+                                            }
+
+                                            &:after {
+                                                color: @blue;
+                                            }
+                                        }
+
+                                        &:hover, &:focus {
+                                            > a {
+                                                i, span {
+                                                    color: @white;
+                                                }
+
+                                                &:after {
+                                                    color: @white;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.title {
+                                        span {
+                                            display: block;
+                                            padding: 23px 18px 13px 18px;
+                                            font-family: @Oswald_Light;
+                                            font-size: 14px;
+                                            letter-spacing: .15px;
+                                            color: @gray;
+                                            cursor: default;
+                                            text-transform: uppercase;
+                                        }
+
+                                        &:first-child {
+                                            span {
+                                                padding: 13px 18px;
+                                            }
+                                        }
+                                    }
+
+                                    &.dropdown-submenu {
+                                        &:hover, &:focus, &.open {
+                                            > a {
+                                                background: @blue_dark;
+
+                                                i, span {
+                                                    color: @white;
+                                                }
+
+                                                &:after {
+                                                    color: @white;
+                                                }
+                                            }
+                                        }
+
+                                        &.active {
+                                            &:hover, &:focus, &.open {
+                                                > a {
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+
+                                                    &:after {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .dropdown-menu {
+                                            background: @blue_dark;
+
+                                            > li {
+                                                &:hover, &:focus, &.open {
+                                                    > a {
+                                                        background: @blue;
+                                                        color: @white;
+                                                    }
+                                                }
+
+                                                &.active {
+                                                    > a {
+                                                        background: @blue_dark;
+                                                        color: #a6f1fd;
+                                                    }
+
+                                                    &:hover, &:focus {
+                                                        > a {
+                                                            background: @blue;
+                                                            color: @white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.breadcrumb-related-nav {
+                    > li {
+                        position: relative;
+                        margin: 0;
+
+                        > a {
+                            font-family: @Oswald_Light;
+                            text-transform: none;
+                            font-size: 18px;
+                            color: @white;
+                            letter-spacing: .15px;
+
+                            .uui-label {
+                                position: absolute;
+                                top: 8px;
+                                right: -10px;
+                                z-index: 1;
+                            }
+
+                            &:hover, &:focus, &:active {
+                                color: @white;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: none;
+                                color: #a6f1fd;
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: #a6f1fd;
+                            }
+
+                            &:focus {
+                                > a {
+                                    background: none;
+                                    color: #a6f1fd;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.extended-menu {
+                    > li {
+                        > a {
+                            font-family: @Oswald_Light;
+                            text-transform: none;
+                            font-size: 18px;
+                            letter-spacing: .15px;
+                        }
+
+                        .dropdown-menu {
+                            > li {
+                                position: relative;
+
+                                > a {
+                                    .uui-label {
+                                        position: relative;
+                                        top: -9px;
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .uui-responsive-header {
+                .responsive-menu {
+                    ul {
+                        > li {
+                            &.active {
+                                > a {
+                                    span, i {
+                                        color: #3cc2d7;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.sub-menu {
+                                .sub {
+                                    > li {
+                                        &.active {
+                                            > a {
+                                                span {
+                                                    color: #3cc2d7;
+                                                }
+                                            }
+
+                                            &:hover, &:focus {
+                                                > a {
+                                                    color: @white;
+
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .uui-responsive-header {
+            display: none;
+
+            .responsive-header {
+                position: absolute;
+                z-index: 1004;
+                top: 0;
+                left: 0;
+                height: 60px;
+                width: 100%;
+                min-width: 320px;
+                background: @gray_dark;
+
+                .responsive-toggle-box {
+                    position: relative;
+                    float: left;
+                    width: 54px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    cursor: pointer;
+                    background: @black;
+
+                    span {
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        width: 18px;
+                        background: @white;
+                        left: 18px;
+
+                        &:nth-child(1) {
+                            top: 20px;
+                        }
+
+                        &:nth-child(2) {
+                            top: 27px;
+                        }
+
+                        &:nth-child(3) {
+                            top: 34px;
+                        }
+                    }
+                }
+
+                .responsive-hide-menu {
+                    position: absolute;
+                    right: 100%;
+                    top: 0;
+                    z-index: 1004;
+                    width: 54px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    cursor: pointer;
+                    background: @black;
+                    opacity: 0;
+                    -webkit-transition: right .3s linear, opacity .5s linear;
+                    -moz-transition: right .3s linear, opacity .5s linear;
+                    -o-transition: right .3s linear, opacity .5s linear;
+                    -ms-transition: right .3s linear, opacity .5s linear;
+                    transition: right .3s linear, opacity .5s linear;
+
+                    span {
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        width: 26px;
+                        background: @white;
+                        opacity: 1;
+                        top: 29px;
+                        left: 15px;
+
+                        &:nth-child(1) {
+                            -webkit-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+
+                        &:nth-child(2) {
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform: rotate(-45deg);
+                            -o-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                        }
+                    }
+
+                    &.show {
+                        right: 0;
+                        opacity: 1;
+                    }
+                }
+
+                .responsive-brand-logo {
+                    float: left;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 22px;
+                    color: @white;
+                    padding: 0 18px;
+                    font-family: @Oswald_Regular;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    .arrow {
+                        line-height: 60px;
+                        font-size: 28px;
+                        color: @white;
+                        margin-right: 6px;
+                        display: none;
+                    }
+
+                    .logo {
+                        float: left;
+                        width: auto;
+                        height: 34px;
+                        margin: 13px 6px 0 0;
+
+                        img {
+                            vertical-align: top;
+                            width: auto;
+                            height: 34px;
+                        }
+                    }
+                }
+
+                .responsive-header-tools {
+                    height: 60px;
+                    margin: 0;
+                    float: right;
+                    padding: 0;
+
+                    > li {
+                        float: left;
+                        margin: 0;
+                        padding: 0 9px;
+
+                        &:last-of-type {
+                            padding: 0 18px 0 9px;
+                        }
+
+                        > a {
+                            height: 60px;
+                            line-height: 60px;
+                            padding: 0;
+
+                            &:hover, &:focus, &:active {
+                                background: none;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &.responsive-header-icon {
+                            > a {
+                                line-height: 56px;
+
+                                i {
+                                    font-size: 22px;
+                                    color: @white;
+                                    margin-top: 19px;
+                                    opacity: 1;
+
+                                    &:hover {
+                                        opacity: 0.8;
+                                    }
+                                }
+
+                                .uui-label {
+                                    position: absolute;
+                                    top: 8px;
+                                    right: -2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .responsive-menu {
+                position: fixed;
+                z-index: 1003;
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-width: 320px;
+                height: 100%;
+                margin-top: 60px;
+                padding-right: 54px;
+                background: fade(@black, 50%);
+                display: none;
+
+                .menu-wrapper {
+                    height: 100%;
+                    width: 100%;
+                    background: @black;
+                    position: relative;
+                    min-height: 232px;
+
+                    .menu-scroll {
+                        min-height: 150px;
+
+                        .mCSB_inside > .mCSB_container {
+                            margin-right: 0;
+                        }
+
+                        .mCSB_scrollTools {
+                            width: 0;
+                        }
+
+                        ul {
+                            width: 100%;
+                            margin: 0;
+
+                            > li {
+                                display: inline-block;
+                                width: 100%;
+                                list-style: none;
+                                margin: 0;
+
+                                > a {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    padding: 0 12px 0 18px;
+                                    color: @gray_light;
+
+                                    &:hover, &:focus, &:active {
+                                        color: @gray_light;
+                                        background: none;
+                                        text-decoration: none;
+                                    }
+
+                                    i {
+                                        font-size: 22px;
+                                        color: @gray_light;
+                                        line-height: 50px;
+                                        margin-right: 6px;
+                                        min-width: 22px;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                        font-family: @Oswald_Regular;
+                                        letter-spacing: .15px;
+                                        font-size: 16px;
+                                        text-transform: uppercase;
+                                        color: @gray_light;
+                                    }
+
+                                    .arrow {
+                                        float: right;
+                                        font-size: 12px;
+                                        color: @gray;
+                                        line-height: 50px;
+                                        margin-left: 12px;
+                                    }
+
+                                    .uui-label {
+                                        margin-left: 10px;
+                                        position: absolute;
+                                        top: 16px;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        background: darken(@black, 8%);
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+
+                                &.active {
+                                    > a {
+                                        color: #3cc2d7;
+
+                                        i, span {
+                                            color: #3cc2d7;
+                                        }
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            color: @white;
+
+                                            i, span {
+                                                color: @white;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.sub-menu {
+                                    .sub {
+                                        display: none;
+
+                                        > li {
+                                            margin: 0;
+
+                                            > a {
+                                                span {
+                                                    text-transform: none;
+                                                    font-family: @Oswald_Light;
+                                                    font-size: 18px;
+                                                    line-height: 24px;
+                                                    white-space: normal;
+                                                    max-width: none;
+                                                    letter-spacing: .15px;
+                                                }
+                                            }
+
+                                            &.active {
+                                                > a {
+                                                    span {
+                                                        color: #3cc2d7;
+                                                    }
+                                                }
+
+                                                &:hover, &:focus {
+                                                    > a {
+                                                        color: @white;
+
+                                                        i, span {
+                                                            color: @white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .responsive-header-button {
+                        position: absolute;
+                        bottom: 60px;
+                        display: inline-block;
+                        width: 100%;
+                        padding: 20px;
+                        text-align: center;
+
+                        > a {
+                            &.uui-button {
+                                width: 205px;
+                                height: 42px;
+                                line-height: 42px;
+                                border-radius: 20px;
+                                padding: 0 20px;
+                                background: @green_lime;
+                                border-color: @green_lime;
+                                color: @white;
+                                font-size: 16px;
+
+                                &:hover, &:focus, &:active {
+                                    background: darken(@green_lime, 8%);
+                                    border-color: darken(@green_lime, 8%);
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        .dropdown-menu {
+                            right: 0;
+                            width: 205px;
+                            margin: 0 auto;
+                            border-radius: 0;
+                            padding: 0;
+                            box-shadow: none;
+
+                            ul {
+                                > li {
+                                    box-shadow: inset 0 1px #dddddd;
+                                    margin: 0;
+
+                                    &:last-child {
+                                        box-shadow: none;
+                                    }
+
+                                    > a {
+                                        display: inline-block;
+                                        width: 100%;
+                                        padding: 12px 10px;
+                                        font-size: 16px;
+                                        height: inherit;
+                                        line-height: inherit;
+                                        color: @gray_medium;
+
+                                        i {
+                                            color: @gray_medium;
+                                            font-size: 16px;
+                                            margin-right: 5px;
+                                            min-width: 16px;
+                                            line-height: inherit;
+                                        }
+
+                                        img {
+                                            height: 16px;
+                                            width: auto;
+                                            min-width: 16px;
+                                            margin-right: 5px;
+                                            margin-bottom: 3px;
+                                            opacity: .8;
+                                        }
+
+                                        span {
+                                            font-family: @Source_Sans_Pro_Regular;
+                                            color: @gray_medium;
+                                            letter-spacing: normal;
+                                            text-transform: none;
+                                        }
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: @gray_light;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .menu-arrow {
+                                position: absolute;
+                                bottom: -6px;
+                                right: 50%;
+                                margin-right: -6px;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 6px 6px 0 6px;
+                                border-color: @gray_bg transparent transparent transparent;
+                            }
+                        }
+                    }
+
+                    .responsive-global-menu {
+                        position: absolute;
+                        bottom: 0;
+                        display: inline-block;
+                        width: 100%;
+                        background: darken(@black, 4%);
+
+                        > a {
+                            display: inline-block;
+                            width: 100%;
+                            height: 60px;
+                            padding: 0 18px;
+                            text-align: center;
+                            color: @gray;
+
+                            img {
+                                height: 60px;
+                                width: auto;
+                                opacity: 0.8;
+                            }
+
+                            span {
+                                display: inline-block;
+                                font-size: 16px;
+                                font-family: @Oswald_Regular;
+                                letter-spacing: .25px;
+                                text-transform: uppercase;
+                                color: @gray;
+                                vertical-align: middle;
+                                margin-top: 2px;
+                            }
+
+                            &:hover, &:focus, &:active {
+                                text-decoration: none;
+                            }
+                        }
+
+                        &:hover {
+                            > a {
+                                img {
+                                    opacity: 1;
+                                }
+
+                                span {
+                                    color: lighten(@gray, 4%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Blue  */
+.uui-header.blue {
+    background: @blue_dark;
+
+    .uui-toggle-box,
+    .responsive-toggle-box {
+        background: @blue;
+    }
+
+    .uui-navigation {
+        > li {
+            > a {
+                .arrow {
+                    color: @white;
+                }
+            }
+
+            &:hover, &:focus, &.open {
+                > a {
+                    background: @blue;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: #a6f1fd;
+
+                    .arrow {
+                        color: #a6f1fd;
+                    }
+                }
+
+                &:hover, &:focus, &.open {
+                    > a {
+                        background: @blue;
+                    }
+                }
+            }
+
+            &.dropdown {
+                &:hover, &:focus, &.open {
+                    > a {
+                        background: @blue;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                background: @blue;
+
+                > li {
+                    &:hover, &:focus, &.open {
+                        > a {
+                            background: darken(@blue_dark, 8%);
+                        }
+                    }
+
+                    &.active {
+                        > a {
+                            background: @blue;
+                            color: #a6f1fd;
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: darken(@blue_dark, 8%);
+                            }
+                        }
+                    }
+
+                    &.dropdown-submenu {
+                        > a {
+                            &:after {
+                                color: @white;
+                            }
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: darken(@blue_dark, 8%);
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: #a6f1fd;
+
+                                &:after {
+                                    color: #a6f1fd;
+                                }
+                            }
+                        }
+
+                        > .dropdown-menu {
+                            background: darken(@blue_dark, 8%);
+
+                            > li {
+                                &:hover, &:focus {
+                                    > a {
+                                        background: @blue_dark;
+                                    }
+                                }
+
+                                &.active {
+                                    > a {
+                                        background: darken(@blue_dark, 8%);
+                                        color: #a6f1fd;
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: @blue_dark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .uui-responsive-header {
+        .responsive-header {
+            background: @blue_dark;
+
+            .responsive-toggle-box {
+                background: @blue;
+            }
+
+            .responsive-hide-menu {
+                background: @blue;
+            }
+        }
+    }
+
+    &.navigation-header {
+        .brand-logo {
+            background: darken(@blue_dark, 8%);
+        }
+    }
+
+    &.sidebar-header {
+        .brand-logo {
+            background: @blue_dark;
+        }
+    }
+}
+
+/*  Gray & Blue  */
+.uui-header.gray-blue {
+    background: @gray_dark;
+
+    .uui-toggle-box,
+    .responsive-toggle-box {
+        background: @blue;
+    }
+
+    .uui-responsive-header {
+        .responsive-header {
+            background: @gray_dark;
+
+            .responsive-toggle-box {
+                background: @blue;
+            }
+
+            .responsive-hide-menu {
+                background: @blue;
+            }
+        }
+    }
+
+    &.navigation-header {
+        .brand-logo {
+            background: @blue;
+        }
+    }
+
+    &.sidebar-header {
+        .brand-logo {
+            background: @gray_dark;
+        }
+    }
+
+    &.breadcrumb-header {
+        .brand-logo {
+            background: @blue;
+
+            &:before {
+                border-color: transparent transparent transparent @blue;
+            }
+        }
+    }
+}
+
+/*  Green  */
+.uui-header.green {
+    background: @green_dark;
+
+    .uui-toggle-box,
+    .responsive-toggle-box {
+        background: @green_lime;
+    }
+
+    .uui-navigation {
+        > li {
+            > a {
+                .arrow {
+                    color: @white;
+                }
+            }
+
+            &:hover, &:focus, &.open {
+                > a {
+                    background: @green_lime;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: #e4ff99;
+
+                    .arrow {
+                        color: #e4ff99;
+                    }
+                }
+
+                &:hover, &:focus, &.open {
+                    > a {
+                        background: @green_lime;
+                    }
+                }
+            }
+
+            &.dropdown {
+                &:hover, &:focus, &.open {
+                    > a {
+                        background: @green_lime;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                background: @green_lime;
+
+                > li {
+                    &:hover, &:focus, &.open {
+                        > a {
+                            background: darken(@green_dark, 8%);
+                        }
+                    }
+
+                    &.active {
+                        > a {
+                            background: @green_lime;
+                            color: #e4ff99;
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: darken(@green_dark, 8%);
+                            }
+                        }
+                    }
+
+                    &.dropdown-submenu {
+                        > a {
+                            &:after {
+                                color: @white;
+                            }
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: darken(@green_dark, 8%);
+
+                                &:after {
+                                    color: @white;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: #e4ff99;
+
+                                &:after {
+                                    color: #e4ff99;
+                                }
+                            }
+                        }
+
+                        > .dropdown-menu {
+                            background: darken(@green_dark, 8%);
+
+                            > li {
+                                &:hover, &:focus {
+                                    > a {
+                                        background: @green_dark;
+                                    }
+                                }
+
+                                &.active {
+                                    > a {
+                                        background: darken(@green_dark, 8%);
+                                        color: #e4ff99;
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: @green_dark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .uui-header-tools {
+        > li {
+            &.uui-global-search {
+                > a {
+                    .uui-search {
+                        border: 1px solid darken(@green_dark, 8%);
+                        background: darken(@green_dark, 8%);
+
+                        &::-webkit-input-placeholder {
+                            color: @green_lime;
+                        }
+
+                        &::-moz-placeholder {
+                            color: @green_lime;
+                        }
+
+                        &:-ms-input-placeholder {
+                            color: @green_lime;
+                        }
+
+                        &:focus {
+                            border: 1px solid @white;
+                            background-color: @white;
+
+                            &::-webkit-input-placeholder {
+                                color: @gray;
+                            }
+
+                            &::-moz-placeholder {
+                                color: @gray;
+                            }
+
+                            &:-ms-input-placeholder {
+                                color: @gray;
+                            }
+                        }
+                    }
+
+                    label {
+                        &:before {
+                            color: @green_lime;
+                        }
+                    }
+                }
+            }
+
+            &.uui-header-button {
+                > a {
+                    &.uui-button {
+                        background: @gray_dark;
+                        border-color: @gray_dark;
+                        color: @white;
+
+                        &:hover, &:focus, &:active {
+                            background: darken(@gray_dark, 8%);
+                            border-color: darken(@gray_dark, 8%);
+                            color: @white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &.open {
+                    > a {
+                        background: @gray_dark;
+                        border-color: @gray_dark;
+                    }
+                }
+            }
+        }
+    }
+
+    .uui-responsive-header {
+        .responsive-header {
+            background: @green_dark;
+
+            .responsive-toggle-box {
+                background: @green_lime;
+            }
+
+            .responsive-hide-menu {
+                background: @green_lime;
+            }
+        }
+
+        .responsive-menu {
+            ul {
+                > li {
+                    &.active {
+                        > a {
+                            span, i {
+                                color: @green_lime;
+                            }
+                        }
+
+                        &:hover, &:focus {
+                            > a {
+                                color: @white;
+
+                                i, span {
+                                    color: @white;
+                                }
+                            }
+                        }
+                    }
+
+                    &.sub-menu {
+                        .sub {
+                            > li {
+                                &.active {
+                                    > a {
+                                        span {
+                                            color: @green_lime;
+                                        }
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            color: @white;
+
+                                            i, span {
+                                                color: @white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.navigation-header {
+        .brand-logo {
+            background: darken(@green_dark, 8%);
+        }
+    }
+
+    &.sidebar-header {
+        nav {
+            .brand-logo {
+                background: @green_dark;
+            }
+
+            .uui-responsive-header {
+                .responsive-menu {
+                    ul {
+                        > li {
+                            &.active {
+                                > a {
+                                    span, i {
+                                        color: @green_lime;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.sub-menu {
+                                .sub {
+                                    > li {
+                                        &.active {
+                                            > a {
+                                                span {
+                                                    color: @green_lime;
+                                                }
+                                            }
+
+                                            &:hover, &:focus {
+                                                > a {
+                                                    color: @white;
+
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Gray & Green  */
+.uui-header.gray-green {
+    background: @gray_dark;
+
+    .uui-toggle-box,
+    .responsive-toggle-box {
+        background: @green_lime;
+    }
+
+    .uui-navigation {
+        > li {
+            &.active {
+                > a {
+                    color: @green_lime;
+
+                    .arrow {
+                        color: @green_lime;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                > li {
+                    &:hover, &:focus, &.open {
+                        > a {
+                            background: @green_dark;
+                        }
+                    }
+
+                    &.active {
+                        > a {
+                            color: @green_lime;
+                        }
+
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: @green_dark;
+                            }
+                        }
+                    }
+
+                    &.dropdown-submenu {
+                        &:hover, &:focus, &.open {
+                            > a {
+                                background: @green_dark;
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: @green_lime;
+
+                                &:after {
+                                    color: @green_lime;
+                                }
+                            }
+                        }
+
+                        > .dropdown-menu {
+                            background: @green_dark;
+
+                            > li {
+                                &:hover, &:focus {
+                                    > a {
+                                        background: @green_lime;
+                                    }
+                                }
+
+                                &.active {
+                                    > a {
+                                        background: @green_dark;
+                                        color: #e4ff99;
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: @green_lime;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .uui-responsive-header {
+        .responsive-header {
+            background: @gray_dark;
+
+            .responsive-toggle-box {
+                background: @green_lime;
+            }
+
+            .responsive-hide-menu {
+                background: @green_lime;
+            }
+        }
+
+        .responsive-menu {
+            ul {
+                > li {
+                    &.active {
+                        > a {
+                            span, i {
+                                color: @green_lime;
+                            }
+                        }
+
+                        &:hover, &:focus {
+                            > a {
+                                color: @white;
+
+                                i, span {
+                                    color: @white;
+                                }
+                            }
+                        }
+                    }
+
+                    &.sub-menu {
+                        .sub {
+                            > li {
+                                &.active {
+                                    > a {
+                                        span {
+                                            color: @green_lime;
+                                        }
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.navogation-header {
+        .brand-logo {
+            background: @green_lime;
+        }
+    }
+
+    &.sidebar-header {
+        nav {
+            .brand-logo {
+                background: @gray_dark;
+            }
+
+            .uui-responsive-header {
+                .responsive-menu {
+                    ul {
+                        > li {
+                            &.active {
+                                > a {
+                                    span, i {
+                                        color: @green_lime;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.sub-menu {
+                                .sub {
+                                    > li {
+                                        &.active {
+                                            > a {
+                                                span {
+                                                    color: @green_lime;
+                                                }
+                                            }
+
+                                            &:hover, &:focus {
+                                                > a {
+                                                    color: @white;
+
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.breadcrumb-header {
+        nav {
+            .brand-logo {
+                background: @green_lime;
+
+                &:before {
+                    border-color: transparent transparent transparent @green_lime;
+                }
+            }
+
+            .uui-navigation {
+                &.breadcrumb-main-nav {
+                    > li {
+                        &.active-nav {
+                            .dropdown-menu {
+                                > li {
+                                    &:hover, &:focus, &.open {
+                                        > a {
+                                            background: @green_dark;
+
+                                            i, span {
+                                                color: @white;
+                                            }
+
+                                            &:after {
+                                                color: @white;
+                                            }
+                                        }
+                                    }
+
+                                    &.active {
+                                        > a {
+                                            i, span {
+                                                color: @green_lime;
+                                            }
+                                        }
+
+                                        &:hover, &:focus {
+                                            > a {
+                                                background: @green_dark;
+
+                                                i, span {
+                                                    color: @white;
+                                                }
+
+                                                &:after {
+                                                    color: @white;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.dropdown-submenu {
+                                        &:hover, &:focus, &.open {
+                                            > a {
+                                                background: @green_dark;
+
+                                                i, span {
+                                                    color: @white;
+                                                }
+
+                                                &:after {
+                                                    color: @white;
+                                                }
+                                            }
+                                        }
+
+                                        &.active {
+                                            > a {
+                                                i, span {
+                                                    color: @green_lime;
+                                                }
+
+                                                &:after {
+                                                    color: @green_lime;
+                                                }
+                                            }
+
+                                            &:hover, &:focus, &.open {
+                                                > a {
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+
+                                                    &:after {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .dropdown-menu {
+                                            background: @green_dark;
+
+                                            > li {
+                                                &:hover, &:focus, &.open {
+                                                    > a {
+                                                        background: @green_lime;
+                                                        color: @white;
+                                                    }
+                                                }
+
+                                                &.active {
+                                                    > a {
+                                                        background: @green_dark;
+                                                        color: #e4ff99;
+                                                    }
+
+                                                    &:hover, &:focus {
+                                                        > a {
+                                                            background: @green_lime;
+                                                            color: @white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.breadcrumb-related-nav {
+                    > li {
+                        &:hover, &:focus {
+                            > a {
+                                color: #e4ff99;
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: #e4ff99;
+                            }
+
+                            &:focus, &.open {
+                                > a {
+                                    color: #e4ff99;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .uui-responsive-header {
+                .responsive-menu {
+                    ul {
+                        > li {
+                            &.active {
+                                > a {
+                                    span, i {
+                                        color: @green_lime;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        i, span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.sub-menu {
+                                .sub {
+                                    > li {
+                                        &.active {
+                                            > a {
+                                                span {
+                                                    color: @green_lime;
+                                                }
+                                            }
+
+                                            &:hover, &:focus {
+                                                > a {
+                                                    color: @white;
+
+                                                    i, span {
+                                                        color: @white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.uui-main-container {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    main {
+        .promo-section {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+
+            .section-wrapper {
+                max-width: 1280px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/* UUI Sidebar menu */
+aside {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    background: fade(@black, 50%);
+
+    .uui-side-bar {
+        position: fixed;
+        left: 0;
+        top: 60px;
+        z-index: 1001;
+        width: 260px;
+        height: 100%;
+        background: @black;
+        display: none;
+
+        .mCSB_inside > .mCSB_container {
+            margin-right: 0;
+        }
+
+        .mCSB_scrollTools {
+            width: 0;
+        }
+
+        ul {
+            margin: 0 0 60px 0;
+
+            > li {
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                list-style: none;
+                box-shadow: inset 0 -1px lighten(@black, 4%);
+
+                > a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0 18px;
+                    color: @white;
+
+                    &:hover, &:focus, &:active {
+                        color: @white;
+                        background: none;
+                        text-decoration: none;
+                    }
+
+                    i {
+                        font-size: 22px;
+                        color: @white;
+                        line-height: 50px;
+                        margin-right: 6px;
+                        min-width: 24px;
+                    }
+
+                    img {
+                        height: 22px;
+                        width: auto;
+                        min-width: 24px;
+                        margin-right: 6px;
+                        margin-bottom: 7px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        font-family: @Oswald_Regular;
+                        letter-spacing: .15px;
+                        color: @white;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                    }
+
+                    .arrow {
+                        float: right;
+                        font-size: 12px;
+                        color: @white;
+                        line-height: 50px;
+                        margin-left: 12px;
+                    }
+                }
+
+                &:hover, &:focus {
+                    > a {
+                        background: @blue_dark;
+                    }
+                }
+
+                &.active {
+                    margin: 0;
+
+                    > a {
+                        color: #3cc2d7;
+
+                        i, span {
+                            color: #3cc2d7;
+                        }
+                    }
+
+                    &:hover, &:focus {
+                        > a {
+                            color: @white;
+
+                            i, span {
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+
+                &.sub-menu {
+                    height: auto;
+
+                    .sub {
+                        margin: 0;
+                        background: darken(@black, 8%);
+                        display: none;
+
+                        > li {
+                            box-shadow: none;
+
+                            > a {
+                                color: @gray_light;
+                                height: auto;
+                                line-height: normal;
+                                padding: 13px 18px 13px 30px;
+
+                                span {
+                                    color: @gray_light;
+                                    text-transform: none;
+                                    font-family: @Oswald_Light;
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    white-space: normal;
+                                    max-width: none;
+                                    letter-spacing: .15px;
+                                }
+                            }
+
+                            &:hover, &:focus {
+                                > a {
+                                    color: @white;
+                                    background: none;
+
+                                    span {
+                                        color: @white;
+                                    }
+                                }
+                            }
+
+                            &.active {
+                                > a {
+                                    color: #3cc2d7;
+                                    background: none;
+
+                                    span {
+                                        color: #3cc2d7;
+                                    }
+                                }
+
+                                &:hover, &:focus {
+                                    > a {
+                                        color: @white;
+
+                                        span {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.open {
+                        > a {
+                            background: darken(@black, 8%);
+
+                            i, span {
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Blue */
+.uui-side-bar.blue {
+    background: @blue;
+
+    ul {
+        > li {
+            box-shadow: inset 0 -1px lighten(@blue, 4%);
+
+            &:hover, &:focus {
+                > a {
+                    background: lighten(@blue_dark, 4%);
+                }
+            }
+
+            &.active {
+                > a {
+                    color: #a6f1fd;
+
+                    i, span {
+                        color: #a6f1fd;
+                    }
+                }
+
+                &:hover, &:focus {
+                    > a {
+                        color: @white;
+
+                        i, span {
+                            color: @white;
+                        }
+                    }
+                }
+            }
+
+            &.sub-menu {
+                .sub {
+                    background: @blue_dark;
+
+                    > li {
+                        > a {
+                            color: #bef2fa;
+
+                            span {
+                                color: #bef2fa;
+                            }
+                        }
+
+                        &:hover, &:focus {
+                            > a {
+                                color: @white;
+
+                                span {
+                                    color: @white;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: @white;
+
+                                span {
+                                    color: @white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.open {
+                    > a {
+                        background: @blue_dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Green */
+.uui-side-bar.green {
+    background: @green_lime;
+
+    ul {
+        > li {
+            box-shadow: inset 0 -1px lighten(@green_lime, 4%);
+
+            &:hover, &:focus {
+                > a {
+                    background: lighten(@green_dark, 4%);
+
+                    i, span {
+                        color: @white;
+                    }
+                }
+            }
+
+            &.active {
+                > a {
+                    color: #e4ff99;
+
+                    i, span {
+                        color: #e4ff99;
+                    }
+                }
+
+                &:hover, &:focus {
+                    > a {
+                        color: @white;
+
+                        i, span {
+                            color: @white;
+                        }
+                    }
+                }
+            }
+
+            &.sub-menu {
+                .sub {
+                    background: @green_dark;
+
+                    > li {
+                        > a {
+                            color: #dff999;
+
+                            span {
+                                color: #dff999;
+                            }
+                        }
+
+                        &:hover, &:focus {
+                            > a {
+                                color: @white;
+
+                                span {
+                                    color: @white;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: @white;
+
+                                span {
+                                    color: @white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.open {
+                    > a {
+                        background: @green_dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Gray & Green */
+.uui-side-bar.gray-green {
+    ul {
+        > li {
+            &:hover, &:focus {
+                > a {
+                    background: @green_dark;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: @green_lime;
+
+                    i, span {
+                        color: @green_lime;
+                    }
+                }
+
+                &:hover, &:focus {
+                    > a {
+                        color: @white;
+
+                        i, span {
+                            color: @white;
+                        }
+                    }
+                }
+            }
+
+            &.sub-menu {
+                .sub {
+                    > li {
+                        &:hover, &:focus {
+                            > a {
+                                color: @white;
+
+                                span {
+                                    color: @white;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            > a {
+                                color: @green_lime;
+
+                                span {
+                                    color: @green_lime;
+                                }
+                            }
+
+                            &:hover, &:focus {
+                                > a {
+                                    color: @white;
+
+                                    span {
+                                        color: @white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.open {
+                    > a {
+                        background: darken(@black, 8%);
+
+                        i, span {
+                            color: @white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1000;
+
+    .uui-footer {
+        display: table;
+        table-layout: fixed;
+        height: 60px;
+        width: 100%;
+        vertical-align: middle;
+        background: @gray_dark;
+        padding: 0 20px;
+
+        .footer-logo-copyright,
+        .footer-build {
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+        }
+
+        .footer-logo-copyright {
+            text-align: left;
+        }
+
+        .footer-build {
+            text-align: right;
+
+            .build {
+                display: inline-block;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: @gray;
+                margin: 0;
+            }
+        }
+    }
+
+    .epam-logo {
+        display: inline-block;
+        width: auto;
+        height: 32px;
+        margin: 2px 10px 0 0;
+
+        img {
+            width: auto;
+            height: 32px;
+        }
+    }
+
+    .copyright {
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: @gray;
+        margin: 0;
+    }
+
+    .uui-promo-footer {
+        display: table;
+        table-layout: fixed;
+        height: 60px;
+        width: 100%;
+        background: @gray_dark;
+        padding: 0 20px;
+
+        .footer-logo-copyright,
+        .footer-navigation,
+        .footer-icon-navigation {
+            display: table-cell;
+            width: 33.3%;
+            vertical-align: middle;
+        }
+
+        .footer-logo-copyright {
+            text-align: left;
+        }
+
+        .footer-navigation {
+            text-align: center;
+        }
+
+        .footer-icon-navigation {
+            text-align: right;
+        }
+
+        .uui-footer-navigation {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: @gray;
+                margin: 2px 9px;
+
+                > a {
+                    font-size: 14px;
+                    color: @gray;
+
+                    i {
+                        font-size: 18px;
+                        color: @gray;
+                    }
+
+                    &:hover, &:active, &:focus {
+                        text-decoration: none;
+                        color: @white;
+
+                        i {
+                            color: @white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .uui-main-container {
+        padding-bottom: 158px;
+    }
+
+    footer {
+        margin-top: -158px;
+        display: table;
+
+        .epam-logo {
+            margin: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            margin: 10px 0px;
+        }
+
+        .uui-footer {
+            display: table-cell;
+            height: 158px;
+            padding: 15px 20px;
+            vertical-align: middle;
+
+            .footer-logo-copyright,
+            .footer-build {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+
+                .build {
+                    width: 100%;
+                }
+            }
+        }
+
+        .uui-promo-footer {
+            display: table-cell;
+            height: 158px;
+            padding: 15px 20px;
+            vertical-align: middle;
+
+            .footer-logo-copyright,
+            .footer-navigation,
+            .footer-icon-navigation {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+
+                .icon-navigation {
+                    margin-top: 10px;
+                }
+            }
+
+            .uui-footer-navigation {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        .uui-header {
+            .uui-responsive-header {
+                display: block;
+            }
+
+            .brand-logo,
+            .uui-navigation,
+            .uui-header-tools {
+                display: none;
+            }
+        }
+    }
+
+    .uui-main-container {
+        margin-left: 0 !important;
+    }
+
+    aside {
+        width: auto;
+
+        .uui-side-bar {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        .copyright {
+            margin: 5px 0;
+        }
+
+        .uui-footer,
+        .uui-promo-footer {
+            padding: 10px;
+
+            .footer-icon-navigation {
+                .icon-navigation {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

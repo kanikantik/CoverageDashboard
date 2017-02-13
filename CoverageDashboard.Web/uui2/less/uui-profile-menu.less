@@ -1,0 +1,56 @@
+﻿@import 'uui-colors.less';
+
+header {
+    .uui-header {
+        .uui-header-tools {
+            > li {
+                &.uui-profile-menu {
+                    > a {
+                        .profile-photo {
+                            float: left;
+                            width: 34px;
+                            height: 34px;
+                            margin-top: 13px;
+                            overflow: hidden;
+                            border-radius: 50%;
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+
+                    .dropdown-menu {
+                        .profile-links {
+                            > li {
+                                &.logout {
+                                    > a {
+                                        background: @raspberry;
+                                        color: @white;
+
+                                        i {
+                                            color: @white;
+                                        }
+                                    }
+
+                                    &:hover, &:focus {
+                                        > a {
+                                            background: @plum;
+                                            color: @white;
+                                        }
+
+                                        i {
+                                            color: @white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

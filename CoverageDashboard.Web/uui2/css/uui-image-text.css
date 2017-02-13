@@ -1,0 +1,103 @@
+/* Basic - Primary */
+/* Basic - Secondary */
+/* Additionally */
+.uui-image-text {
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  overflow: hidden;
+}
+.uui-image-text .image-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.uui-image-text .image-text-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #ffffff;
+}
+/* PRIMARY COLORS */
+/*  Blue  */
+.uui-image-text.blue .image-text-section {
+  background-color: rgba(57, 194, 215, 0.85);
+}
+/*  Lime Green  */
+.uui-image-text.lime-green .image-text-section {
+  background-color: rgba(163, 198, 68, 0.85);
+}
+/*  Dark Gray  */
+.uui-image-text.dark-gray .image-text-section {
+  background-color: rgba(70, 69, 71, 0.85);
+}
+/* White */
+.uui-image-text.white .image-text-section {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #464547;
+}
+/* SECONDARY COLORS */
+/*  Raspberry  */
+.uui-image-text.raspberry .image-text-section {
+  background-color: rgba(178, 39, 70, 0.85);
+}
+/*  Plum  */
+.uui-image-text.plum .image-text-section {
+  background-color: rgba(142, 36, 77, 0.85);
+}
+/*  Dark Blue  */
+.uui-image-text.dark-blue .image-text-section {
+  background-color: rgba(26, 156, 176, 0.85);
+}
+/*  Dark Green  */
+.uui-image-text.dark-green .image-text-section {
+  background-color: rgba(127, 153, 58, 0.85);
+}
+/*  Medium Gray  */
+.uui-image-text.medium-gray .image-text-section {
+  background-color: rgba(102, 102, 102, 0.85);
+}
+/*  Light Gray  */
+.uui-image-text.gray .image-text-section {
+  background-color: rgba(153, 153, 153, 0.85);
+}
+/*  Gray  */
+.uui-image-text.light-gray .image-text-section {
+  background-color: rgba(204, 204, 204, 0.85);
+}
+/* ADDITIONAL COLORS */
+/*  Yellow  */
+.uui-image-text.yellow .image-text-section {
+  background-color: rgba(255, 220, 25, 0.85);
+  color: #464547;
+}
+/*  Orange  */
+.uui-image-text.orange .image-text-section {
+  background-color: rgba(255, 155, 25, 0.85);
+}
+/*  Red  */
+.uui-image-text.red .image-text-section {
+  background-color: rgba(203, 35, 35, 0.85);
+}
+/*  Fuchsia  */
+.uui-image-text.fuchsia .image-text-section {
+  background-color: rgba(228, 68, 95, 0.85);
+}
+/*  Black  */
+.uui-image-text.black .image-text-section {
+  background-color: rgba(51, 51, 51, 0.85);
+}
+/*  Violet  */
+.uui-image-text.violet .image-text-section {
+  background-color: rgba(139, 90, 159, 0.85);
+}

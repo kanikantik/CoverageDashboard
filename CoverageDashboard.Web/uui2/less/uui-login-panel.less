@@ -1,0 +1,128 @@
+﻿@import 'uui-colors.less';
+@import 'uui-fonts.less';
+
+.uui-login-panel {
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 12px;
+
+    .login-panel-body {
+        display: table;
+        width: 100%;
+
+        .login-panel-section {
+            display: table-cell;
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+            padding: 12px 0;
+
+            .section-title {
+                font-size: 14px;
+                color: @gray_light;
+                margin-bottom: 26px;
+            }
+
+            .social-icons {
+                padding: 6px 0;
+
+                button {
+                    font-size: 24px;
+                    font-family: 'FontAwesome';
+                    color: @gray_light;
+                    height: auto;
+                    margin: 0 14px;
+                    padding: 0;
+                    border: none;
+
+                    &:first-child {
+                        margin: 0 14px 0 0;
+                    }
+
+                    &:last-child {
+                        margin: 0 0 0 14px;
+                    }
+
+                    &:hover {
+                        &.fa-google-plus {
+                            color: #d64136;
+                        }
+
+                        &.fa-twitter {
+                            color: #69cfec;
+                        }
+
+                        &.fa-linkedin {
+                            color: #0085af;
+                        }
+
+                        &.fa-vk {
+                            color: #336cc5;
+                        }
+
+                        &.fa-facebook {
+                            color: #05207f;
+                        }
+
+                        &.fa-github-alt {
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+
+            .login-separator {
+                display: table;
+                width: 100%;
+                padding: 18px 0 12px 0;
+
+                .border {
+                    display: table-cell;
+                    width: 45%;
+                    vertical-align: middle;
+                    text-align: center;
+
+                    span {
+                        display: inline-block;
+                        height: 1px;
+                        width: 100%;
+                        background: @gray_light;
+                        position: relative;
+                        top: -4px;
+                    }
+                }
+
+                .text {
+                    display: table-cell;
+                    width: 10%;
+                    padding: 0 20px;
+                    vertical-align: middle;
+                    text-align: center;
+
+                    span {
+                        font-family: @Oswald_Light;
+                        letter-spacing: .25px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: @gray_light;
+                    }
+                }
+            }
+
+            .epam-login {
+                padding: 14px 0 0 0;
+
+                button {
+                    width: 100%;
+
+                    i {
+                        vertical-align: top;
+                        font-size: 24px;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

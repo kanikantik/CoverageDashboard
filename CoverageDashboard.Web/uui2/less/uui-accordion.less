@@ -1,0 +1,65 @@
+﻿@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+.uui-accordion {
+    .panel.accordion-item {
+        border-radius: 0;
+        margin: 0 0 5px 0;
+        padding: 0;
+        box-shadow: none;
+        border: 1px solid @gray_light;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .accordion-heading {
+            background: @white;
+            border: none;
+
+            .accordion-title {
+                margin: 0;
+
+                .accordion-toggle {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 14px 15px;
+                    font-family: @Source_Sans_Pro_Regular;
+                    font-size: 16px;
+                    color: @gray_medium;   
+                    text-decoration: none;        
+                }
+            }
+        }
+
+        .accordion-collapse {
+            background: @white;
+
+            .accordion-body {
+                border: none;
+                padding: 3px 15px 15px 15px;
+                color: @gray;
+                font-size: 14px;
+                font-family: @Source_Sans_Pro_Regular;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &.cards-accordion {
+        .panel.accordion-item {
+            border: none;
+            box-shadow: 0 1px 3px 0 rgba(51, 51, 51, 0.2);
+
+            .accordion-heading {
+                border: none;
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    border: none;
+                }
+            }
+        }
+    }
+}

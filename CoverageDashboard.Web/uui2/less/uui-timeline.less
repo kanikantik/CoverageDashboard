@@ -1,0 +1,1159 @@
+﻿@import 'uui-icons.less';
+@import 'uui-colors.less';
+@import 'uui-fonts.less';
+
+.uui-timeline {
+    position: relative;
+
+    .date-wrapper {
+        .line {
+            padding-bottom: 24px;
+            border-left: 1px solid #e5e5e5;
+            margin: 0 0 0 24px;
+            position: relative;
+
+            .date {
+                padding-left: 20px;
+                position: relative;
+                text-transform: uppercase;
+                margin-bottom: 0;
+
+                span {
+                    position: relative;
+                    color: @gray_light;
+                    font-size: 16px;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    height: 13px;
+                    width: 13px;
+                    border-radius: 50%;
+                    background-color: @gray_light;
+                    left: -7px;
+                    top: 3px;
+                }
+            }
+        }
+
+        &:first-child {
+            .line {
+                .date {
+                    span {
+                        top: -3px;
+                    }
+
+                    &:after {
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            .line {
+                padding-bottom: 0;
+
+                .date {
+                    span {
+                        top: 3px;
+                    }
+
+                    &:after {
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .timeline-wrapper {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+
+        .timeline-body {
+            display: table;
+            width: 100%;
+            margin: 0;
+
+            .line {
+                position: relative;
+                padding-bottom: 24px;
+                border-left: 1px solid #e5e5e5;
+                margin: 0 0 0 24px;
+
+                .item-wrapper {
+                    margin: 0 0 0 -24px;
+
+                    .timeline-section {
+                        display: table-cell;
+                        vertical-align: top;
+
+                        &.icon {
+                            position: relative;
+                            width: 40px;
+                            padding: 0 12px 0 0;
+
+                            .timeline-icon {
+                                .uui-icon (static, auto, auto, auto, auto, auto, left);
+                                width: 48px;
+                                height: 48px;
+                                line-height: 46px;
+
+                                &.transparent {
+                                    background: @white !important;
+                                }
+
+                                i {
+                                    font-size: 16px;
+                                    line-height: inherit;
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                position: relative;
+                                display: inline-block;
+                                float: left;
+                                padding: 14px 16px;
+                                background: @white;
+                                box-shadow: 0px 1px 3px 1px fade(black, 10%);
+                                min-width: 100px;
+                                min-height: 50px;
+
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    width: 0;
+                                    height: 0;
+                                    top: 16px;
+                                    left: -8px;
+                                    border-top: 8px solid transparent;
+                                    border-right: 8px solid fade(@gray_medium, 10%);
+                                    border-bottom: 8px solid transparent;
+                                }
+
+                                &:after {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    width: 0;
+                                    height: 0;
+                                    top: 18px;
+                                    left: -6px;
+                                    border-top: 6px solid transparent;
+                                    border-right: 6px solid @white;
+                                    border-bottom: 6px solid transparent;
+                                }
+
+                                .title {
+                                    font-size: 14px;
+                                    text-transform: uppercase;
+                                    font-family: @Source_Sans_Pro_Bold;
+                                    color: @black;
+                                    margin-bottom: 4px;
+                                }
+
+                                .time {
+                                    font-size: 14px;
+                                    margin: 0;
+                                    color: @blue;
+
+                                    i {
+                                        font-size: 16px;
+                                        padding: 0 10px 0 0;
+                                    }
+
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                .message {
+                                    color: @gray_medium;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        float: left;
+        width: 100%;
+        overflow: auto;
+
+        .timeline-content {
+            float: left;
+            width: 10000px;
+        }
+
+        .date-wrapper {
+            position: relative;
+            float: left;
+            height: 400px;
+            width: 246px;
+
+            &:first-child {
+                .line {
+                    padding-left: 0;
+                    left: 50%;
+
+                    .date {
+                        right: 50%;
+                    }
+                }
+            }
+
+            &:last-child {
+                .line {
+                    padding-right: 0;
+                    right: 50%;
+
+                    .date {
+                        left: 50%;
+                    }
+                }
+            }
+
+            .line {
+                position: absolute;
+                padding: 0 18px;
+                margin: 0;
+                border-left: none;
+                height: 50%;
+                width: 100%;
+                border-bottom: 1px solid #cccccc;
+                margin-bottom: -1px;
+                bottom: 50%;
+
+                .date {
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 0;
+                    text-align: center;
+
+                    span {
+                        display: inline-block;
+                        top: 50%;
+                        margin-top: 60px;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        height: 13px;
+                        width: 13px;
+                        border-radius: 50%;
+                        background-color: @gray_light;
+                        left: 50%;
+                        margin-left: -6px;
+                        top: 100%;
+                        margin-top: -6px;
+                    }
+                }
+            }
+        }
+
+        .timeline-wrapper {
+            position: relative;
+            z-index: 1;
+            float: left;
+            height: 400px;
+            width: auto;
+
+            .timeline-body {
+                position: relative;
+                width: 270px;
+                float: left;
+                height: 100%;
+                margin: 0 -78px 0 0 !important;
+
+                &:last-child {
+                    margin: 0 !important;
+                }
+
+                .line {
+                    position: absolute;
+                    float: left;
+                    height: 50%;
+                    width: 100%;
+                    padding: 0 12px;
+                    margin-left: 0;
+                    border-left: none;
+
+                    .item-wrapper {
+                        position: absolute;
+                        width: 246px;
+                        float: left;
+                        margin: 0;
+
+                        .date {
+                            position: absolute;
+                            left: 70px;
+                            width: 160px;
+                            text-align: center;
+                            font-size: 16px;
+                            color: @gray_light;
+                        }
+
+                        .timeline-section {
+                            float: left;
+                            width: 100%;
+                            padding: 0;
+
+                            &.icon {
+                                padding: 0 99px;
+                            }
+
+                            &.desk {
+                                .timeline-desk {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.top {
+                    .line {
+                        border-bottom: 1px solid @gray_light;
+                        margin-bottom: -1px;
+                        bottom: 50%;
+
+                        .item-wrapper {
+                            margin-bottom: -24px;
+                            bottom: 0;
+
+                            .timeline-section {
+                                &.icon {
+                                    padding-top: 12px;
+                                }
+
+                                &.desk {
+                                    .timeline-desk {
+                                        &:before {
+                                            bottom: -16px;
+                                            top: auto;
+                                            left: 50%;
+                                            margin-left: -8px;
+                                            border-top: 8px solid fade(@gray_medium, 10%);
+                                            border-left: 8px solid transparent;
+                                            border-right: 8px solid transparent;
+                                        }
+
+                                        &:after {
+                                            top: 100%;
+                                            left: 50%;
+                                            margin-left: -6px;
+                                            border-top: 6px solid @white;
+                                            border-left: 6px solid transparent;
+                                            border-right: 6px solid transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        border-top: 1px solid @gray_light;
+                        top: 50%;
+
+                        .item-wrapper {
+                            margin-top: -26px;
+                            top: 0;
+
+                            .timeline-section {
+                                &.icon {
+                                    padding-bottom: 12px;
+                                }
+
+                                &.desk {
+                                    .timeline-desk {
+                                        &:before {
+                                            top: -16px;
+                                            left: 50%;
+                                            margin-left: -8px;
+                                            border-bottom: 8px solid fade(@gray_medium, 10%);
+                                            border-left: 8px solid transparent;
+                                            border-right: 8px solid transparent;
+                                        }
+
+                                        &:after {
+                                            top: -12px;
+                                            left: 50%;
+                                            margin-left: -6px;
+                                            border-bottom: 6px solid @white;
+                                            border-left: 6px solid transparent;
+                                            border-right: 6px solid transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Blue  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.blue {
+                                background: @blue;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                                &:after {
+                                    border-right-color: @blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.blue {
+                                        &:after {
+                                            border-top-color: @blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.blue {
+                                        &:after {
+                                            border-bottom-color: @blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Lime Green  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.lime-green {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @green_lime;
+                                background: @green_lime;
+
+                                &.transparent {
+                                    border-color: @green_lime;
+                                    background: @white;
+
+                                    i {
+                                        color: @green_lime;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @green_lime;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.lime-green {
+                                background: @green_lime;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                               &:after {
+                                    border-right-color: @green_lime;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.lime-green {
+                                        &:after {
+                                            border-top-color: @green_lime;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.lime-green {
+                                        &:after {
+                                            border-bottom-color: @green_lime;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Dark Gray  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.dark-gray {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @gray_dark;
+                                background: @gray_dark;
+
+                                &.transparent {
+                                    border-color: @gray_dark;
+                                    background: @white;
+
+                                    i {
+                                        color: @gray_dark;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @gray_dark;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.dark-gray {
+                                background: @gray_dark;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                                &:after {
+                                    border-right-color: @gray_dark;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.dark-gray {
+                                        &:after {
+                                            border-top-color: @gray_dark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.dark-gray {
+                                        &:after {
+                                            border-bottom-color: @gray_dark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Medium Gray  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.medium-gray {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @gray_medium;
+                                background: @gray_medium;
+
+                                &.transparent {
+                                    border-color: @gray_medium;
+                                    background: @white;
+
+                                    i {
+                                        color: @gray_medium;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @gray_medium;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.medium-gray {
+                                background: @gray_medium;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                                &:after {
+                                    border-right-color: @gray_medium;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.medium-gray {
+                                        &:after {
+                                            border-top-color: @gray_medium;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.medium-gray {
+                                        &:after {
+                                            border-bottom-color: @gray_medium;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Yellow  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.yellow {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @yellow;
+                                background: @yellow;
+
+                                i {
+                                    color: @gray_dark;
+                                }
+
+                                &.transparent {
+                                    border-color: @yellow;
+                                    background: @white;
+
+                                    i {
+                                        color: @gray_dark;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.yellow {
+                                background: @yellow;
+
+                                .title, .message, .time {
+                                    color: @gray_dark;
+                                }
+
+                                &:after {
+                                    border-right-color: @yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.yellow {
+                                        &:after {
+                                            border-top-color: @yellow;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.yellow {
+                                        &:after {
+                                            border-bottom-color: @yellow;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Orange  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.orange {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @orange;
+                                background: @orange;
+
+                                &.transparent {
+                                    border-color: @orange;
+                                    background: @white;
+
+                                    i {
+                                        color: @orange;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.orange {
+                                background: @orange;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                                &:after {
+                                    border-right-color: @orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.orange {
+                                        &:after {
+                                            border-top-color: @orange;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.orange {
+                                        &:after {
+                                            border-bottom-color: @orange;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Fuchsia  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.fuchsia {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @fuchsia;
+                                background: @fuchsia;
+
+                                &.transparent {
+                                    border-color: @fuchsia;
+                                    background: @white;
+
+                                    i {
+                                        color: @fuchsia;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @fuchsia;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.fuchsia {
+                                background: @fuchsia;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                                &:after {
+                                    border-right-color: @fuchsia;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.fuchsia {
+                                       &:after {
+                                            border-top-color: @fuchsia;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.fuchsia {
+                                        &:after {
+                                            border-bottom-color: @fuchsia;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Violet  */
+.uui-timeline {
+    .timeline-wrapper {
+        .timeline-body.violet {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.icon {
+                            .timeline-icon {
+                                border-color: @violet;
+                                background: @violet;
+
+                                &.transparent {
+                                    border-color: @violet;
+                                    background: @white;
+
+                                    i {
+                                        color: @violet;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.desk {
+                            .timeline-desk {
+                                .time {
+                                    color: @violet;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .timeline-body {
+            .line {
+                .item-wrapper {
+                    .timeline-section {
+                        &.desk {
+                            .timeline-desk.violet {
+                                background: @violet;
+
+                                .title, .message, .time {
+                                    color: @white;
+                                }
+
+                                &:after {
+                                    border-right-color: @violet;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horisontal {
+        .timeline-wrapper {
+            .timeline-body {
+                &.top {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.violet {
+                                        &:after {
+                                            border-top-color: @violet;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bottom {
+                    .line {
+                        .item-wrapper {
+                            .timeline-section {
+                                &.desk {
+                                    .timeline-desk.violet {
+                                        &:after {
+                                            border-bottom-color: @violet;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

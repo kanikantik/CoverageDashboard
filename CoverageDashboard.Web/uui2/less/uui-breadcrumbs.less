@@ -1,0 +1,46 @@
+@import 'uui-fonts.less';
+@import 'uui-colors.less';
+
+.uui-breadcrumbs {
+    list-style: none;
+    padding: 8px 15px;
+    margin: 0;
+
+    > li {
+        display: inline-block;
+
+        + li:before {
+            padding: 0 5px;
+            color: @gray_medium;
+            content: "/\00a0";
+        }
+
+        a {
+            color: @blue_dark;
+            text-decoration: none;
+
+            &:hover {
+                color: @blue_dark;
+                text-decoration: underline;
+            }
+        }
+
+        i {
+            font-size: 14px;
+            padding: 0 3px 0 0;
+            color: @blue_dark;
+
+            &.active {
+                color: @gray_medium;
+            }
+        }
+
+        &.active {
+            a {
+                color: @gray_medium;
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+    }
+}

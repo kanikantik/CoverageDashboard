@@ -1,4 +1,5 @@
 using System;
+using CoverageDashboard.Core.Dependency;
 
 namespace CoverageDashboard.Dependency
 {

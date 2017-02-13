@@ -1,0 +1,30 @@
+{
+  "globals": {
+    "$": false,
+    "jQuery": false,
+    "console": false,
+    "jasmine": false,
+    "describe": false,
+    "it": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "spyOn": false,
+    "runs": false,
+    "waitsFor": false,
+    "loadFixtures": false,
+    "expect": false,
+    "UUI": true
+  },
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "browser": true,
+  "forin": true,
+  "freeze": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "undef": true,
+  "unused": true,
+  "strict": true
+}

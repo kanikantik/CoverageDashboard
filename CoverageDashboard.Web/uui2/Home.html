@@ -1,0 +1,1024 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>EPAM UUI</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="/images/icons/favicon.ico" />
+    <!-- Highlight Styles -->
+    <link rel="stylesheet" href="/highlight/styles/github.css" />
+    <!-- Bootstrap Core Styles -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <!-- jQuery-UI Core Styles -->
+    <link rel="stylesheet" href="/jquery-ui/jquery-ui.min.css" />
+    <!-- Font Awesome Styles -->
+    <link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css" />
+    <!-- Scrollbar Styles -->
+    <link rel="stylesheet" href="/css/lib/components/jquery.mCustomScrollbar.min.css" />
+    <!-- Data Tables Styles -->
+    <link rel="stylesheet" href="/js/lib/components/DataTables-1.10.2/css/jquery.dataTables.min.css" />
+    <!-- C3 charts styles -->
+    <link rel="stylesheet" href="/js/lib/components/c3-0.4.2/c3.min.css" />
+    <!-- Bootstrap Components Styles-->
+    <link rel="stylesheet" href="/css/lib/components/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="/css/lib/components/jasny-bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/lib/components/datepicker3.css" />
+    <link rel="stylesheet" href="/css/lib/components/timepicker.min.css" />
+    <link rel="stylesheet" href="/css/lib/components/bootstrap-switch.min.css" />
+    <!-- Tour -->
+    <link rel="stylesheet" href="/css/lib/components/foundation.css" />
+    <!-- Tag It -->
+    <link rel="stylesheet" href="/css/lib/components/jquery.tagit.css" />
+    <link rel="stylesheet" href="/css/lib/components/tagit.ui-zendesk.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/custom-styles.min.css?v=1.1.3.2" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="uui-header sidebar-header">
+                <nav>
+                    <div class="uui-responsive-header">
+                        <div class="responsive-header">
+                            <div class="responsive-toggle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="responsive-hide-menu">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <a href="#" class="responsive-brand-logo">
+                                <span class="arrow fa fa-angle-left"></span>
+                                <span class="logo"><img src="/images/ic_logo_UUi.svg" alt="" height="34" /></span>
+                                <span class="title">Unified UI</span>
+                            </a>
+                            <ul class="responsive-header-tools nav navbar-nav">
+                                <li class="responsive-header-icon search-icon">
+                                    <a href="#" onclick="return false">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="responsive-menu">
+                            <div class="menu-wrapper">
+                                <div class="menu-scroll">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="/dashboard">
+                                                <i class="fa fa-home"></i>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/getting-started">
+                                                <i class="fa fa-rocket"></i>
+                                                <span>Getting Started</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu">
+                                            <a href="">
+                                                <i class="fa fa-cogs"></i>
+                                                <span>UI Elements</span>
+                                                <div class="arrow fa fa-angle-right"></div>
+                                            </a>
+                                            <ul class="sub">
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/buttons/basic-buttons">
+                                                        <span>Basic Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/buttons/buttons-group">
+                                                        <span>Buttons Group</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/buttons/dropdown-buttons">
+                                                        <span>Dropdown Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/buttons/icon-buttons">
+                                                        <span>Icon Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Controls</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/autocomplete">
+                                                        <span>Autocomplete</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/checkboxes">
+                                                        <span>Checkboxes</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/drop-downs">
+                                                        <span>Drop-downs</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/multiswitch">
+                                                        <span>Multiswitch</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/labels">
+                                                        <span>Labels</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/radio-buttons">
+                                                        <span>Radio Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/sliders">
+                                                        <span>Sliders</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/star-rating">
+                                                        <span>Star Rating</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/switch">
+                                                        <span>Switch</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/tag-it">
+                                                        <span>Tag It</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/controls/text-fields">
+                                                        <span>Text Fields</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Containers</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/containers/accordion">
+                                                        <span>Accordion</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/containers/items-lists">
+                                                        <span>Items Lists</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>File Uploaders</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/file-uploaders/basic-file-uploader">
+                                                        <span>Basic File Uploader</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Footers</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/footers/basic-footer">
+                                                        <span>Basic Footer</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/footers/promo-footer">
+                                                        <span>Promo Footer</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Headers</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/basic-header">
+                                                        <span>Basic Header</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/basic-navigation">
+                                                        <span>Basic Navigation</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/breadcrumb-navigation">
+                                                        <span>Breadcrumb Navigation</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/sidebar">
+                                                        <span>Sidebar</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/header-buttons">
+                                                        <span>Header Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/header-icons">
+                                                        <span>Header Icons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/global-menu">
+                                                        <span>Global Menu</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/global-search">
+                                                        <span>Global Search</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/headers/profile-menu">
+                                                        <span>Profile Menu</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Icons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/icons/font-awesome">
+                                                        <span>Font Awesome</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/icons/shaped-icons">
+                                                        <span>Shaped Icons</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Infographics</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/infographics/charts">
+                                                        <span>Charts</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Media</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/media/carousel">
+                                                        <span>Carousel</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/media/loaders">
+                                                        <span>Loaders</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/media/progress-bars">
+                                                        <span>Progress Bar</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/media/time-lines">
+                                                        <span>Time Lines</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Navigation</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/navigation/breadcrumbs">
+                                                        <span>Breadcrumbs</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/navigation/pagination">
+                                                        <span>Pagination</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/navigation/tabs">
+                                                        <span>Tabs</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Panels</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/panels/animated-image-panels">
+                                                        <span>Animated Image Panels</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/panels/image-text-panel">
+                                                        <span>Image Text Panels</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/panels/information-panels">
+                                                        <span>Information Panels</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/panels/login-panel">
+                                                        <span>Login Panels</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/panels/personal-profiles">
+                                                        <span>Personal Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Popups</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/popups/alert">
+                                                        <span>Alert</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/popups/modal">
+                                                        <span>Modal</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Tables</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/tables/basic-tables">
+                                                        <span>Basic Tables</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/tables/dynamic-tables">
+                                                        <span>Dynamic Tables</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/tables/treegrid-tables">
+                                                        <span>Treegrid Tables</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group" onclick="return false">
+                                                    <a href="">
+                                                        <span>Time & Date Picker</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/time-and-date-picker/timepicker">
+                                                        <span>Timepicker</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/time-and-date-picker/datepicker">
+                                                        <span>Datepicker</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group" onclick="return false">
+                                                    <a href="#">
+                                                        <span>Tooltips & Popovers</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/tooltips-and-popovers/tooltips">
+                                                        <span>Tooltips</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/tooltips-and-popovers/popovers">
+                                                        <span>Popovers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>Typography</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/typography/inline-elements">
+                                                        <span>Inline Elements</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/typography/show-text">
+                                                        <span>Show Text</span>
+                                                    </a>
+                                                </li>
+                                                <li class="title-group">
+                                                    <a href="" onclick="return false">
+                                                        <span>WYSIWYG</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ui-elements/wysiwyg/tiny-mce">
+                                                        <span>TinyMCE</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/fonts">
+                                                <i class="fa fa-font"></i>
+                                                <span>Fonts</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/colors">
+                                                <i class="fa fa-eyedropper"></i>
+                                                <span>Colors</span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu">
+                                            <a href="">
+                                                <i class="fa fa-file-text-o"></i>
+                                                <span>Documentation</span>
+                                                <div class="arrow fa fa-angle-right"></div>
+                                            </a>
+                                            <ul class="sub">
+                                                <li>
+                                                    <a href="/documentation/my-ui-elements">
+                                                        <span>My UI Elements</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="responsive-global-menu epam-global-menu" id="global_menu_toggle_responsive">
+                                    <a href="#" onclick="return false;">
+                                        <img src="https://menu.epam.com/content/images/menu_button.svg" alt="" onerror="document.getElementById('global_menu_toggle_responsive').style.display = 'none';" />
+                                        <span>EPAM APPS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsive-global-search">
+                            <div class="search-header">
+                                <div class="header-wrapper">
+                                    <div class="search-field">
+                                        <label></label>
+                                        <input type="search" class="uui-search" placeholder="Search" maxlength="100" />
+                                    </div>
+                                    <div class="hide-search">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-list">
+                                <div class="list-wrapper">
+                                    <div class="all-results">
+                                        <a href="#">107 results found. View all.</a>
+                                    </div>
+                                    <div class="menu-scroll">
+                                        <ul class="search-links">
+                                            <li class="no-results">
+                                                <div class="no-results-content">
+                                                    <img src="images/icons/no-results-responsive.png" alt="" />
+                                                    <h4>Whoops</h4>
+                                                    <p>No results found</p>
+                                                </div>
+                                                <div class="no-results-footer">
+                                                    <a href="#"><i class="fa fa-angle-left"></i>Back to ...</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uui-toggle-box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="/" class="brand-logo">
+                        <span class="logo"><img src="images/ic_logo_UUi.svg" alt="" height="34" /></span>
+                        Unified UI
+                    </a>
+                    <ul class="uui-header-tools nav navbar-nav">
+                        <li class="dropdown uui-global-search">
+                            <div class="search-field">
+                                <label></label>
+                                <input type="search" class="uui-search" placeholder="Search" maxlength="100" />
+                            </div>
+                            <div class="dropdown-menu search-container" role="menu">
+                                <span class="menu-arrow"></span>
+                                <div class="menu-scroll">
+                                    <ul class="search-links">
+                                        <li class="no-results">
+                                            <img src="/images/icons/no-results.png" alt="" />
+                                            <h4>Whoops</h4>
+                                            <p>No results found</p>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="return false;">
+                                                <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                <p class="description">Lorem ipsum dolor sit amet.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="all-results">
+                                    <a href="#">107 results found. View all.</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown uui-profile-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <div class="profile-photo">
+                                    <img src="https://static.cdn.epam.com/avatar/0bababb808b39740743a85a3321300e5.jpg" alt="" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="global-menu epam-global-menu" id="global_menu_toggle_desktop">
+                            <img src="https://menu.epam.com/content/images/menu_button.svg" alt="" onerror="document.getElementById('global_menu_toggle_desktop').style.display = 'none';" />
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <aside>
+            <div class="uui-side-bar" data-animate>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="/dashboard">
+                            <i class="fa fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/getting-started">
+                            <i class="fa fa-rocket"></i>
+                            <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="">
+                            <i class="fa fa-cogs"></i>
+                            <span>UI Elements</span>
+                            <div class="fa fa-angle-right arrow"></div>
+                        </a>
+                        <ul class="sub">
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Buttons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/buttons/basic-buttons">
+                                    <span>Basic Buttons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/buttons/buttons-group">
+                                    <span>Buttons Group</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/buttons/dropdown-buttons">
+                                    <span>Dropdown Buttons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/buttons/icon-buttons">
+                                    <span>Icon Buttons</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Controls</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/autocomplete">
+                                    <span>Autocomplete</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/checkboxes">
+                                    <span>Checkboxes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/drop-downs">
+                                    <span>Drop-downs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/multiswitch">
+                                    <span>Multiswitch</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/labels">
+                                    <span>Labels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/radio-buttons">
+                                    <span>Radio Buttons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/sliders">
+                                    <span>Sliders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/star-rating">
+                                    <span>Star Rating</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/switch">
+                                    <span>Switch</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/tag-it">
+                                    <span>Tag It</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/controls/text-fields">
+                                    <span>Text Fields</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Containers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/containers/accordion">
+                                    <span>Accordion</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/containers/items-lists">
+                                    <span>Items Lists</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>File Uploaders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/file-uploaders/basic-file-uploader">
+                                    <span>Basic File Uploader</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Footers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/footers/basic-footer">
+                                    <span>Basic Footer</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/footers/promo-footer">
+                                    <span>Promo Footer</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Headers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/basic-header">
+                                    <span>Basic Header</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/basic-navigation">
+                                    <span>Basic Navigation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/breadcrumb-navigation">
+                                    <span>Breadcrumb Navigation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/sidebar">
+                                    <span>Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/header-buttons">
+                                    <span>Header Buttons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/header-icons">
+                                    <span>Header Icons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/global-menu">
+                                    <span>Global Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/global-search">
+                                    <span>Global Search</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/headers/profile-menu">
+                                    <span>Profile Menu</span>
+                                </a>
+                            </li>
+
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Icons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/icons/font-awesome">
+                                    <span>Font Awesome</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/icons/shaped-icons">
+                                    <span>Shaped Icons</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Infographics</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/infographics/charts">
+                                    <span>Charts</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Media</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/media/carousel">
+                                    <span>Carousel</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/media/loaders">
+                                    <span>Loaders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/media/progress-bars">
+                                    <span>Progress Bar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/media/time-lines">
+                                    <span>Time Lines</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Navigation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/navigation/breadcrumbs">
+                                    <span>Breadcrumbs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/navigation/pagination">
+                                    <span>Pagination</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/navigation/tabs">
+                                    <span>Tabs</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/panels/animated-image-panels">
+                                    <span>Animated Image Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/panels/image-text-panel">
+                                    <span>Image Text Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/panels/information-panels">
+                                    <span>Information Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/panels/login-panel">
+                                    <span>Login Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/panels/personal-profiles">
+                                    <span>Personal Profile</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Popups</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/popups/alert">
+                                    <span>Alert</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/popups/modal">
+                                    <span>Modal</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Tables</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/tables/basic-tables">
+                                    <span>Basic Tables</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/tables/dynamic-tables">
+                                    <span>Dynamic Tables</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/tables/treegrid-tables">
+                                    <span>Treegrid Tables</span>
+                                </a>
+                            </li>
+                            <li class="title-group" onclick="return false">
+                                <a href="">
+                                    <span>Time & Date Picker</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/time-and-date-picker/timepicker">
+                                    <span>Timepicker</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/time-and-date-picker/datepicker">
+                                    <span>Datepicker</span>
+                                </a>
+                            </li>
+                            <li class="title-group" onclick="return false">
+                                <a href="#">
+                                    <span>Tooltips & Popovers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/tooltips-and-popovers/tooltips">
+                                    <span>Tooltips</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/tooltips-and-popovers/popovers">
+                                    <span>Popovers</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>Typography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/typography/inline-elements">
+                                    <span>Inline Elements</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/typography/show-text">
+                                    <span>Show Text</span>
+                                </a>
+                            </li>
+                            <li class="title-group">
+                                <a href="" onclick="return false">
+                                    <span>WYSIWYG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ui-elements/wysiwyg/tiny-mce">
+                                    <span>TinyMCE</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/fonts">
+                            <i class="fa fa-font"></i>
+                            <span>Fonts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/colors">
+                            <i class="fa fa-eyedropper"></i>
+                            <span>Colors</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="">
+                            <i class="fa fa-file-text-o"></i>
+                            <span>Documentation</span>
+                            <div class="fa fa-angle-right arrow"></div>
+                        </a>
+                        <ul class="sub">
+                            <li>
+                                <a href="/documentation/my-ui-elements">
+                                    <span>My UI Elements</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="uui-main-container site-main-container">
+            <main>
+            </main>
+        </div>
+        <a href="mailto:WFTUUIGroup@epam.com" class="uui-button blue left-icon support-button">
+            <i class="fa fa-envelope"></i>Ask Support
+        </a>
+    </div>
+
+    <!-- JS files -->
+    <script src="/js/lib/jquery-1.12.0.min.js"></script>
+    <script src="/highlight/highlight.pack.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/uui/uui-core.js?v=1.1.3.2"></script>
+    <script src="/js/uui/uui-global-search.js?v=1.1.3.2"></script>
+    <script src="/js/lib/backbone/underscore.min.js"></script>
+    <script src="/js/lib/backbone/backbone.min.js"></script>
+    <script src="/js/lib/components/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/app.js?v=1.1.3.2"></script>
+    <script src="https://menu.epam.com/scripts/menu.js" async></script>
+</body>
+</html>
