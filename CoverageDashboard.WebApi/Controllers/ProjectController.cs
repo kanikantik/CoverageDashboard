@@ -37,8 +37,9 @@ namespace CoverageDashboard.WebApi.Controllers
         public IHttpActionResult GetAllProjects()
         {
             var projects = _projectAppService.GetProjects();
-            return Ok(projects);
-        }
+            
+               return Ok(projects);
+           }
 
         /// <summary>
         /// Get All Projects 
@@ -46,9 +47,10 @@ namespace CoverageDashboard.WebApi.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("Get/{projectId}")]
-        public IHttpActionResult GetProject([FromUri]string projectId)
+        public IHttpActionResult GetProject([FromUri] string projectId)
         {
             var project = _projectAppService.GetProject(projectId);
+
             return Ok(project);
         }
 
@@ -78,7 +80,7 @@ namespace CoverageDashboard.WebApi.Controllers
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
                     if(itemId.Status == TaskStatus.RanToCompletion)
-                        return Ok(item);
+                        return Ok(itemId.Result);
                     else
                     {
                         if(itemId.Exception!= null)

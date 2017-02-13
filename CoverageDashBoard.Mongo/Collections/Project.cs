@@ -13,9 +13,11 @@ namespace CoverageDashboard.Mongo.Collections
     public class Project : IEntity<string>
     {
         [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
+        //[BsonId]
+        //[BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        [BsonElement("code")]
+       [BsonElement("code")]
         public string Code { get; set; }
 
         [BsonElement("name")]

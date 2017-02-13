@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
+using System.Xml;
 using CoverageDashboard.Core.Repositories;
 using MongoDB.Driver;
 
@@ -48,6 +50,7 @@ namespace CoverageDashboard.Mongo.Repositories
 
             public override IQueryable<TEntity> GetAll()
             {
+               
                 return Collection.AsQueryable();
             }
 
@@ -71,7 +74,7 @@ namespace CoverageDashboard.Mongo.Repositories
 
             public override TEntity Insert(TEntity entity)
             {
-                Collection.InsertOneAsync(entity);
+                Collection.InsertOneAsync(entity, null, default(CancellationToken));
                 return entity;
             }
             public override TEntity Update(TEntity entity)

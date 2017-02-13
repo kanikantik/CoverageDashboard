@@ -1,4 +1,5 @@
 ﻿
+using System.Collections;
 using System.Collections.Generic;
 using CoverageDashboard.Application.Projects.Dto;
 using CoverageDashboard.Mongo.Repositories;
@@ -27,28 +28,29 @@ namespace CoverageDashboard.Application.Projects
             //_mapper = mapper;
         }
         
-        public Task<string> CreateorUpdateProject(ProjectInputDto input)
+        public async Task<string> CreateorUpdateProject(ProjectInputDto input)
         {
             var proj = AutoMapperConfig.Mapper.Map<ProjectInputDto, Project>(input);
-            return _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
+            return await _projectRepository.InsertOrUpdateAndGetIdAsync(proj);
         }
 
 
-        public void DeleteProject(string projectId)
+        public async void DeleteProject(string projectId)
         {
-            _projectRepository.Delete(projectId);
+            await _projectRepository.DeleteAsync(projectId);
         }
 
         public ProjectViewDto GetProject(string projectId)
         {
             var project = _projectRepository.Get(projectId);
-            return Mapper.Map<Project, ProjectViewDto>(project);
+            return  AutoMapperConfig.Mapper.Map<Project, ProjectViewDto>(project);
         }
 
         public IList<ProjectViewDto> GetProjects()
         {
-            var prs = _projectRepository.GetAll();
-            return new List<ProjectViewDto>(Mapper.Map<IQueryable<Project>, IList<ProjectViewDto>>(prs));
+            var prs = _projectRepository.GetAllList();
+            return AutoMapperConfig.Mapper.Map<List<Project>, IList<ProjectViewDto>>(prs);
         }
+
     }
 }
