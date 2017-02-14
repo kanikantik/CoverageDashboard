@@ -78,7 +78,7 @@ namespace CoverageDashboard.WebApi.Controllers
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
                     if (itemId.Status == TaskStatus.RanToCompletion)
-                        return Ok(item);
+                        return Ok(itemId);
                     else
                     {
                         if (itemId.Exception != null)
@@ -123,6 +123,7 @@ namespace CoverageDashboard.WebApi.Controllers
             }
             return BadRequest(ModelState);
         }
+
         /// <summary>
         /// Test method for the api availability
         /// </summary>
@@ -134,6 +135,7 @@ namespace CoverageDashboard.WebApi.Controllers
 
             return Ok("pong");
         }
+
         /// <summary>
         /// Get All Projects Async
         /// </summary>
