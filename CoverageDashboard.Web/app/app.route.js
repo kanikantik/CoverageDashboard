@@ -29,7 +29,8 @@
          .state("training", {
              url: "/training",
              templateUrl: "app/trainings/partial-training.html",
-             controller: "TrainingController"
+             controller: "TrainingController",
+             controllerAs: "vm"
          })
          .state("settings", {
              url: "/settings",
