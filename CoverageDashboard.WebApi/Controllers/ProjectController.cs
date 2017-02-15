@@ -2,7 +2,7 @@ using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
 using System.Threading.Tasks;
-using System.Web.Http
+using System.Web.Http;
 using System.Web.Http.Cors;
 using CoverageDashboard.Core.Application;
 using CoverageDashboard.Core.Controllers;
