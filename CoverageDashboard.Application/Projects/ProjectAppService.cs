@@ -48,8 +48,8 @@ namespace CoverageDashboard.Application.Projects
 
         public IList<ProjectViewDto> GetProjects()
         {
-            var prs = _projectRepository.GetAll();
-            return new List<ProjectViewDto>(AutoMapperConfig.Mapper.Map<IQueryable<Project>, IList<ProjectViewDto>>(prs));
+            var prs = _projectRepository.GetAllList();
+            return new List<ProjectViewDto>(AutoMapperConfig.Mapper.Map<List<Project>, IList<ProjectViewDto>>(prs));
         }
 
         public async Task<IList<ProjectViewDto>> GetAllProjectAsync()
