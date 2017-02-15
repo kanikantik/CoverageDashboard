@@ -1,14 +1,9 @@
 ﻿using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Castle.Core.Logging;
-using CoverageDashboard.Core.Application;
 using CoverageDashboard.Core.Controllers;
-using CoverageDashboard.Core.Dependency;
-using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Core.Logging;
 
 
