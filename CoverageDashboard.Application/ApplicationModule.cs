@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using CoverageDashboard.Application.AutoMapper;
 using CoverageDashboard.Core;
+using CoverageDashboard.Core.Logging;
 using CoverageDashboard.Core.Modules;
 using CoverageDashboard.Mongo;
 
@@ -11,7 +12,7 @@ namespace CoverageDashboard.Application
     {
         public override void PreInitialize()
         {
-           
+            LogHelper.Debug("Application Module");
             //// Register automappers
             AutoMapperConfig.RegisterMappings();
         }

@@ -1,14 +1,12 @@
-﻿using CoverageDashboard.Application.Projects;
+using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using CoverageDashboard.Core.Application;
 using CoverageDashboard.Core.Controllers;
-using CoverageDashboard.Core.Dependency;
-using CoverageDashboard.Application.Projects;
+using CoverageDashboard.Core.Logging;
 
 
 namespace CoverageDashboard.WebApi.Controllers
@@ -87,6 +85,7 @@ namespace CoverageDashboard.WebApi.Controllers
                 }
                 catch (Exception execption)
                 {
+                   
                     return BadRequest(execption.Message);
                 }
 
@@ -132,7 +131,7 @@ namespace CoverageDashboard.WebApi.Controllers
         [Route("api/project/ping")]
         public async Task<IHttpActionResult> Ping()
         {
-
+            LogHelper.Debug("test");
             return Ok("pong");
         }
 

@@ -1,29 +1,14 @@
 ﻿<div class="text-center">
     <h1>Training</h1>
-    <!--<div class="col-md-3 panel-info" ng-repeat="item in trainings track by $index">
-        <div class="panel-body">
-            <ul>
-                <li><strong>Name</strong>:<span data-ng-bind="item.Title"></span></li>
-                <li><strong>Description</strong>:  <span data-ng-bind="item.Description"></span></li>
-                <li><strong>Trainer</strong>:  <span data-ng-bind="item.Trainer"></span></li>
-
-            </ul>
-        </div>
-    </div>-->
     <div class="form-group">
-        <legend>Training List</legend>
         <button class="btn" ng-click="addForm = !addForm" style="float: right;">
             <span><i class="fa fa-plus-circle"></i></span>
         </button>
         <br />
-        <br />
-        <br />
-
-
         <table class="uui-table stripe ">
             <thead>
                 <tr>
-                    <th>Id</th>
+                    <!--<th>Id</th>-->
                     <th>Title</th>
                     <th>Description</th>
                     <th>Trainer</th>
@@ -31,12 +16,12 @@
                 </tr>
             </thead>
             <tr ng-repeat="training in trainings track by $index">
-                <td>{{training.Id}}</td>
+                <!--<td>{{training.Id}}</td>-->
                 <td>{{training.Title}}</td>
                 <td>{{training.Description}}</td>
                 <td>{{training.Trainer}}</td>
                 <td>
-                    <button class="btn btn-info btn-sm" ng-click="editStudentDetails(training, $index)">
+                    <button class="btn btn-info btn-sm" ng-click="editTrainingDetails(training, $index)">
                         Edit
                     </button>
                 </td>
@@ -48,10 +33,8 @@
             </tr>
         </table>
     </div>
-
     <br />
     <br />
     <crud-training action="addDetails" ng-show="addForm"></crud-training>
     <!--<crud-training action="editDetails" ng-show="editDetailsForm"></crud-training>-->
-
 </div>
