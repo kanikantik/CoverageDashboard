@@ -14,9 +14,8 @@
             }
             //////////////////////////////////////////////////////////////////////////////////
 
-            function GetTrainings(data) {
-                debugger;
-                return baseApiService.sendGetQuery("GetDashboardCount", data);
+            function GetTrainings(apiController) {
+                return baseApiService.GetAllAction(apiController).then(HandleSaveSuccess, HandleSaveFailure);
             }
 
             function RefreshDashboard(data) {

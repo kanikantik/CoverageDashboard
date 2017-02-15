@@ -55,6 +55,10 @@
     <Compile Include="Projects\IProjectAppService.cs" />
     <Compile Include="Projects\ProjectAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trainings\Dto\TrainingViewDto.cs" />
+    <Compile Include="Trainings\Dto\TrainingInputDto.cs" />
+    <Compile Include="Trainings\ITrainingAppService.cs" />
+    <Compile Include="Trainings\TrainingAppService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoverageDashboard.Core\CoverageDashboard.Core.csproj">

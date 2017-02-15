@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\CustomIdGenerator.cs" />
     <Compile Include="Collections\Project.cs" />
     <Compile Include="Configuration\Startup\MongoDbConfigurationExtensions.cs" />
     <Compile Include="DataModule.cs" />
@@ -62,6 +63,9 @@
     <Compile Include="Configuration\MongoDbModuleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IProjectRepository.cs" />
+    <Compile Include="Repositories\ITrainingRepository.cs" />
+    <Compile Include="Collections\Training.cs" />
+    <Compile Include="Repositories\TrainingRepository.cs" />
     <Compile Include="Repositories\MongoDbRepositoryBase.cs" />
     <Compile Include="Repositories\ProjectRepository.cs" />
   </ItemGroup>

@@ -11,7 +11,7 @@ using CoverageDashboard.Core.Logging;
 
 namespace CoverageDashboard.WebApi.Controllers
 {
-    [EnableCors(origins:"*",headers:"*",methods:"*")]
+
     public class ProjectController : WebApiController
     {
         private readonly IProjectAppService _projectAppService;
@@ -147,21 +147,7 @@ namespace CoverageDashboard.WebApi.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
-        [Route("api/training/create")]
-        public async Task<IHttpActionResult> Create(Training req)
-        {
-            var result = string.Format("Response from Service");
-            return Ok(result);
-        }
+       
     }
 
-    public class Training
-    {
-
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Trainer { get; set; }
-        public string header { get; set; }
-    }
 }
