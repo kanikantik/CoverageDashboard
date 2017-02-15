@@ -19,3 +19,4 @@
 /CoverageDashboard.WebApi/obj/Debug
 /CoverageDashboard.Web/lib/_app
 /CoverageDashboard.sln.DotSettings.user
+/CoverageDashboard.WebApi/App_Data/Logs/Logs.txt

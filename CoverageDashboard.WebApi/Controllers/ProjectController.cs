@@ -4,10 +4,12 @@ using System;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Web.Http;
+using Castle.Core.Logging;
 using CoverageDashboard.Core.Application;
 using CoverageDashboard.Core.Controllers;
 using CoverageDashboard.Core.Dependency;
 using CoverageDashboard.Application.Projects;
+using CoverageDashboard.Core.Logging;
 
 
 namespace CoverageDashboard.WebApi.Controllers
@@ -86,6 +88,7 @@ namespace CoverageDashboard.WebApi.Controllers
                 }
                 catch (Exception execption)
                 {
+                   
                     return BadRequest(execption.Message);
                 }
 
@@ -130,7 +133,7 @@ namespace CoverageDashboard.WebApi.Controllers
         [Route("ping")]
         public async Task<IHttpActionResult> Ping()
         {
-
+            LogHelper.Debug("test");
             return Ok("pong");
         }
         /// <summary>

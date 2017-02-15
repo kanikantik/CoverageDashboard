@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Castle.Core.Logging;
 using CoverageDashboard.Core.Configurations;
 using CoverageDashboard.Core.Dependency;
 using CoverageDashboard.Core.Dependency.Installers;
@@ -12,7 +13,8 @@ namespace CoverageDashboard.Core.Modules
     public abstract class MainModule
     {
         protected internal IIocManager IocManager { get; internal set; }
-        //public ILogger Logger { get; set; }
+        
+       
 
         /// <summary>
         /// Gets a reference to the ABP configuration.
@@ -20,10 +22,7 @@ namespace CoverageDashboard.Core.Modules
         protected internal IDefaultConfigurations Configuration { get; internal set; }
 
 
-        protected MainModule()
-        {
-            //Logger = NullLogger.Instance;
-        }
+        
 
 
         /// <summary>
