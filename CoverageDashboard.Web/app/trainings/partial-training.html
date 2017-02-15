@@ -1,39 +1,45 @@
-﻿<div class="text-center" ng-controller="TrainingController">
+﻿<div class="text-center">
     <h1>Training</h1>
-    {{training}}
+    <div class="form-group">
+        <legend>Training List</legend>
+        <button class="btn" ng-click="addForm = !addForm" style="float: right;">
+            <span><i class="fa fa-plus-circle"></i></span>
+        </button>
+        <br />
+        <br />
+        <br />
+        <table class="uui-table stripe ">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Trainer</th>
+                    <th colspan="2"></th>
+                </tr>
+            </thead>
+            <!--<tr ng-repeat="student in students">
+                <td>{{training.Id}}</td>
+                <td>{{training.Title}}</td>
+                <td>{{training.Description}}</td>
+                <td>{{training.Trainer}}</td>
+                <td>
+                    <button class="btn btn-info btn-sm" ng-click="editStudentDetails(student, $index)">
+                        Edit
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-danger btn-sm" ng-click="removeFromList($index)">
+                        Remove
+                    </button>
+                </td>
+            </tr>-->
+        </table>
+    </div>
 
-</div>
-<div>
-    <table class="uui-table stripe ">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>1 column</th>
-                <th>2 column</th>
-                <th>3 column</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1 row</td>
-                <td>Unit 1x1</td>
-                <td>Unit 1x2</td>
-                <td>Unit 1x3</td>
-            </tr>
-            <tr>
-                <td>2 row</td>
-                <td>Unit 2x1</td>
-                <td>Unit 2x2</td>
-                <td>Unit 2x3</td>
-            </tr>
-            <tr>
-                <td>3 row</td>
-                <td>Unit 3x1</td>
-                <td>Unit 3x2</td>
-                <td>Unit 3x3</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <br />
+    <br />
+    <crud-training action="addDetails" ng-show="addForm"></crud-training>
+    <!--<crud-training action="editDetails" ng-show="editDetailsForm"></crud-training>-->
 
 </div>

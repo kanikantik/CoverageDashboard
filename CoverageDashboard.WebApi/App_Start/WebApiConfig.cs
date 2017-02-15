@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace CoverageDashboard.Core
 {
@@ -9,6 +10,9 @@ namespace CoverageDashboard.Core
     {
         public static void Register(HttpConfiguration config)
         {
+            //enable CORS
+            var corsAttr=new EnableCorsAttribute("*","*","*");
+            config.EnableCors();
             // Web API configuration and services
 
             // Web API routes

@@ -1,15 +1,17 @@
-﻿using CoverageDashboard.Application.Projects;
+using CoverageDashboard.Application.Projects;
 using CoverageDashboard.Application.Projects.Dto;
 using System;
 using System.Threading.Tasks;
-using System.Web.Http;
+using System.Web.Http
+using System.Web.Http.Cors;
+using CoverageDashboard.Core.Application;
 using CoverageDashboard.Core.Controllers;
 using CoverageDashboard.Core.Logging;
 
 
 namespace CoverageDashboard.WebApi.Controllers
 {
-    [Route("api")]
+    [EnableCors(origins:"*",headers:"*",methods:"*")]
     public class ProjectController : WebApiController
     {
         private readonly IProjectAppService _projectAppService;
@@ -27,7 +29,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("Get")]
+        [Route("api/project/Get")]
         public IHttpActionResult GetAllProjects()
         {
             var projects = _projectAppService.GetProjects();
@@ -41,7 +43,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("Get/{projectId}")]
+        [Route("api/project/Get/{projectId}")]
         public IHttpActionResult GetProject([FromUri]string projectId)
         {
             var project = _projectAppService.GetProject(projectId);
@@ -53,7 +55,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// </summary>
         /// <param name="projectId">project id</param>
         [HttpDelete]
-        [Route("Delete")]
+        [Route("api/project/Delete")]
         public void DeleteProject([FromUri]string projectId)
         {
             _projectAppService.DeleteProject(projectId);
@@ -65,7 +67,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// <param name="item"></param>
         /// <returns>CreateUpdateProject dto</returns>
         [HttpPost]
-        [Route("CreateProject")]
+        [Route("api/project/CreateProject")]
         public IHttpActionResult Post(ProjectInputDto item)
         {
             if (ModelState.IsValid)
@@ -74,7 +76,7 @@ namespace CoverageDashboard.WebApi.Controllers
                 {
                     var itemId = _projectAppService.CreateorUpdateProject(item);
                     if (itemId.Status == TaskStatus.RanToCompletion)
-                        return Ok(item);
+                        return Ok(itemId);
                     else
                     {
                         if (itemId.Exception != null)
@@ -97,7 +99,7 @@ namespace CoverageDashboard.WebApi.Controllers
         /// <param name="item"></param>
         /// <returns>CreateUpdateProject Dto</returns>
         [HttpPut]
-        [Route("UpdateProject")]
+        [Route("api/project/UpdateProject")]
         public IHttpActionResult Put(ProjectInputDto item)
         {
             if (ModelState.IsValid)
@@ -120,27 +122,46 @@ namespace CoverageDashboard.WebApi.Controllers
             }
             return BadRequest(ModelState);
         }
+
         /// <summary>
         /// Test method for the api availability
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("ping")]
+        [Route("api/project/ping")]
         public async Task<IHttpActionResult> Ping()
         {
             LogHelper.Debug("test");
             return Ok("pong");
         }
+
         /// <summary>
         /// Get All Projects Async
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("GetAll")]
+        [Route("api/project/GetAll")]
         public async Task<IHttpActionResult> GetAllProjectAsync()
         {
             var result = await _projectAppService.GetAllProjectAsync();
             return Ok(result);
         }
+
+        [HttpPost]
+        [Route("api/training/create")]
+        public async Task<IHttpActionResult> Create(Training req)
+        {
+            var result = string.Format("Response from Service");
+            return Ok(result);
+        }
+    }
+
+    public class Training
+    {
+
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Trainer { get; set; }
+        public string header { get; set; }
     }
 }
