@@ -1,5 +1,15 @@
 ﻿<div class="text-center">
     <h1>Training</h1>
+    <!--<div class="col-md-3 panel-info" ng-repeat="item in trainings track by $index">
+        <div class="panel-body">
+            <ul>
+                <li><strong>Name</strong>:<span data-ng-bind="item.Title"></span></li>
+                <li><strong>Description</strong>:  <span data-ng-bind="item.Description"></span></li>
+                <li><strong>Trainer</strong>:  <span data-ng-bind="item.Trainer"></span></li>
+
+            </ul>
+        </div>
+    </div>-->
     <div class="form-group">
         <legend>Training List</legend>
         <button class="btn" ng-click="addForm = !addForm" style="float: right;">
@@ -8,6 +18,8 @@
         <br />
         <br />
         <br />
+
+
         <table class="uui-table stripe ">
             <thead>
                 <tr>
@@ -18,13 +30,13 @@
                     <th colspan="2"></th>
                 </tr>
             </thead>
-            <!--<tr ng-repeat="student in students">
+            <tr ng-repeat="training in trainings track by $index">
                 <td>{{training.Id}}</td>
                 <td>{{training.Title}}</td>
                 <td>{{training.Description}}</td>
                 <td>{{training.Trainer}}</td>
                 <td>
-                    <button class="btn btn-info btn-sm" ng-click="editStudentDetails(student, $index)">
+                    <button class="btn btn-info btn-sm" ng-click="editStudentDetails(training, $index)">
                         Edit
                     </button>
                 </td>
@@ -33,7 +45,7 @@
                         Remove
                     </button>
                 </td>
-            </tr>-->
+            </tr>
         </table>
     </div>
 

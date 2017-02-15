@@ -11,7 +11,7 @@
 
             ////////////////////////////////////////////////////////
             var enableCache = false;
-            var configGETHeader = function () { return { cache: enableCache, withCredentials: true }; };
+            var configGETHeader = function () { return { cache: enableCache, withCredentials: false }; };
             var configPOSTHeader = function () { return { cache: enableCache, withCredentials: false }; };
             var configPUTHeader = function () { return { cache: enableCache, withCredentials: true }; };
             var configDELETEHeader = function () { return { cache: enableCache, withCredentials: true }; };

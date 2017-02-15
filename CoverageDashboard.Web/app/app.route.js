@@ -6,7 +6,7 @@
 
 
 
-    function config($stateProvider, $urlRouterProvider) {
+    function config($locationProvider, $stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
 
         $stateProvider
@@ -42,8 +42,10 @@
              templateUrl: "app/exports/partial-export.html",
              controller: "ExportController"
          });
-
-
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
 
     };
 })(angular);
