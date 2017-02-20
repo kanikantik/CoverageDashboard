@@ -1,6 +1,6 @@
 ﻿(function (angular) {
 
-    angular.module("capability").service("TrainingService",
+    angular.module("capability").service("trainingService",
         ["$http", "$q", "$location", "baseApiService", function ($http, $q, $location, baseApiService) {
 
 

@@ -4,14 +4,14 @@
     angular.module("capability")
         .controller("TrainingController", TrainingController);
 
-    TrainingController.$inject = ["$scope", "TrainingService"];
+    TrainingController.$inject = ["$scope", "trainingService"];
 
     function TrainingController($scope, TrainingService) {
         var vm = $scope;
         var trainingResponseCreateEndPoint = "training/create", trainingResponseGetAllEndPoint = "training";
         vm.addDetails = {};
         vm.addDetails.training = {};
-        vm.addDetails.training.header = "Add student details";
+        vm.addDetails.training.header = "Add training details";
         vm.addDetails.submitDetails = submitDetails;
         vm.trainings = [];
         getTrainings();
