@@ -18,9 +18,6 @@
                 return baseApiService.GetAllAction(apiController).then(HandleSaveSuccess, HandleSaveFailure);
             }
 
-            function RefreshDashboard(data) {
-                return baseApiService.sendPostQuery("RefreshDashboard", data);
-            }
 
             function AddTrainings(apiController, data) {
                 return baseApiService.PostAction(apiController, data).then(HandleSaveSuccess, HandleSaveFailure);
@@ -29,7 +26,6 @@
 
             return {
                 GetTrainings: GetTrainings,
-                RefreshDashboard: RefreshDashboard,
                 AddTrainings: AddTrainings
             };
         }]);

@@ -127,6 +127,7 @@
     <Content Include="app\settings\partial-settings.html" />
     <Content Include="app\settings\settings.controller.js" />
     <Content Include="app\trainings\partial-training.html" />
+    <Content Include="app\trainings\training.controller.spec.js" />
     <Content Include="app\trainings\training.controller1.js" />
     <Content Include="app\trainings\training.controller.js" />
     <Content Include="e2e-tests\protractor.conf.js" />
