@@ -4,9 +4,9 @@
     angular.module("capability")
         .controller("DashboardController", DashboardController);
 
-    DashboardController.$inject = ["$location", "DashboardService"];
+    DashboardController.$inject = ["$location", "dashboardService"];
 
-    function DashboardController($location, DashboardService) {
+    function DashboardController($location, dashboardService) {
         var vm = this;
 
 

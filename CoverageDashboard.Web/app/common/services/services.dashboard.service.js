@@ -1,6 +1,6 @@
 ﻿(function (angular) {
 
-    angular.module('capability').service('DashboardService',
+    angular.module('capability').service('dashboardService',
         ['$http', '$q', '$location', 'baseApiService', function ($http, $q, $location, baseApiService) {
 
             function GetCount(data) {

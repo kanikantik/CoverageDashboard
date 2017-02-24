@@ -4,13 +4,13 @@
     angular.module("capability")
         .controller("HomeController", HomeController);
 
-    HomeController.$inject = ["$location", "HomeService"];
+    HomeController.$inject = ["$location", "homeService"];
 
-    function HomeController($location, HomeService) {
+    function HomeController($location, homeService) {
         var vm = this;
         vm.totalCount = 25;
         vm.getProjectCount = getProjectCount;
-        vm.getCountFromService = HomeService.GetCount(vm.totalCount);
+        vm.getCountFromService = homeService.GetCount(vm.totalCount);
 
         vm.names = ["hi", "hello", "world"];
 
