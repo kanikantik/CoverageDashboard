@@ -6,7 +6,7 @@
 
     TrainingController.$inject = ["$scope", "trainingService"];
 
-    function TrainingController($scope, TrainingService) {
+    function TrainingController($scope, trainingService) {
         var vm = $scope;
         var trainingResponseCreateEndPoint = "training", trainingResponseGetAllEndPoint = "training";
         vm.addDetails = {};
@@ -37,14 +37,14 @@
         }
 
         function getTrainings() {
-            return TrainingService.GetTrainings(trainingResponseGetAllEndPoint)
+            return trainingService.GetTrainings(trainingResponseGetAllEndPoint)
                .then(HandleSaveSuccess, HandleSaveFailure);
 
         }
 
         function submitDetails() {
 
-            return TrainingService.AddTrainings(trainingResponseCreateEndPoint, vm.addDetails.training)
+            return trainingService.AddTrainings(trainingResponseCreateEndPoint, vm.addDetails.training)
                 .then(HandleSaveSuccess, HandleSaveFailure);
 
 

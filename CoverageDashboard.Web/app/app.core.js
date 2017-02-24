@@ -2,10 +2,10 @@
     'use strict';
 
     angular.module(
-        'capability',
+        'app.core',
         [
-            /*shared modules*/
-            'app.core'
+            //3rd party dep
+            'ui.router'
         ]);
 
 })(angular);

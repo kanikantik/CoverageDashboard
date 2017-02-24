@@ -1,17 +1,19 @@
 ﻿(function (angular) {
 
-    angular.module('capability').service('HomeService',
-        ['$http', '$q', '$location', 'baseApiService', function ($http, $q, $location, baseApiService) {
+    function homeService($http, $q, $location, baseApiService) {
+        var service = {
+            GetCount: GetCount
+        };
+        return service;
 
-            
-            function GetCount(data) {
-                return "Count from Service " + data;
 
-            }
+        function GetCount(data) {
+            return "Count from Service " + data;
 
-            return {
-                GetCount: GetCount
-            };
-        }]);
+        }
+
+    };
+    angular.module('capability').service('homeService', homeService);
+    homeService.$inject = ['$http', '$q', '$location', 'baseApiService'];
 })
 (angular);

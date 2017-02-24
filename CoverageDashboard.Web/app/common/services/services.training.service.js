@@ -1,33 +1,36 @@
 ﻿(function (angular) {
 
-    angular.module("capability").service("trainingService",
-        ["$http", "$q", "$location", "baseApiService", function ($http, $q, $location, baseApiService) {
+    function trainingService($http, $q, $location, baseApiService) {
+
+        var service = {
+            GetTrainings: GetTrainings,
+            AddTrainings: AddTrainings
+
+        };
+        return service;
+
+        ///////////////////////////////////////////////////////////////////////////////////
+        // Callback Functions That Are Routed From The API Back To The Calling Object
+        function HandleSaveSuccess(result) {
+            return result;
+        }
+        function HandleSaveFailure(result) {
+            return $q.reject(result);
+        }
+        //////////////////////////////////////////////////////////////////////////////////
+
+        function GetTrainings(apiController) {
+            return baseApiService.GetAllAction(apiController).then(HandleSaveSuccess, HandleSaveFailure);
+        }
 
 
-            ///////////////////////////////////////////////////////////////////////////////////
-            // Callback Functions That Are Routed From The API Back To The Calling Object
-            function HandleSaveSuccess(result) {
-                return result;
-            }
-            function HandleSaveFailure(result) {
-                return $q.reject(result);
-            }
-            //////////////////////////////////////////////////////////////////////////////////
+        function AddTrainings(apiController, data) {
+            return baseApiService.PostAction(apiController, data).then(HandleSaveSuccess, HandleSaveFailure);
 
-            function GetTrainings(apiController) {
-                return baseApiService.GetAllAction(apiController).then(HandleSaveSuccess, HandleSaveFailure);
-            }
+        }
 
-
-            function AddTrainings(apiController, data) {
-                return baseApiService.PostAction(apiController, data).then(HandleSaveSuccess, HandleSaveFailure);
-
-            }
-
-            return {
-                GetTrainings: GetTrainings,
-                AddTrainings: AddTrainings
-            };
-        }]);
+    };
+    angular.module("capability").service("trainingService", trainingService);
+    trainingService.$inject = ["$http", "$q", "$location", "baseApiService"];
 })
 (angular);

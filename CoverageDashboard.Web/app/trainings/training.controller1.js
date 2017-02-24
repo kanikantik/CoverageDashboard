@@ -76,7 +76,7 @@
 //    angular.module("capability")
 //        .controller("TrainingController", TrainingController);
 
-//   // TrainingController.$inject = ["$location", "HomeService"];
+//   // TrainingController.$inject = ["$location", "homeService"];
 
 //    function TrainingController() {
 //        var vm = this;
@@ -84,7 +84,7 @@
 //        vm.addDetails.header = "Add training details here";
 //        // vm.totalCount = 25;
 //        //vm.addDetails.submitDetails = submitDetails();
-//        //vm.getCountFromService = HomeService.GetCount(vm.totalCount);
+//        //vm.getCountFromService = homeService.GetCount(vm.totalCount);
 
 //        vm.training = "Angular in Action training is in progress";
 //        vm.addDetails.submitDetails = function () {
