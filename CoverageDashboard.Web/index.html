@@ -131,49 +131,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!--<div class="responsive-global-menu epam-global-menu" id="global_menu_toggle_responsive">
-                                    <a href="#" onclick="return false;">
-                                        <img src="https://menu.epam.com/content/images/menu_button.svg" alt="" onerror="document.getElementById('global_menu_toggle_responsive').style.display = 'none';" />
-                                        <span>EPAM APPS</span>
-                                    </a>
-                                </div>-->
                             </div>
                         </div>
-                        <!--<div class="responsive-global-search">
-                            <div class="search-header">
-                                <div class="header-wrapper">
-                                    <div class="search-field">
-                                        <label></label>
-                                        <input type="search" class="uui-search" placeholder="Search" maxlength="100" />
-                                    </div>
-                                    <div class="hide-search">
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search-list">
-                                <div class="list-wrapper">
-                                    <div class="all-results">
-                                        <a href="#">107 results found. View all.</a>
-                                    </div>
-                                    <div class="menu-scroll">
-                                        <ul class="search-links">
-                                            <li class="no-results">
-                                                <div class="no-results-content">
-                                                    <img src="images/icons/no-results-responsive.png" alt="" />
-                                                    <h4>Whoops</h4>
-                                                    <p>No results found</p>
-                                                </div>
-                                                <div class="no-results-footer">
-                                                    <a href="#"><i class="fa fa-angle-left"></i>Back to ...</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
+
                     </div>
                     <div class="uui-toggle-box">
                         <span></span>
@@ -220,7 +180,9 @@
                         <li class="dropdown uui-profile-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <div class="profile-photo">
-                                    <img src="https://static.cdn.epam.com/avatar/0bababb808b39740743a85a3321300e5.jpg" alt="" />
+                                    <!--<img src="https://static.cdn.epam.com/avatar/0bababb808b39740743a85a3321300e5.jpg" alt="" />-->
+                                    <img src="uui2/images/icons/no_photo.png" alt="" />
+                                    
                                 </div>
                             </a>
                         </li>
@@ -301,7 +263,7 @@
                 </ul>
             </div>
         </aside>
-    <div class="uui-main-container site-main-container container">
+        <div class="uui-main-container site-main-container container">
             <main>
                 <div ui-view></div>
             </main>
@@ -330,8 +292,9 @@
         UUI.Panels.init();
 
     </script>
-    <!-- Module files -->
+<!-- Module files -->
     <script src="app/app.module.js"></script>
+    <script src="app/app.core.js"></script>
     <script src="app/app.route.js"></script>
     <script src="app/trainings/directives/crudtraining.directive.js"></script>
     <script src="app/app.constants.js"></script>

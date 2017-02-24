@@ -1,9 +1,9 @@
 {
   "name": "capabilitydashboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A starter project for capabilitydashboard using UUI-Framework and AngularJS",
-  "repository": "https://github.com/",
+  "repository": "https://git.epam.com/hackathons/epmhtnapkc/",
   "homepage": "https://capabilitydashboard.epam.com",
   "author": {
     "name": "EPAM Systems, Inc."
@@ -17,7 +17,7 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
-    "protractor": "^4.0.9",
+    "protractor": "^5.1.1",
     "grunt": "~1.0.1",
     "gulp": "~3.9.1",
     "gulp-uglify": "~2.0.0",

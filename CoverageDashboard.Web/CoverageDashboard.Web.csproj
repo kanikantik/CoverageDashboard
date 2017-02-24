@@ -99,11 +99,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="app\app.constants.js" />
+    <Content Include="app\app.core.js" />
     <Content Include="app\app.module.js" />
     <Content Include="app\app.route.js" />
     <Content Include="app\associates\associate.controller.js" />
     <Content Include="app\associates\associate.controller.spec.js" />
     <Content Include="app\associates\partial-associate.html" />
+    <Content Include="app\exports\export.controller.spec.js" />
+    <Content Include="app\home\home.controller.spec.js" />
+    <Content Include="app\settings\settings.controller.spec.js" />
     <Content Include="app\trainings\directives\crudtraining.directive.js" />
     <Content Include="app\trainings\directives\crud-training.html" />
     <Content Include="app\common\services\base\services.apiUrl.factory.js" />
@@ -127,6 +131,7 @@
     <Content Include="app\settings\partial-settings.html" />
     <Content Include="app\settings\settings.controller.js" />
     <Content Include="app\trainings\partial-training.html" />
+    <Content Include="app\trainings\training.controller.spec.js" />
     <Content Include="app\trainings\training.controller1.js" />
     <Content Include="app\trainings\training.controller.js" />
     <Content Include="e2e-tests\protractor.conf.js" />
@@ -757,6 +762,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\layout\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,11 +1,18 @@
 ﻿(function (angular) {
-    'use strict';
+    "use strict";
 
-    angular.module('capability').controller('SettingsController',
-       ['$scope', function ($scope) {
+    angular.module("capability")
+        .controller("SettingsController", SettingsController);
+
+    SettingsController.$inject = ["$location"];
+
+    function SettingsController($location) {
+        var vm = this;
+        vm.settings = "Angular in Action Settings is in progress";
 
 
-           $scope.settings = "Angular in Action Associate is in progress";
-       }]);
+
+    }
+
 
 })(angular);

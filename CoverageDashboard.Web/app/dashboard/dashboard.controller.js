@@ -1,11 +1,20 @@
 ﻿(function (angular) {
-    'use strict';
+    "use strict";
 
-    angular.module('capability').controller('DashboardController',
-       ['$scope', function ($scope) {
+    angular.module("capability")
+        .controller("DashboardController", DashboardController);
+
+    DashboardController.$inject = ["$location", "dashboardService"];
+
+    function DashboardController($location, dashboardService) {
+        var vm = this;
 
 
-           $scope.dashboard = "Angular in Action Dashboard is in progress";
-       }]);
+        vm.dashboard = "Angular in Action Dashboard is in progress";
+
+
+
+    }
+
 
 })(angular);

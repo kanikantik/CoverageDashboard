@@ -11,6 +11,7 @@ namespace CoverageDashboard.Core
         public static void Register(HttpConfiguration config)
         {
             //enable CORS
+            //To Do: replace origins from * to specific clients or URL
             var corsAttr = new EnableCorsAttribute(origins: "*", headers: "*", methods: "*", exposedHeaders: "*");
             config.EnableCors(corsAttr);
             // Web API configuration and services
