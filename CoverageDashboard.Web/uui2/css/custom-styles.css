@@ -23,3 +23,53 @@
  .preview-icon {
             .uui-icon (static, auto, auto, auto, auto, auto, none);
         }
+
+aside .uui-side-bar {
+  width: 120px;
+}
+
+aside .uui-side-bar ul > li > a {
+  display: block;
+  height: auto;
+  line-height: normal;
+  text-align:center;
+  padding: 0 30px;
+}
+
+aside .uui-side-bar ul > li > a i {
+  font-size: 36px;
+  margin-right: 0px;
+  min-width: 36px;
+}
+
+aside .uui-side-bar ul > li > a img {
+  height: 36px;
+  min-width: 36px;
+  margin-right: 0px;
+}
+
+aside .uui-side-bar ul > li > a span {
+  font-size: 10px;
+}
+
+aside .uui-side-bar ul > li > a .arrow {
+  font-size: 10px;
+  line-height: normal;
+  margin-left: 0px;
+}
+
+aside .uui-side-bar ul > li.sub-menu {
+  padding: 0px 2px;
+}
+
+aside .uui-side-bar ul > li.sub-menu .sub > li > a {
+  color: #cccccc;
+  height: auto;
+  line-height: normal;
+  padding: 0px 0px 0px 0px;
+}
+
+aside .uui-side-bar ul > li.sub-menu .sub > li > a span {
+  font-size: 10px;
+  margin: auto;
+}
