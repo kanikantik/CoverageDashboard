@@ -104,6 +104,9 @@
     <Content Include="app\associates\associate.controller.js" />
     <Content Include="app\associates\associate.controller.spec.js" />
     <Content Include="app\associates\partial-associate.html" />
+    <Content Include="app\exports\export.controller.spec.js" />
+    <Content Include="app\home\home.controller.spec.js" />
+    <Content Include="app\settings\settings.controller.spec.js" />
     <Content Include="app\trainings\directives\crudtraining.directive.js" />
     <Content Include="app\trainings\directives\crud-training.html" />
     <Content Include="app\common\services\base\services.apiUrl.factory.js" />

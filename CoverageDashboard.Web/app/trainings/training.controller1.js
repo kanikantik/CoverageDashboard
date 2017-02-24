@@ -1,5 +1,5 @@
 ﻿(function(angular) {
-    
+    //Need to delete  this file
     angular.module("capability").controller('TrainingController', ['$scope', function ($scope) {
         var vm = $scope;
         // $scope.students = StudentsJSON;

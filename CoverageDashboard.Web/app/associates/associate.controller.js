@@ -1,11 +1,20 @@
 ﻿(function (angular) {
-    'use strict';
+    "use strict";
 
-    angular.module('capability').controller('AssociateController',
-       ['$scope', function ($scope) {
+    angular.module("capability")
+        .controller("AssociateController", AssociateController);
+
+    AssociateController.$inject = ["$location"];
+
+    function AssociateController($location) {
+        var vm = this;
 
 
-           $scope.associate = "Angular in Action Associate is in progress";
-       }]);
+        vm.associate = "Angular in Action Associate is in progress";
+
+
+
+    }
+
 
 })(angular);

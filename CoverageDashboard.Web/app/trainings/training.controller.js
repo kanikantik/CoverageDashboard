@@ -8,7 +8,7 @@
 
     function TrainingController($scope, TrainingService) {
         var vm = $scope;
-        var trainingResponseCreateEndPoint = "training/create", trainingResponseGetAllEndPoint = "training";
+        var trainingResponseCreateEndPoint = "training", trainingResponseGetAllEndPoint = "training";
         vm.addDetails = {};
         vm.addDetails.training = {};
         vm.addDetails.training.header = "Add training details";

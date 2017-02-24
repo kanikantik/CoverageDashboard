@@ -1,11 +1,18 @@
 ﻿(function (angular) {
-    'use strict';
+    "use strict";
 
-    angular.module('capability').controller('ExportController',
-       ['$scope', function ($scope) {
+    angular.module("capability")
+        .controller("ExportController", ExportController);
+
+    ExportController.$inject = ["$location"];
+
+    function ExportController($location) {
+        var vm = this;
+        vm.export = "Angular in Action Export tp pdf or excel is in progress";
 
 
-           $scope.export = "Angular in Action Associate is in progress";
-       }]);
+
+    }
+
 
 })(angular);

@@ -9,7 +9,7 @@ namespace CoverageDashboard.Core.Configuration.Startup
     public static class WebApiConfigurationExtensions
     {
         /// <summary>
-        /// Used to configure Verisk.NextGen.Web.Api module.
+        /// Used to configure CoverageDashboard.Web.Api module.
         /// </summary>
         /// <param name="configurations">The configurations.</param>
         /// <returns>Returns Object of IExtWebApiModuleConfiguration</returns>
