@@ -1,7 +1,7 @@
 ﻿<div class="text-center">
     <h1>Training</h1>
     <div class="form-group">
-        <button class="btn" ng-click="addForm = !addForm" style="float: right;">
+        <button class="btn" data-toggle="modal" data-target="#crudTrainingPopover" style="float: right;">
             <span><i class="fa fa-plus-circle"></i></span>
         </button>
         <br />
@@ -35,6 +35,24 @@
     </div>
     <br />
     <br />
-    <crud-training action="addDetails" ng-show="addForm"></crud-training>
-    <!--<crud-training action="editDetails" ng-show="editDetailsForm"></crud-training>-->
+
+
+    <div class="modal uui-modal fade blue" id="crudTrainingPopover" tabindex="-1" role="dialog" aria-labelledby="crudTrainingPopoverLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header blue">
+                    <h4 class="modal-title">Add/Update Trainings</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span></span><span></span></button>
+                </div>
+                <div class="modal-body">
+                    <crud-training action="addDetails"></crud-training>
+                    <!--<crud-training action="editDetails" ng-show="editDetailsForm"></crud-training>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="uui-button transparent">Cancel</button>
+                    <button type="button" class="uui-button lime-green">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
