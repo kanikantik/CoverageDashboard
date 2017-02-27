@@ -47,5 +47,5 @@
             requireBase: false
         });
 
-    };
+    }
 })(angular);

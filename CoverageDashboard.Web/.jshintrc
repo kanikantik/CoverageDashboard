@@ -41,6 +41,6 @@
   "noempty": true,
   "nonbsp": true,
   "undef": true,
-  "unused": true,
+  "unused": true
 
 }

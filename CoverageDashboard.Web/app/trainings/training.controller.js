@@ -1,10 +1,5 @@
-﻿(function (angular) {
+﻿(function (module) {
     "use strict";
-
-    angular.module("capability")
-        .controller("TrainingController", TrainingController);
-
-    TrainingController.$inject = ["$scope", "trainingService"];
 
     function TrainingController($scope, trainingService) {
         var vm = $scope;
@@ -25,7 +20,8 @@
 
         }
         function HandleSaveFailure(result) {
-            alert("error" + result);
+            //need to remove alert or implent logging
+            window.alert("error" + result);
         }
 
         function ResetForm() {
@@ -48,8 +44,11 @@
                 .then(HandleSaveSuccess, HandleSaveFailure);
 
 
-        };
+        }
     }
 
 
-})(angular);
+    TrainingController.$inject = ["$scope", "trainingService"];
+    module.controller("TrainingController", TrainingController);
+
+})(angular.module("capability"));
