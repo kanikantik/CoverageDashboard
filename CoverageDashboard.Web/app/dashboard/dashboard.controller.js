@@ -1,8 +1,7 @@
-﻿(function (angular) {
+﻿(function (module) {
     "use strict";
 
-    angular.module("capability")
-        .controller("DashboardController", DashboardController);
+    module.controller("DashboardController", DashboardController);
 
     DashboardController.$inject = ["$location", "dashboardService"];
 
@@ -17,4 +16,4 @@
     }
 
 
-})(angular);
+})(angular.module("capability"));

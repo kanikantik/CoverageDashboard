@@ -1,8 +1,8 @@
-﻿(function (angular) {
+﻿(function (module) {
     "use strict";
 
-    angular.module("capability")
-        .controller("HomeController", HomeController);
+    
+    module.controller("HomeController", HomeController);
 
     HomeController.$inject = ["$location", "homeService"];
 
@@ -21,4 +21,4 @@
 
     }
 
-})(angular);
+})(angular.module("capability"));

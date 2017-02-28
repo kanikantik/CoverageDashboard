@@ -1,8 +1,8 @@
-﻿(function (angular) {
+﻿(function (module) {
     "use strict";
 
-    angular.module("capability")
-        .controller("ExportController", ExportController);
+   
+    module.controller("ExportController", ExportController);
 
     ExportController.$inject = ["$location"];
 
@@ -15,4 +15,4 @@
     }
 
 
-})(angular);
+})( angular.module("capability"));

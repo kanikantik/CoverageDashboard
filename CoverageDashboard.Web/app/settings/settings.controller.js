@@ -1,8 +1,8 @@
-﻿(function (angular) {
+﻿(function (module) {
     "use strict";
 
-    angular.module("capability")
-        .controller("SettingsController", SettingsController);
+
+    module.controller("SettingsController", SettingsController);
 
     SettingsController.$inject = ["$location"];
 
@@ -15,4 +15,4 @@
     }
 
 
-})(angular);
+})(angular.module("capability"));
