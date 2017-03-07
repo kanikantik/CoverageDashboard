@@ -1,16 +1,16 @@
 ﻿describe('Training Controller- example test', function () {
 
-    var scope, createController;
+    //var scope, createController;
 
-    beforeEach(inject(function ($rootScope, $controller) {
-        scope = $rootScope.$new();
-        createController = function () {
-            return $controller("TrainingController",
-            {
-                '$scope': scope
-            });
-        };
-    }));
+    //beforeEach(inject(function ($rootScope, $controller) {
+    //    scope = $rootScope.$new();
+    //    createController = function () {
+    //        return $controller("TrainingController",
+    //        {
+    //            '$scope': scope
+    //        });
+    //    };
+    //}));
 
 
 

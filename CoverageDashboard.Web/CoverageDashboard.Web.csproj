@@ -151,6 +151,7 @@
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="karma.conf.js" />
+    <Content Include="lib\_app\capabilitymain.min.js" />
     <Content Include="packages.config" />
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
