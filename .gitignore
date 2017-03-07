@@ -22,3 +22,4 @@
 /CoverageDashboard.WebApi/App_Data/Logs/Logs.txt
 /.vs/config
 /.vs/CoverageDashboard/v14
+/CoverageDashboard.WebApi.Tests

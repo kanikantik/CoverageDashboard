@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.Applicati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3D43A9D2-3BC7-47B1-851D-4CD50F8EC7DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.Tests", "CoverageDashboard.Tests\CoverageDashboard.Tests.csproj", "{5BEADCF4-A8C9-4B95-A6AE-4F7C8DB976A7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.Web", "CoverageDashboard.Web\CoverageDashboard.Web.csproj", "{3ED82F96-B686-4CA8-AC2C-A21B5C81C533}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{656E5D0A-D9A4-4BB1-AD0E-0EAD2AE57AC5}"
@@ -23,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{656E5D
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.WebApi", "CoverageDashboard.WebApi\CoverageDashboard.WebApi.csproj", "{3BC01404-F7A9-4AC6-97D0-5EDE53D1A3D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageDashboard.WebApi.Tests", "CoverageDashboard.WebApi.Tests\CoverageDashboard.WebApi.Tests.csproj", "{92DC6C79-F255-4602-B593-02BFCF7FB018}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +42,6 @@ Global
 		{6C8879D9-2F10-4151-A6E6-CF518076F408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C8879D9-2F10-4151-A6E6-CF518076F408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C8879D9-2F10-4151-A6E6-CF518076F408}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BEADCF4-A8C9-4B95-A6AE-4F7C8DB976A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BEADCF4-A8C9-4B95-A6AE-4F7C8DB976A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BEADCF4-A8C9-4B95-A6AE-4F7C8DB976A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BEADCF4-A8C9-4B95-A6AE-4F7C8DB976A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3ED82F96-B686-4CA8-AC2C-A21B5C81C533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3ED82F96-B686-4CA8-AC2C-A21B5C81C533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED82F96-B686-4CA8-AC2C-A21B5C81C533}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -54,11 +50,15 @@ Global
 		{3BC01404-F7A9-4AC6-97D0-5EDE53D1A3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC01404-F7A9-4AC6-97D0-5EDE53D1A3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC01404-F7A9-4AC6-97D0-5EDE53D1A3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DC6C79-F255-4602-B593-02BFCF7FB018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DC6C79-F255-4602-B593-02BFCF7FB018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DC6C79-F255-4602-B593-02BFCF7FB018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DC6C79-F255-4602-B593-02BFCF7FB018}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5BEADCF4-A8C9-4B95-A6AE-4F7C8DB976A7} = {3D43A9D2-3BC7-47B1-851D-4CD50F8EC7DC}
+		{92DC6C79-F255-4602-B593-02BFCF7FB018} = {3D43A9D2-3BC7-47B1-851D-4CD50F8EC7DC}
 	EndGlobalSection
 EndGlobal

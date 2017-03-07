@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using CoverageDashboard.Core.Modules;
+using System.IdentityModel.Services;
+using CoverageDashboard.Core.Authentication;
 
 namespace CoverageDashboard.Core.Modules
 {
@@ -25,6 +27,7 @@ namespace CoverageDashboard.Core.Modules
         {
             
             CdBootstrapper.Initialize();
+           
         }
 
         /// <summary>
@@ -56,7 +59,10 @@ namespace CoverageDashboard.Core.Modules
         /// </summary>
         protected virtual void Application_BeginRequest(object sender, EventArgs e)
         {
-            
+            if (AuthDataManager.IsFederatedAuthResponse(Request))
+            {
+                AuthDataManager.StoreAuthData(Request, Response);
+            }
         }
 
         /// <summary>
@@ -64,12 +70,18 @@ namespace CoverageDashboard.Core.Modules
         /// </summary>
         protected virtual void Application_EndRequest(object sender, EventArgs e)
         {
-
+            if (AuthDataManager.IsFederatedAuthRedirect(Response))
+            {
+                AuthDataManager.StoreAuthRedirectData(Response);
+            }
         }
 
         protected virtual void Application_AuthenticateRequest(object sender, EventArgs e)
         {
-
+            if (User == null || !User.Identity.IsAuthenticated)
+            {
+                FederatedAuthentication.WSFederationAuthenticationModule.SignIn("");
+            }
         }
 
         protected virtual void Application_Error(object sender, EventArgs e)
